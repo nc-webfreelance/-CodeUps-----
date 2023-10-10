@@ -1,0 +1,111 @@
+@use "global" as *;
+
+
+
+// campaign
+
+.swiper-slide.sliders.swiper-slide-active {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.swiper.js-campaign-slider.swiper-initialized.swiper-horizontal.swiper-android.swiper-backface-hidden {
+  overflow-x: scroll;
+  overflow-y: inherit;
+  position: relative;
+  display: block;
+  list-style: none;
+  max-width: rem(1440);
+  margin-inline: auto;
+  z-index: 1;
+}
+
+// .swiper-button-next {
+//   position: absolute;
+//   top: 0;
+//   right: 10%;
+// }
+
+// .swiper-button-prev {
+//   position: absolute;
+//   top: 0;
+//   left: 70%;
+// }
+
+// .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+//   opacity: 1;
+//   color: $green;
+//   border: 1px solid $green;
+//   border-radius: 100%;
+//   width: rem(80);
+//   height: rem(80);
+// }
+
+
+
+.swiper-button-prev,
+.swiper-button-next {
+  @include mq("md") {
+    position: absolute;
+    display: block;
+    top: 5%;
+    width: rem(80);
+    height: rem(80);
+    background-color: rgba($color: $white, $alpha: 1);
+    border: 1px solid $green;
+    border-radius: 100%;
+  }
+}
+
+.swiper-button-prev {
+  @include mq("md") {
+    left: 70%;
+  }
+}
+
+.swiper-button-next {
+  @include mq("md") {
+    right: 10%;
+  }
+}
+
+.swiper-button-prev::before,
+.swiper-button-next::before {
+  content: '';
+	position: absolute;
+	top: calc(50% - rem(2));
+	right: 25%;
+	transform: translateY(calc(-50% - rem(2))) rotate(45deg);
+	width: rem(10);
+	height: 1px;
+	background: $green;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: '';
+	position: absolute;
+	top: 50%;
+	right: 25%;
+	transform: translateY(-50%);
+	width: rem(40);
+	height: 1px;
+	background-color: $green;
+}
+
+
+.swiper-button-prev::before {
+  left: 25%;
+	transform: translateY(calc(-50% - rem(2))) rotate(135deg);
+}
+
+.swiper-button-prev::after {
+  left: 25%;
+}
+
+
+
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+  opacity: 1;
+}

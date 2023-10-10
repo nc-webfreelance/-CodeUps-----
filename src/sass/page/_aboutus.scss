@@ -1,0 +1,130 @@
+@use "global" as *;
+
+
+.aboutus {
+  padding-top: rem(80);
+  padding-bottom: rem(70);
+  @include mq("md") {
+    position: relative;
+    padding-top: rem(140);
+    padding-bottom: rem(164);
+  }
+}
+
+.aboutus__inner.inner {
+  position: relative;
+}
+
+
+.aboutus__images {
+  position: relative;
+  display: flex;
+  max-width: rem(550);
+  width: 100%;
+  margin-inline: auto;
+  aspect-ratio: 345 / 212;
+  margin-top: rem(24);
+  @include mq("md") {
+    max-width: rem(1080);
+    margin-top: rem(40);
+  }
+}
+
+.aboutus__first-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 38%;
+  height: 90%;
+}
+
+.aboutus__first-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.aboutus__second-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 80%;
+  height: 80%;
+}
+
+.aboutus__second-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.aboutus__body {
+  margin-top: rem(40);
+  @include mq("md") {
+    display: flex;
+    position: absolute;
+    top: 45%;
+    right: 5%;
+    margin-top: 0;
+    gap: rem(40);
+    z-index: 3;
+  }
+}
+
+.aboutus__head h3{
+  font-family: $gotu-font-family;
+  font-weight: $regular;
+  font-size: rem(40);
+  line-height: 1;
+  color: $green;
+  @include mq("md") {
+    font-size: rem(80);
+    line-height: calc(100 / 80);
+    color: $white;
+  }
+}
+
+.aboutus__content {
+  margin-top: rem(16);
+  @include mq("md") {
+    max-width: rem(400);
+    margin-top: 0;
+  }
+}
+
+.aboutus__text p{
+  font-weight: $regular;
+  font-size: rem(16);
+  line-height: calc(24 / 16);
+  @include mq("md") {
+    display: block;
+    color: $white;
+  }
+}
+
+.aboutus__btn {
+  text-align: center;
+  margin-top: rem(50);
+  @include mq("md") {
+    margin-top: rem(40);
+  }
+}
+
+.aboutus__decoration-image {
+  @include mq("md") {
+    position: absolute;
+    bottom: 5%;
+    right: 7%;
+    z-index: 10;
+  }
+}
+
+.aboutus__decoration-image img {
+  @include mq("md") {
+    max-width: rem(194);
+    width: 100%;
+    height: 100%;
+  }
+}

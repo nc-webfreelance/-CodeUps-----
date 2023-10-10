@@ -1,0 +1,50 @@
+@use "global" as *;
+
+
+
+.blog {
+  padding-top: rem(80);
+  @include mq("md") {
+    position: relative;
+    background-image: url(/assets/images/common/blog-bgi.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 52%;
+    padding-top: rem(100);
+  }
+}
+
+.blog__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: rem(40);
+  margin-top: rem(24);
+  @include mq("md") {
+    margin-top: rem(80);
+  }
+}
+
+
+.blog__btn {
+  text-align: center;
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: rem(80);
+  }
+}
+
+.blog__decoration-image {
+  @include mq("md") {
+    position: absolute;
+    top: 2%;
+    left: 5%;
+  }
+}
+
+.blog__decoration-image img {
+  @include mq("md") {
+    max-width: rem(437);
+    width: 100%;
+    height: 100%;
+  }
+}

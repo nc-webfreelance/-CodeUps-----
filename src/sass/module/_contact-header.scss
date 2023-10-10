@@ -1,0 +1,28 @@
+@use "global" as *;
+
+
+.contact-header {
+  text-align: center;
+}
+
+.contact-header__engtitle {
+  font-family: $gotu-font-family;
+  font-weight: $regular;
+  font-size: rem(80);
+  line-height: 1;
+  color: $black;
+  text-shadow: 2px 2px 4px rgba($color: $black, $alpha: 0.6);
+}
+
+.contact-header__engtitle span {
+  color: $green;
+}
+
+.contact-header__jatitle {
+  font-family: $base-font-family;
+  font-weight: $regular;
+  font-size: rem(12);
+  line-height: calc(18 / 12);
+  color: $green;
+  text-shadow: 1px 6px 6px rgba($color: $black, $alpha: 0.3);
+}
