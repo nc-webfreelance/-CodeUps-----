@@ -49,7 +49,6 @@
   @include mq("md") {
     position: absolute;
     display: block;
-    top: 5%;
     width: rem(80);
     height: rem(80);
     background-color: rgba($color: $white, $alpha: 1);
@@ -60,13 +59,15 @@
 
 .swiper-button-prev {
   @include mq("md") {
-    left: 70%;
+    top: 3.3%;
+    left: 70.8%;
   }
 }
 
 .swiper-button-next {
   @include mq("md") {
-    right: 10%;
+    top: 3.2%;
+    right: 12.5%;
   }
 }
 
@@ -74,19 +75,25 @@
 .swiper-button-next::before {
   content: '';
 	position: absolute;
-	top: calc(50% - rem(2));
-	right: 25%;
-	transform: translateY(calc(-50% - rem(2))) rotate(45deg);
+	top: 50%;
+	right: 22%;
+	transform: translateY(calc(-50% - rem(2))) rotate(40deg);
 	width: rem(10);
 	height: 1px;
 	background: $green;
+}
+
+.swiper-button-prev::before {
+  top: 51%;
+  left: 24%;
+  transform: translateY(calc(-50% - rem(2))) rotate(142deg);
 }
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
   content: '';
 	position: absolute;
-	top: 50%;
+	top: 51%;
 	right: 25%;
 	transform: translateY(-50%);
 	width: rem(40);
@@ -95,12 +102,9 @@
 }
 
 
-.swiper-button-prev::before {
-  left: 25%;
-	transform: translateY(calc(-50% - rem(2))) rotate(135deg);
-}
 
 .swiper-button-prev::after {
+  top: 52.4%;
   left: 25%;
 }
 

@@ -3,10 +3,10 @@
 
 
 .voice {
-  padding: rem(80) 0;
+  padding: rem(84) 0;
   @include mq("md") {
     position: relative;
-    padding: rem(140) 0;
+    padding: rem(144) 0;
   }
 }
 
@@ -14,7 +14,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: rem(40);
-  margin-top: rem(40);
+  margin-top: rem(44);
   @include mq("md") {
     margin-top: rem(30);
   }
@@ -24,6 +24,7 @@
 .voice__btn {
   text-align: center;
   margin-top: rem(40);
+  margin-left: rem(-3);
   @include mq("md") {
     margin-top: rem(80);
   }
@@ -32,8 +33,8 @@
 .voice__decoration-image-top {
   @include mq("md") {
     position: absolute;
-    top: 0;
-    left: 5%;
+    top: 2.6%;
+    left: 7%;
   }
 }
 
@@ -48,8 +49,8 @@
 .voice__decoration-image-bottom {
   @include mq("md") {
     position: absolute;
-    bottom: 5%;
-    right: 8%;
+    right: 12.5%;
+    bottom: 8%;
   }
 }
 

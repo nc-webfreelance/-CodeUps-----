@@ -9,16 +9,20 @@
     background-image: url(/assets/images/common/blog-bgi.png);
     background-repeat: no-repeat;
     background-position: top;
-    background-size: 100% 52%;
+    background-size: 100% 60.5%;
     padding-top: rem(100);
   }
+}
+
+.blog__title {
+  margin-left: rem(-1);
 }
 
 .blog__cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: rem(40);
-  margin-top: rem(24);
+  gap: rem(40.3);
+  margin-top: rem(28);
   @include mq("md") {
     margin-top: rem(80);
   }
@@ -28,16 +32,18 @@
 .blog__btn {
   text-align: center;
   margin-top: rem(40);
+  margin-left: rem(-3);
   @include mq("md") {
     margin-top: rem(80);
+    margin-left: rem(-6);
   }
 }
 
 .blog__decoration-image {
   @include mq("md") {
     position: absolute;
-    top: 2%;
-    left: 5%;
+    top: 2.9%;
+    left: 7%;
   }
 }
 

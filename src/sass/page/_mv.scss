@@ -16,11 +16,15 @@
 .mv__header {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 52.7%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: $white;
   z-index: $mv__header-z-index;
+  @include mq("md") {
+    top: 50.1%;
+    left: 51.43%;
+  }
 }
 
 .mv__header h2 {
@@ -28,7 +32,7 @@
   font-weight: $regular;
   font-size: rem(40);
   line-height: calc(48 / 40);
-  letter-spacing: 0.54em;
+  letter-spacing: 0.53em;
   @include mq("md") {
     font-size: rem(80);
     line-height: calc(100 / 80);
@@ -40,5 +44,8 @@
   font-weight: $regular;
   font-size: rem(20);
   line-height: calc(33 / 20);
-  margin-top: rem(13);
+  margin-left: rem(-23);
+  @include mq("md") {
+    margin-left: rem(-43);
+  }
 }
