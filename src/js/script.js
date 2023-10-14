@@ -38,7 +38,7 @@ jQuery(function ($) {
     return false;
   });
 
-  $(".js-hamburger,.js-sp-nav,.sp-nav__menu a,.header__logo").click(function () {
+  $(".js-hamburger,.js-sp-nav,.js-drawer a").click(function () {
     if ($(".js-hamburger").hasClass("is-active")) {
       $(".js-hamburger").removeClass("is-active");
       $(".js-sp-nav").fadeOut(500);
@@ -55,9 +55,6 @@ jQuery(function ($) {
   let headerHeight = $(".js-header").height();
   let height = $(".js-mv-height").height();
 
-  console.log('ヘッダー高さ' + headerHeight);
-  console.log('メインビュー高さ' + height);
-
   $(window).scroll(function () {
     if ($(this).scrollTop() > height - headerHeight) {
       header.addClass("is-color");
@@ -66,60 +63,47 @@ jQuery(function ($) {
     }
   });
 
-    // ヘッダーの高さ分だけコンテンツを下げる
-    // const height = $(".js-header").height();
-    $("main").css("margin-top", headerHeight);
+  // ヘッダーの高さ分だけコンテンツを下げる
+  $("main").css("margin-top", headerHeight);
 
-    // ヘッダーの高さ取得
-    // const headerHeight = $(".js-header").height();
-    $('a[href^="#"]').click(function () {
-      const speed = 1000;
-      let href = $(this).attr("href");
-      let target = $(href == "#" || href == "" ? "html" : href);
-      // ヘッダーの高さ分下げる
-      let position = target.offset().top - headerHeight;
-      $("body,html").animate({ scrollTop: position }, speed, "swing");
-      return false;
-    });
+  // ヘッダーの高さ取得
+  $('a[href^="#"]').click(function () {
+    const speed = 1000;
+    let href = $(this).attr("href");
+    let target = $(href == "#" || href == "" ? "html" : href);
+    // ヘッダーの高さ分下げる
+    let position = target.offset().top - headerHeight;
+    $("body,html").animate({ scrollTop: position }, speed, "swing");
+    return false;
+  });
 
-  // const swiper = new Swiper(".js-swiper", {
-  //   loop: true,
-  //   effect: "fade",
-  //   speed: 3000,
-  //   allowTouchMove: false,
-  //   autoplay: {
-  //     delay: 3000,
-  //   },
-  // });
+  const swiper = new Swiper(".js-swiper", {
+    loop: true,
+    effect: "fade",
+    speed: 3000,
+    allowTouchMove: false,
+    autoplay: {
+      delay: 3000,
+    },
+  });
 
   var campaignSwiper = new Swiper(".js-campaign-slider", {
     slidesPerView: "auto",
     centeredSlides: true,
-    // spaceBetween: 40,
   });
 
   $(".swiper-button-prev").click(function () {
-    $(
-      ".swiper.js-campaign-slider.swiper-initialized.swiper-horizontal.swiper-android.swiper-backface-hidden"
-    ).animate(
+    $(".campaign__wrapper").animate(
       {
-        scrollLeft:
-          $(
-            ".swiper.js-campaign-slider.swiper-initialized.swiper-horizontal.swiper-android.swiper-backface-hidden"
-          ).scrollLeft() - 700, //〇〇px左にスクロールする
+        scrollLeft: $(".campaign__wrapper").scrollLeft() - 700, //〇〇px左にスクロールする
       },
       300
     ); //スクロールにかかる時間
   });
   $(".swiper-button-next").click(function () {
-    $(
-      ".swiper.js-campaign-slider.swiper-initialized.swiper-horizontal.swiper-android.swiper-backface-hidden"
-    ).animate(
+    $(".campaign__wrapper").animate(
       {
-        scrollLeft:
-          $(
-            ".swiper.js-campaign-slider.swiper-initialized.swiper-horizontal.swiper-android.swiper-backface-hidden"
-          ).scrollLeft() + 700, //〇〇px右にスクロールする
+        scrollLeft: $(".campaign__wrapper").scrollLeft() + 700, //〇〇px右にスクロールする
       },
       300
     ); //スクロールにかかる時間
@@ -151,6 +135,4 @@ jQuery(function ($) {
       }
     });
   });
-
-
 });

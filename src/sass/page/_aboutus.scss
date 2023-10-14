@@ -1,13 +1,12 @@
 @use "global" as *;
 
-
 .aboutus {
   padding-top: rem(84);
   padding-bottom: rem(74);
   @include mq("md") {
     position: relative;
     padding-top: rem(144);
-    padding-bottom: rem(164);
+    padding-bottom: rem(163);
   }
 }
 
@@ -15,15 +14,14 @@
   position: relative;
 }
 
-
 .aboutus__images {
   position: relative;
   display: flex;
+  aspect-ratio: 345 / 212;
   max-width: rem(550);
   width: 100%;
-  margin-inline: auto;
-  aspect-ratio: 345 / 212;
   margin-top: rem(28);
+  margin-inline: auto;
   @include mq("md") {
     aspect-ratio: 346 / 212;
     max-width: rem(1080);
@@ -58,7 +56,8 @@
   height: 87.7%;
   @include mq("md") {
     right: 0;
-    bottom: rem(1.5);
+    bottom: rem(0.5);
+    height: 87.9%;
   }
 }
 
@@ -81,7 +80,7 @@
   }
 }
 
-.aboutus__head h3{
+.aboutus__head h3 {
   font-family: $gotu-font-family;
   font-weight: $regular;
   font-size: rem(40);
@@ -102,7 +101,7 @@
   }
 }
 
-.aboutus__text p{
+.aboutus__text p {
   font-weight: $regular;
   font-size: rem(16);
   line-height: calc(24 / 16);

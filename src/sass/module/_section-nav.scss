@@ -1,40 +1,34 @@
 @use "global" as *;
 
-
-
-
-.sp-nav__menu {
+.section-nav__menu {
   color: $white;
 }
 
-
-
-.sp-nav__title {
+.section-nav__title {
   display: flex;
 }
 
-.sp-nav__title img {
+.section-nav__title img {
   width: rem(18);
   height: rem(18);
 }
 
-.sp-nav__title a {
+.section-nav__title a {
   font-weight: $bold;
   font-size: rem(16);
   line-height: calc(18 / 16);
   margin-left: rem(4);
 }
 
-.sp-nav__item {
+.section-nav__item {
   display: flex;
   flex-direction: column;
   margin-left: rem(18);
 }
 
-.sp-nav__item a{
+.section-nav__item a {
   font-weight: $regular;
   font-size: rem(16);
   line-height: calc(18 / 16);
   margin-top: rem(24);
 }
-

@@ -1,7 +1,5 @@
 @use "global" as *;
 
-
-
 // campaign
 
 .swiper-slide.sliders.swiper-slide-active {
@@ -10,9 +8,7 @@
   align-items: center;
 }
 
-.swiper.js-campaign-slider.swiper-initialized.swiper-horizontal.swiper-android.swiper-backface-hidden {
-  overflow-x: scroll;
-  overflow-y: inherit;
+.campaign__slider.swiper {
   position: relative;
   display: block;
   list-style: none;
@@ -21,28 +17,10 @@
   z-index: 1;
 }
 
-// .swiper-button-next {
-//   position: absolute;
-//   top: 0;
-//   right: 10%;
-// }
-
-// .swiper-button-prev {
-//   position: absolute;
-//   top: 0;
-//   left: 70%;
-// }
-
-// .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
-//   opacity: 1;
-//   color: $green;
-//   border: 1px solid $green;
-//   border-radius: 100%;
-//   width: rem(80);
-//   height: rem(80);
-// }
-
-
+.campaign__wrapper {
+  overflow-x: scroll;
+  overflow-y: inherit;
+}
 
 .swiper-button-prev,
 .swiper-button-next {
@@ -73,14 +51,14 @@
 
 .swiper-button-prev::before,
 .swiper-button-next::before {
-  content: '';
-	position: absolute;
-	top: 50%;
-	right: 22%;
-	transform: translateY(calc(-50% - rem(2))) rotate(40deg);
-	width: rem(10);
-	height: 1px;
-	background: $green;
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 22%;
+  transform: translateY(calc(-50% - rem(2))) rotate(40deg);
+  width: rem(10);
+  height: rem(1);
+  background: $green;
 }
 
 .swiper-button-prev::before {
@@ -91,25 +69,22 @@
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  content: '';
-	position: absolute;
-	top: 51%;
-	right: 25%;
-	transform: translateY(-50%);
-	width: rem(40);
-	height: 1px;
-	background-color: $green;
+  content: "";
+  position: absolute;
+  top: 51%;
+  right: 25%;
+  transform: translateY(-50%);
+  width: rem(40);
+  height: rem(1);
+  background-color: $green;
 }
-
-
 
 .swiper-button-prev::after {
   top: 52.4%;
   left: 25%;
 }
 
-
-
-.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
   opacity: 1;
 }

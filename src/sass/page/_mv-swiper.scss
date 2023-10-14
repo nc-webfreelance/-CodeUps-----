@@ -1,6 +1,5 @@
 @use "global" as *;
 
-
 .mv-swiper {
   width: 100%;
   height: inherit;
@@ -13,13 +12,6 @@
 
 .mv-swiper__slide {
   height: inherit;
-}
-
-.mv-swiper__slide picture,
-.mv-swiper__slide img {
-  width: 100%;
-  height: inherit;
-  object-fit: cover;
 }
 
 .mv-swiper__slide picture,

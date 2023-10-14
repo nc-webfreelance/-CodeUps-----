@@ -1,6 +1,5 @@
 @use "global" as *;
 
-
 .campaign {
   padding-top: rem(40);
   @include mq("md") {
@@ -13,7 +12,6 @@
     position: relative;
   }
 }
-
 
 .campaign__btn {
   text-align: center;

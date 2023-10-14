@@ -5,7 +5,7 @@
   padding-top: rem(80);
   padding-bottom: rem(84);
   @include mq("md") {
-    padding-top: rem(100);
+    padding-top: rem(101);
     padding-bottom: rem(76);
   }
 }
@@ -39,8 +39,6 @@
   }
 }
 
-
-
 .information__image img {
   display: block;
   width: 100%;
@@ -51,6 +49,7 @@
 .information__textBody {
   margin-top: rem(21.5);
   @include mq("md") {
+    max-width: rem(492);
     margin-top: rem(-5);
   }
 }
@@ -58,7 +57,7 @@
 .information__head {
   border-bottom: 1px solid $green;
   @include mq("md") {
-    padding-bottom: 7px;
+    padding-bottom: rem(7);
   }
 }
 
