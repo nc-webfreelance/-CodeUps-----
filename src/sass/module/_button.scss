@@ -3,6 +3,7 @@
 .button {
   position: relative;
   display: inline-block;
+  cursor: pointer;
 }
 
 .button::before {

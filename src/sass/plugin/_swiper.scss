@@ -2,25 +2,25 @@
 
 // campaign
 
-.swiper-slide.sliders.swiper-slide-active {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
+// .swiper-slide.sliders.swiper-slide-active {
+//   display: flex;
+//   justify-content: flex-start;
+//   align-items: center;
+// }
 
-.campaign__slider.swiper {
-  position: relative;
-  display: block;
-  list-style: none;
-  max-width: rem(1440);
-  margin-inline: auto;
-  z-index: 1;
-}
+// .campaign__slider.swiper {
+//   position: relative;
+//   display: block;
+//   list-style: none;
+//   max-width: rem(1440);
+//   margin-inline: auto;
+//   z-index: 1;
+// }
 
-.campaign__wrapper {
-  overflow-x: scroll;
-  overflow-y: inherit;
-}
+// .campaign__wrapper {
+//   overflow-x: scroll;
+//   overflow-y: inherit;
+// }
 
 .swiper-button-prev,
 .swiper-button-next {

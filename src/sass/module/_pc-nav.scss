@@ -1,25 +1,39 @@
 @use "global" as *;
 
+.pc-nav {
+  height: inherit;
+}
+
 .pc-nav__items {
   display: flex;
+  height: inherit;
   margin-left: rem(25);
 }
 
 .pc-nav__item {
+  display: flex;
+  height: inherit;
   text-align: center;
   color: $white;
   white-space: nowrap;
 }
 
 .pc-nav__item a {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
   position: relative;
+}
+
+.pc-nav__text {
+  display: block;
 }
 
 .pc-nav__item a::after {
   content: "";
   position: absolute;
-  bottom: rem(-4);
+  bottom: rem(20);
   right: 0;
   width: 100%;
   height: rem(1);
@@ -41,7 +55,7 @@
   padding-right: rem(20);
 }
 
-.pc-nav__item h3 {
+.pc-nav__item h2 {
   font-family: $gotu-font-family;
   font-weight: $regular;
   font-size: rem(18);

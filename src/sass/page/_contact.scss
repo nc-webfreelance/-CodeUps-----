@@ -75,7 +75,6 @@
   font-weight: $regular;
   font-size: rem(16);
   line-height: calc(24 / 16);
-  text-shadow: 1px 4px 3px rgba($color: $black, $alpha: 0.3);
   @include mq("md") {
     width: rem(150);
   }
@@ -142,7 +141,6 @@
   font-size: rem(14);
   line-height: calc(18 / 14);
   color: $green;
-  text-shadow: 1px 6px 6px rgba($color: $black, $alpha: 0.3);
   @include mq("md") {
     display: inline-block;
     margin-left: rem(-11);

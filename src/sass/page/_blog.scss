@@ -7,9 +7,18 @@
     background-image: url(../images/common/blog-bgi.png);
     background-repeat: no-repeat;
     background-position: top;
-    background-size: 100% 60.5%;
+    background-size: 100% auto;
     padding-top: rem(100);
   }
+}
+
+.blog__inner.inner {
+    max-width: rem(600);
+    width: 100%;
+    margin-inline: auto;
+    @include mq("md") {
+      max-width: rem(1130);
+    }
 }
 
 .blog__title {
@@ -17,11 +26,12 @@
 }
 
 .blog__cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: rem(40.3);
   margin-top: rem(28);
   @include mq("md") {
+    flex-direction: row;
     margin-top: rem(80);
   }
 }

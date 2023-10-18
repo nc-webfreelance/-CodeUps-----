@@ -10,12 +10,6 @@
   }
 }
 
-.information__inner.inner {
-  @include mq("md") {
-    padding-left: rem(18);
-  }
-}
-
 .information__body {
   max-width: rem(550);
   width: 100%;

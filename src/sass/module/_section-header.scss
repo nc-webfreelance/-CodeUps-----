@@ -17,7 +17,9 @@
 }
 
 .section-header__engtitle.section-header--white {
-  color: $white;
+  @include mq("md") {
+    color: $white;
+  }
 }
 
 .section-header__engtitle span {
@@ -25,7 +27,9 @@
 }
 
 .section-header__engtitle.section-header--white span {
-  color: $white;
+  @include mq("md") {
+    color: $white;
+  }
 }
 
 .section-header__jatitle {
@@ -41,5 +45,7 @@
 }
 
 .section-header__jatitle.section-header--white {
-  color: $white;
+  @include mq("md") {
+    color: $white;
+  }
 }

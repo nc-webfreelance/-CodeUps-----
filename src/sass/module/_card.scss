@@ -51,4 +51,7 @@
   font-weight: $regular;
   font-size: rem(16);
   line-height: calc(24 / 16);
+  :hover {
+    opacity: 1;
+  }
 }
