@@ -1,14 +1,16 @@
 @use "global" as *;
 
-.sliders {
-  margin-top: rem(28);
-  margin-bottom: rem(5);
+
+
+
+.sliders__item {
+  display: flex;
+  flex-direction: column;
+  width: rem(280);
+  height: auto;
+  box-shadow: 2px 2px 10px rgba($color: $black, $alpha: 0.3);
   @include mq("md") {
-    margin-top: rem(38);
-    margin-inline: auto;
+    width: rem(333);
   }
 }
 
-.sliders__item {
-  box-shadow: 2px 2px 10px rgba($color: $black, $alpha: 0.3);
-}

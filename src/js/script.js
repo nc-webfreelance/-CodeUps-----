@@ -92,24 +92,20 @@ jQuery(function ($) {
   var campaignSwiper = new Swiper(".js-campaign-slider", {
     slidesPerView: "auto",
     centeredSlides: true,
+    cssMode: true,
+    KeyboardEvent:true,
+    spaceBetween: 24,
+    breakpoints: {
+      768: {
+    spaceBetween: 40,
+      },
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
   });
 
-  $(".swiper-button-prev").click(function () {
-    $(".campaign__wrapper").animate(
-      {
-        scrollLeft: $(".campaign__wrapper").scrollLeft() - 700, //〇〇px左にスクロールする
-      },
-      300
-    ); //スクロールにかかる時間
-  });
-  $(".swiper-button-next").click(function () {
-    $(".campaign__wrapper").animate(
-      {
-        scrollLeft: $(".campaign__wrapper").scrollLeft() + 700, //〇〇px右にスクロールする
-      },
-      300
-    ); //スクロールにかかる時間
-  });
 
   //要素の取得とスピードの設定
   var box = $(".information__image,.voiceCard__image,.price__image"),

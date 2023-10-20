@@ -45,7 +45,6 @@
   display: inline-block;
   width: rem(174);
   height: rem(65);
-  filter: drop-shadow(1px 4px 3px rgba($color: $black, $alpha: 0.5));
   @include mq("md") {
     width: rem(200);
     height: rem(75);

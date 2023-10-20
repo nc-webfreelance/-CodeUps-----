@@ -1,17 +1,10 @@
 @use "global" as *;
 
-.slider:first-child {
-  margin-left: rem(15);
-  @include mq("md") {
-    margin-left: rem(180);
-  }
-}
 
-.slider:not(:first-child) {
-  margin-left: rem(24);
-  @include mq("md") {
-    margin-left: rem(40);
-  }
+
+.slider {
+  display: flex;
+  flex-direction: column;
 }
 
 .slider__image {
@@ -31,6 +24,9 @@
 }
 
 .slider__body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   padding-top: rem(16);
   padding-right: rem(16);
   padding-bottom: rem(24);
@@ -42,9 +38,9 @@
 }
 
 .slider__head {
-  border-bottom: 2px solid $green;
   padding-bottom: rem(7);
-  text-align: left;
+  flex-grow: 1;
+  border-bottom: 2px solid $green;
 }
 
 .slider__category {

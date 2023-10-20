@@ -3,6 +3,9 @@
 .voiceCard {
   display: inline-block;
   background-color: $white;
+  max-width: rem(580);
+  width: 100%;
+  margin-inline: auto;
 }
 
 .voiceCard__inner {
