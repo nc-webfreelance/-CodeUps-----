@@ -10,6 +10,13 @@
   }
 }
 
+.information--layout {
+  margin-top: rem(74);
+    @include mq("md") {
+    margin-top: rem(163);
+  }
+}
+
 .information__body {
   max-width: rem(550);
   width: 100%;
@@ -77,5 +84,4 @@
 .information__btn {
   text-align: center;
   margin-top: rem(39.5);
-  margin-left: rem(-3);
 }

@@ -1,9 +1,9 @@
 @use "global" as *;
 
-.campaign {
-  padding-top: rem(40);
+.campaign--layout {
+  margin-top: rem(40);
   @include mq("md") {
-    padding-top: rem(120);
+    margin-top: rem(120);
   }
 }
 
@@ -29,9 +29,7 @@
 .campaign__btn {
   text-align: center;
   margin-top: rem(35);
-  margin-left: rem(-5);
   @include mq("md") {
     margin-top: rem(75);
-    margin-left: rem(-3);
   }
 }

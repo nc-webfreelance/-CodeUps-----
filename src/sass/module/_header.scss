@@ -12,6 +12,10 @@
   }
 }
 
+.header.is-active {
+  background-color: rgba($color: $green, $alpha: 1);
+}
+
 .header.is-color {
   background-color: rgba($color: $black, $alpha: 1);
 }
@@ -106,17 +110,25 @@
   background-color: $green;
   color: $white;
   padding: 0 rem(10);
-  overflow-y: scroll;
   z-index: $drawer-z-index;
 }
 
+.header__box {
+  height: inherit;
+  margin-top: rem(80);
+  overflow-y: scroll;
+}
+
 .header__contents {
+  position: relative;
   display: flex;
   gap: rem(16);
   max-width: rem(335);
   width: 100%;
+  height: rem(520);
   margin-inline: auto;
-  margin-top: 29%;
+  // margin-top: 29%;
+  padding: rem(30) 0;
   z-index: $sp-nav-z-index;
 }
 

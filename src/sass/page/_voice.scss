@@ -1,10 +1,15 @@
 @use "global" as *;
 
 .voice {
-  padding: rem(84) 0;
   @include mq("md") {
     position: relative;
-    padding: rem(144) 0;
+  }
+}
+
+.voice--layout {
+  margin-top: rem(84);
+  @include mq("md") {
+    margin-top: rem(144);
   }
 }
 
@@ -19,10 +24,10 @@
 
 .voice__cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(rem(340), 1fr));
   gap: rem(39.5);
   margin-top: rem(44);
   @include mq("md") {
+    grid-template-columns: repeat(2, 1fr);
     gap: rem(40);
     margin-top: rem(30);
   }
@@ -47,7 +52,6 @@
 .voice__btn {
   text-align: center;
   margin-top: rem(40);
-  margin-left: rem(-3);
   @include mq("md") {
     margin-top: rem(80);
   }
@@ -56,14 +60,15 @@
 .voice__decoration-image-top {
   @include mq("md") {
     position: absolute;
-    top: 2.6%;
-    left: 7%;
+    top: -16.4%;
+    left: calc(50% - min(48vw, rem(630)));
+    max-width: rem(301);
+    width: 100%;
   }
 }
 
 .voice__decoration-image-top img {
   @include mq("md") {
-    max-width: rem(301);
     width: 100%;
     height: 100%;
   }
@@ -72,14 +77,15 @@
 .voice__decoration-image-bottom {
   @include mq("md") {
     position: absolute;
-    right: 12.5%;
-    bottom: 8%;
+    right: calc(50% - min(48vw, rem(545)));
+    bottom: -12%;
+    max-width: rem(71);
+    width: 100%;
   }
 }
 
 .voice__decoration-image-bottom img {
   @include mq("md") {
-    max-width: rem(71);
     width: 100%;
     height: 100%;
   }

@@ -70,10 +70,10 @@
 }
 
 .slider__foot {
-  padding-top: rem(6);
+  margin-top: rem(6);
   text-align: center;
   @include mq("md") {
-    padding-top: rem(15);
+    margin-top: rem(15);
   }
 }
 
