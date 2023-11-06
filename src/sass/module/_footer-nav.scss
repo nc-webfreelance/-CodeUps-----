@@ -1,22 +1,22 @@
 @use "global" as *;
 
-.section-nav__menu {
+.footer-nav__menu {
   color: $white;
 }
 
-.section-nav__title {
+.footer-nav__title {
   display: flex;
   :hover {
     opacity: 0.8;
   }
 }
 
-.section-nav__title img {
+.footer-nav__title img {
   width: rem(18);
   height: rem(18);
 }
 
-.section-nav__title a {
+.footer-nav__title a {
   font-weight: $bold;
   font-size: rem(16);
   line-height: calc(18 / 16);
@@ -24,7 +24,7 @@
   margin-left: rem(4);
 }
 
-.section-nav__item {
+.footer-nav__item {
   display: flex;
   flex-direction: column;
   margin-left: rem(18);
@@ -33,7 +33,7 @@
   }
 }
 
-.section-nav__item a {
+.footer-nav__item a {
   font-weight: $regular;
   font-size: rem(16);
   line-height: calc(18 / 16);

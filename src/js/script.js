@@ -43,14 +43,19 @@ jQuery(function ($) {
   $(".js-hamburger,.js-sp-nav,.js-drawer a").click(function () {
     if ($(".js-hamburger").hasClass("is-active")) {
       $(".js-hamburger").removeClass("is-active");
+      $("body").removeClass("is-active");
+      $(".header").removeClass("is-active");
       $(".js-sp-nav").fadeOut(500);
-      $(".mv__header").fadeIn(500);
+      // $(".mv__header").fadeIn(500);
     } else {
       $(".js-hamburger").addClass("is-active");
+      $("body").addClass("is-active");
+      $(".header").addClass("is-active");
       $(".js-sp-nav").fadeIn(500);
-      $(".mv__header").fadeOut(500);
+      // $(".mv__header").fadeOut(500);
     }
   });
+
 
   // ヘッダークラス名付与
   let header = $(".js-header");
@@ -88,11 +93,12 @@ jQuery(function ($) {
       delay: 3000,
     },
   });
-
-  var campaignSwiper = new Swiper(".js-campaign-slider", {
+  
+  const campaignSwiper = new Swiper(".js-campaign-slider", {
+    loop: true,
     slidesPerView: "auto",
     centeredSlides: true,
-    cssMode: true,
+    // cssMode: true,
     KeyboardEvent:true,
     spaceBetween: 24,
     breakpoints: {
@@ -108,7 +114,7 @@ jQuery(function ($) {
 
 
   //要素の取得とスピードの設定
-  var box = $(".information__image,.voiceCard__image,.price__image"),
+  var box = $(".information__image,.wide-card__image,.price__image"),
     speed = 700;
 
   //.colorboxの付いた全ての要素に対して下記の処理を行う

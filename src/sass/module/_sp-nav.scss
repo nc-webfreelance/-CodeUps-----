@@ -1,0 +1,60 @@
+@use "global" as *;
+
+
+.sp-nav {
+  color: $white;
+}
+
+.sp-nav__inner {
+  padding: 0 rem(15);
+}
+
+.sp-nav__wrapper {
+  display: flex;
+  padding-top: rem(20);
+  padding-bottom: rem(100);
+  justify-content: space-around;
+  // gap: rem(17);
+}
+
+// .sp-nav__left,
+// .sp-nav__right {
+//   width: 50%;
+// }
+
+.sp-nav__left-item a,
+.sp-nav__right-item a {
+  display: block;
+  font-size: rem(16);
+  font-weight: $regular;
+  line-height: 1.125;
+  padding-top: rem(12);
+  padding-right: rem(7);
+  padding-bottom: rem(12);
+  padding-left: rem(22);
+}
+
+.sp-nav__left-item:first-child a,
+.sp-nav__right-item:first-child a {
+  position: relative;
+  font-weight: $bold;
+}
+
+.sp-nav__left-item:first-child a::before,
+.sp-nav__right-item:first-child a::before {
+  content: "";
+  background-image: url(../images/common/section-logo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: rem(18);
+  height: rem(18);
+}
+
+.sp-nav__left-items:not(:first-child),
+.sp-nav__right-items:not(:first-child) {
+  margin-top: rem(18);
+}

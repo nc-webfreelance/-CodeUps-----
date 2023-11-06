@@ -3,8 +3,8 @@
 .aboutus {
   // padding-bottom: rem(74);
   @include mq("md") {
-    position: relative;
     // padding-bottom: rem(163);
+    position: relative;
   }
 }
 
@@ -21,60 +21,92 @@
 
 .aboutus__images {
   position: relative;
-  display: flex;
-  aspect-ratio: 345 / 212;
   max-width: rem(550);
   width: 100%;
   margin-top: rem(28);
   margin-inline: auto;
+  // display: flex;
+  // aspect-ratio: 345 / 212;
   @include mq("md") {
-    aspect-ratio: 346 / 212;
     max-width: rem(1080);
     margin-top: rem(40);
+    // aspect-ratio: 346 / 212;
+  }
+}
+
+.aboutus__images::after {
+  display: none;
+  @include mq("md") {
+    display: block;
+    content: "";
+    background-image: url(../images/common/aboutus-decoration.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    position: absolute;
+    position: absolute;
+    right: calc(50% - min(48vw, rem(643)));
+    bottom: -12%;
+    max-width: rem(194);
+    width: 100%;
+    height: 100%;
   }
 }
 
 .aboutus__first-image {
-  position: absolute;
-  top: 0;
-  left: rem(-1);
-  z-index: 2;
+  // position: absolute;
+  // top: 0;
+  // left: rem(-1);
+  // z-index: 2;
   width: 37.1%;
-  height: 91.5%;
-  @include mq("md") {
-    left: 0;
-  }
+  // height: 91.5%;
+  // @include mq("md") {
+  //   left: 0;
+  // }
 }
 
 .aboutus__first-image img {
+  aspect-ratio: 128 / 194;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  @include mq("md") {
+    aspect-ratio: 400 / 606;
+  }
 }
 
 .aboutus__second-image {
-  position: absolute;
-  right: rem(1);
-  bottom: 0;
-  z-index: 1;
+  position: relative;
+  z-index: -1;
   width: 81.5%;
-  height: 87.7%;
+  margin-top: -50%;
+  margin-left: auto;
+  // position: absolute;
+  // right: rem(1);
+  // bottom: 0;
+  // z-index: 1;
+  // height: 87.7%;
   @include mq("md") {
-    right: 0;
-    bottom: rem(0.5);
-    height: 87.9%;
+    margin-top: -49%;
+    // right: 0;
+    // bottom: rem(0.5);
+    // height: 87.9%;
   }
 }
 
 .aboutus__second-image img {
+  aspect-ratio: 281 / 186;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  @include mq("md") {
+    aspect-ratio: 880 / 581;
+  }
 }
 
 .aboutus__body {
   margin-top: rem(40);
-  max-width: rem(600);
+  max-width: rem(550);
   width: 100%;
   margin-inline: auto;
   @include mq("md") {
@@ -130,21 +162,20 @@
   }
 }
 
-.aboutus__decoration-image {
-  @include mq("md") {
-    position: absolute;
-    right: calc(50% - min(48vw, rem(643)));
-    bottom: -12%;
-    max-width: rem(194);
-    width: 100%;
-    z-index: 10;
-    
-  }
-}
+// .aboutus__decoration-image {
+//   @include mq("md") {
+//     position: absolute;
+//     right: calc(50% - min(48vw, rem(643)));
+//     bottom: -12%;
+//     max-width: rem(194);
+//     width: 100%;
+//     z-index: 10;
+//   }
+// }
 
-.aboutus__decoration-image img {
-  @include mq("md") {
-    width: 100%;
-    height: 100%;
-  }
-}
+// .aboutus__decoration-image img {
+//   @include mq("md") {
+//     width: 100%;
+//     height: 100%;
+//   }
+// }

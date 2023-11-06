@@ -1,6 +1,8 @@
 @use "global" as *;
 
-.voiceCard {
+
+
+.wide-card {
   display: inline-block;
   background-color: $white;
   max-width: rem(580);
@@ -8,7 +10,7 @@
   margin-inline: auto;
 }
 
-.voiceCard__inner {
+.wide-card__inner {
   padding-top: rem(15);
   padding-right: rem(16);
   padding-bottom: rem(24);
@@ -20,7 +22,7 @@
   }
 }
 
-.voiceCard__body {
+.wide-card__body {
   display: flex;
   gap: rem(11);
   width: 100%;
@@ -29,7 +31,7 @@
   }
 }
 
-.voiceCard__content {
+.wide-card__content {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -42,7 +44,7 @@
   }
 }
 
-.voiceCard__meta {
+.wide-card__meta {
   @include mq("md") {
     display: flex;
     align-items: end;
@@ -50,7 +52,7 @@
   }
 }
 
-.voiceCard__age {
+.wide-card__age {
   font-weight: $regular;
   font-size: rem(12);
   line-height: calc(18 / 12);
@@ -59,7 +61,7 @@
   }
 }
 
-.voiceCard__category {
+.wide-card__category {
   display: inline-block;
   border: 1px solid $green;
   padding: rem(3) rem(11);
@@ -68,21 +70,21 @@
   }
 }
 
-.voiceCard__category p {
+.wide-card__category p {
   font-weight: $regular;
   font-size: rem(12);
   line-height: calc(22 / 12);
   color: $green;
 }
 
-.voiceCard__head {
+.wide-card__head {
   margin-top: rem(-1);
   @include mq("md") {
     margin-top: rem(4);
   }
 }
 
-.voiceCard__head p {
+.wide-card__head p {
   font-weight: $medium;
   font-size: rem(16);
   line-height: calc(23 / 16);
@@ -92,7 +94,7 @@
   }
 }
 
-.voiceCard__image {
+.wide-card__image {
   position: relative;
   aspect-ratio: 152 / 119;
   overflow: hidden;
@@ -103,20 +105,20 @@
   }
 }
 
-.voiceCard__image img {
+.wide-card__image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.voiceCard__text {
+.wide-card__text {
   margin-top: rem(14);
   @include mq("md") {
     margin-top: rem(40);
   }
 }
 
-.voiceCard__text p {
+.wide-card__text p {
   font-weight: $regular;
   font-size: rem(16);
   line-height: calc(24 / 16);

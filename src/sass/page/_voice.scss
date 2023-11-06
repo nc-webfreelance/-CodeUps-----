@@ -23,13 +23,46 @@
 }
 
 .voice__cards {
-  display: grid;
-  gap: rem(39.5);
   margin-top: rem(44);
   @include mq("md") {
-    grid-template-columns: repeat(2, 1fr);
-    gap: rem(40);
+    position: relative;
     margin-top: rem(30);
+  }
+}
+
+.voice__cards::before {
+  display: none;
+  @include mq("md") {
+    display: block;
+    content: "";
+    background-image: url(../images/common/voice-decoration-top.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    position: absolute;
+    top: -50%;
+    left: calc(50% - min(48vw, rem(630)));
+    max-width: rem(301);
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.voice__cards::after {
+  display: none;
+  @include mq("md") {
+    display: block;
+    content: "";
+    background-image: url(../images/common/voice-decoration-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    position: absolute;
+    right: calc(50% - min(48vw, rem(545)));
+    bottom: -50%;
+    max-width: rem(71);
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -57,36 +90,36 @@
   }
 }
 
-.voice__decoration-image-top {
-  @include mq("md") {
-    position: absolute;
-    top: -16.4%;
-    left: calc(50% - min(48vw, rem(630)));
-    max-width: rem(301);
-    width: 100%;
-  }
-}
+// .voice__decoration-image-top {
+//   @include mq("md") {
+//     position: absolute;
+//     top: -16.4%;
+//     left: calc(50% - min(48vw, rem(630)));
+//     max-width: rem(301);
+//     width: 100%;
+//   }
+// }
 
-.voice__decoration-image-top img {
-  @include mq("md") {
-    width: 100%;
-    height: 100%;
-  }
-}
+// .voice__decoration-image-top img {
+//   @include mq("md") {
+//     width: 100%;
+//     height: 100%;
+//   }
+// }
 
-.voice__decoration-image-bottom {
-  @include mq("md") {
-    position: absolute;
-    right: calc(50% - min(48vw, rem(545)));
-    bottom: -12%;
-    max-width: rem(71);
-    width: 100%;
-  }
-}
+// .voice__decoration-image-bottom {
+//   @include mq("md") {
+//     position: absolute;
+//     right: calc(50% - min(48vw, rem(545)));
+//     bottom: -12%;
+//     max-width: rem(71);
+//     width: 100%;
+//   }
+// }
 
-.voice__decoration-image-bottom img {
-  @include mq("md") {
-    width: 100%;
-    height: 100%;
-  }
-}
+// .voice__decoration-image-bottom img {
+//   @include mq("md") {
+//     width: 100%;
+//     height: 100%;
+//   }
+// }
