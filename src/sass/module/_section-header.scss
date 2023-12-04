@@ -4,6 +4,16 @@
   text-align: center;
 }
 
+.section-header::first-letter {
+  color: $green;
+}
+
+.section-header.section-header--white::first-letter {
+  @include mq("md") {
+    color: $white;
+  }
+}
+
 .section-header__engtitle {
   font-family: $gotu-font-family;
   font-weight: $regular;
@@ -16,17 +26,7 @@
   }
 }
 
-.section-header__engtitle.section-header--white {
-  @include mq("md") {
-    color: $white;
-  }
-}
-
-.section-header__engtitle span {
-  color: $green;
-}
-
-.section-header__engtitle.section-header--white span {
+.section-header__engtitle.section-header__engtitle--white {
   @include mq("md") {
     color: $white;
   }
@@ -44,7 +44,7 @@
   }
 }
 
-.section-header__jatitle.section-header--white {
+.section-header__jatitle.section-header__jatitle--white {
   @include mq("md") {
     color: $white;
   }

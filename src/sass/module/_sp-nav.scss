@@ -1,6 +1,5 @@
 @use "global" as *;
 
-
 .sp-nav {
   color: $white;
 }
@@ -14,13 +13,7 @@
   padding-top: rem(20);
   padding-bottom: rem(100);
   justify-content: space-around;
-  // gap: rem(17);
 }
-
-// .sp-nav__left,
-// .sp-nav__right {
-//   width: 50%;
-// }
 
 .sp-nav__left-item a,
 .sp-nav__right-item a {

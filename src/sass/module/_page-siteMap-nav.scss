@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.page-siteMap-nav__title {
+  display: flex;
+  :hover {
+    opacity: 0.8;
+  }
+}
+
+.page-siteMap-nav__title img {
+  width: rem(18);
+  height: rem(18);
+}
+
+.page-siteMap-nav__title a {
+  font-weight: $bold;
+  font-size: rem(16);
+  line-height: calc(18 / 16);
+  width: 100%;
+  margin-left: rem(4);
+}
+
+.page-siteMap-nav__item {
+  display: flex;
+  flex-direction: column;
+  margin-left: rem(18);
+  :hover {
+    opacity: 0.8;
+  }
+}
+
+.page-siteMap-nav__item a {
+  font-weight: $regular;
+  font-size: rem(16);
+  line-height: calc(18 / 16);
+  margin-top: rem(24);
+}

@@ -1,0 +1,52 @@
+@use "global" as *;
+
+.page-termsOfService__content {
+  position: relative;
+  max-width: rem(800);
+  margin-inline: auto;
+}
+
+.page-termsOfService__content::before {
+  content: "";
+  background-image: url(../images/common/blueFish-decoration-left.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  position: absolute;
+  top: -1.5%;
+  left: calc(52% - min(48vw, rem(630)));
+  max-width: rem(120);
+  width: 100%;
+  height: 100%;
+  @include mq("md") {
+    top: -7%;
+    max-width: rem(301);
+  }
+}
+
+.page-termsOfService__title h3 {
+  font-weight: $medium;
+  font-size: rem(24);
+  line-height: 1;
+  @include mq("md") {
+    font-size: rem(32);
+  }
+}
+
+.page-termsOfService__text {
+  font-weight: $regular;
+  font-size: rem(16);
+  line-height: calc(32 / 16);
+  margin-top: rem(40);
+}
+
+.page-termsOfService__text ul {
+  list-style: inside;
+}
+
+.page-termsOfService__text ol {
+  list-style: decimal;
+  list-style-position: inside;
+  text-indent: -1em;
+  padding-left: 1em;
+}

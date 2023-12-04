@@ -10,14 +10,6 @@
   }
 }
 
-.footer--layout {
-  margin-top: rem(104);
-  @include mq("md") {
-    margin-top: rem(160);
-  }
-}
-
-
 .footer__head {
   @include mq("md") {
     display: flex;

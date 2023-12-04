@@ -39,7 +39,11 @@ body {
   line-height: 1.5;
 }
 
-body.is-active {
+// body.is-active {
+//   overflow: hidden;
+// }
+
+body.no-scroll {
   overflow: hidden;
 }
 

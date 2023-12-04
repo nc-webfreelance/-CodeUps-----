@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.page-faq__list {
+  position: relative;
+}
+
+.page-faq__list::before {
+  content: "";
+  background-image: url(../images/common/blueFish-decoration-left.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  position: absolute;
+  top: -1%;
+  left: calc(52% - min(48vw, rem(630)));
+  max-width: rem(120);
+  width: 100%;
+  height: 100%;
+  @include mq("md") {
+    top: -3%;
+    max-width: rem(301);
+  }
+}

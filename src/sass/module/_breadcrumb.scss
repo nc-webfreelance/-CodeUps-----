@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.breadcrumb {
+  color: $black;
+}
+
+.breadcrumb.breadcrumb--white {
+  color: $white;
+}

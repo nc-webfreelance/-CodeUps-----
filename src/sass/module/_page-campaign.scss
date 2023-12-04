@@ -1,0 +1,68 @@
+@use "global" as *;
+
+.page-campaign__inner.inner {
+  padding: 0 rem(48);
+  @include mq("md") {
+    padding: 0 rem(25);
+  }
+}
+
+.page-campaign__items {
+  display: grid;
+  gap: rem(40);
+  margin-top: rem(40);
+  @include mq("md") {
+    grid-template-columns: 1fr 1fr;
+    row-gap: rem(80);
+  }
+}
+
+.page-campaign__item.sliders__item {
+  display: block;
+  max-width: rem(520);
+  width: 100%;
+  height: 100%;
+  margin-inline: auto;
+}
+
+.page-campaign__image.slider__image {
+  width: 100%;
+}
+
+.page-campaign__cardText {
+  @include mq("md") {
+    font-weight: $regular;
+    font-size: rem(16);
+    line-height: calc(24 / 16);
+    text-align: left;
+    margin-top: rem(24);
+  }
+}
+
+.page-campaign__cardDate {
+  @include mq("md") {
+    font-family: $lato-font-family;
+    font-weight: $bold;
+    font-size: rem(16);
+    line-height: calc(18 / 16);
+    color: $green;
+    margin-top: rem(32);
+  }
+}
+
+.page-campaign__cardInfo {
+  @include mq("md") {
+    font-weight: $regular;
+    font-size: rem(14);
+    line-height: calc(18 / 14);
+    color: $green;
+    margin-top: rem(7);
+  }
+}
+
+.page-campaign__cardBtn {
+  @include mq("md") {
+    text-align: center;
+    margin-top: rem(16);
+  }
+}

@@ -1,0 +1,24 @@
+@use "global" as *;
+
+.page-contactForm {
+  position: relative;
+}
+
+.page-contactForm::before {
+  content: "";
+  background-image: url(../images/common/blueFish-decoration-left.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  position: absolute;
+  top: -1%;
+  left: calc(50% - min(48vw, rem(630)));
+  max-width: rem(120);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  @include mq("md") {
+    top: -3%;
+    max-width: rem(301);
+  }
+}

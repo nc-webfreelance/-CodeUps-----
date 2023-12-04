@@ -1,0 +1,87 @@
+@use "global" as *;
+
+.form {
+  max-width: rem(480);
+  width: 100%;
+  margin-inline: auto;
+  @include mq("md") {
+    max-width: rem(700);
+  }
+}
+
+.form__wrap {
+  padding-bottom: rem(24);
+  border-bottom: 1px dashed $green;
+  @include mq("md") {
+    display: flex;
+    padding-bottom: rem(40);
+    justify-content: space-between;
+  }
+}
+
+.form__wrap dt {
+  @include mq("md") {
+    width: rem(250);
+  }
+}
+
+.form__wrap dd {
+  @include mq("md") {
+    display: inline-block;
+    flex: 1;
+  }
+}
+
+.form__wrap:not(:first-child) {
+  padding-top: rem(24);
+  @include mq("md") {
+    padding-top: rem(40);
+  }
+}
+
+.form__label {
+  font-weight: $bold;
+}
+
+.form__label span {
+  font-weight: $regular;
+  font-size: rem(12);
+  padding: rem(2) rem(16);
+  background-color: #c94800;
+  color: $white;
+  margin-left: rem(8);
+}
+
+.form__checkbox {
+  margin-top: rem(12);
+  @include mq("md") {
+    margin-top: 0;
+  }
+}
+
+.form__lastCheck {
+  text-align: center;
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: rem(80);
+  }
+}
+
+.form__lastCheck span {
+  display: inline-block;
+  text-align: left;
+  padding-left: rem(30);
+}
+
+.form__lastCheck span::before {
+  width: rem(22);
+  height: rem(22);
+}
+
+.form__btn {
+  margin-top: rem(24);
+  text-align: center;
+  @include mq("md") {
+    margin-top: rem(40);
+  }
+}

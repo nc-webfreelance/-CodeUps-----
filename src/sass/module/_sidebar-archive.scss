@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.sidebar-archive__item p {
+  font-weight: $regular;
+  font-size: rem(24);
+  line-height: 1.5;
+  color: red;
+}

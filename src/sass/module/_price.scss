@@ -1,0 +1,92 @@
+@use "global" as *;
+
+.price {
+  background-color: $light-green;
+  padding-top: rem(80);
+  padding-bottom: rem(84);
+  @include mq("md") {
+    position: relative;
+    padding-top: rem(100);
+    padding-bottom: rem(104);
+  }
+}
+
+.price__title {
+  @include mq("md") {
+    margin-left: rem(-3);
+  }
+}
+
+.price__wrapper {
+  margin-top: rem(28);
+  @include mq("md") {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: rem(1077);
+    width: 100%;
+    gap: rem(93);
+    margin-top: rem(39.6);
+    margin-inline: auto;
+  }
+}
+
+.price__wrapper::after {
+  display: none;
+  @include mq("md") {
+    display: block;
+    content: "";
+    background-image: url(../images/common/blueFish-decoration.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    position: absolute;
+    bottom: -25%;
+    left: calc(50% - min(48vw, rem(630)));
+    max-width: rem(437);
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.price__image {
+  position: relative;
+  aspect-ratio: 345 / 227;
+  max-width: rem(492);
+  width: 100%;
+  margin-inline: auto;
+  overflow: hidden;
+  @include mq("md") {
+    aspect-ratio: 492 / 746;
+    margin-inline: 0;
+  }
+}
+
+.price__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.price__contents {
+  margin-top: rem(40);
+  @include mq("md") {
+    text-align: left;
+    max-width: rem(492);
+    width: 100%;
+    margin-top: 0;
+    margin-inline: auto;
+  }
+}
+
+.price__content:not(:first-child) {
+  margin-top: rem(39.5);
+}
+
+.price__btn {
+  text-align: center;
+  margin-top: rem(39.5);
+  @include mq("md") {
+    margin-top: rem(80);
+  }
+}
