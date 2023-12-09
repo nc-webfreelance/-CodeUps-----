@@ -94,12 +94,16 @@ jQuery(function ($) {
     },
   });
   
-  const campaignSwiper = new Swiper(".js-campaign-slider", {
+  const campaignSwiper = new Swiper(".js-campaign-swiper", {
+    // centeredSlides: true,
+    // KeyboardEvent:true,
     loop: true,
+    speed: 1500,
+    autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
+    },
     slidesPerView: "auto",
-    centeredSlides: true,
-    // cssMode: true,
-    KeyboardEvent:true,
     spaceBetween: 24,
     breakpoints: {
       768: {
@@ -111,6 +115,32 @@ jQuery(function ($) {
       prevEl: ".swiper-button-prev",
     },
   });
+
+
+  // var swiper = new Swiper(".js-campaign-swiper", {
+  //   loop: true,
+  //   speed: 1500,
+  //   autoplay: {
+  //     delay: 1500,
+  //     disableOnInteraction: false,
+  //   },
+  //   // Optional parameters
+  //   slidesPerView: 'auto',
+  //   spaceBetween: 24,
+
+  //   breakpoints: {
+  //     // when window width is >= 768px
+  //     768: {
+  //       spaceBetween: 40
+  //     },
+  //   },
+
+  //   // Navigation arrows
+  //   navigation: {
+  //     prevEl: '.swiper-button-prev',
+  //     nextEl: '.swiper-button-next',
+  //   }
+  // });
 
 
   //要素の取得とスピードの設定
@@ -140,12 +170,7 @@ jQuery(function ($) {
     });
   });
 
-//   jQuery(function ($) {
-//     $('.js-faq-question').on('click', function () {
-//         $(this).next().slideToggle();
-//         $(this).toggleClass('is-open');
-//     });
-// });
+
 
 $(function () {
   $(".js-faq-question").addClass("is-open");

@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .page-aboutus {
-  position: relative;
+  // position: relative;
   @include mq("md") {
   }
 }
@@ -76,20 +76,39 @@
   }
 }
 
+// .page-aboutus__body {
+//   position: absolute;
+//   top: 7%;
+//   left: 10%;
+//   max-width: rem(840);
+//   margin-inline: auto;
+//   z-index: 3;
+//   @include mq("md") {
+//     display: flex;
+//     width: 100%;
+//     top: 35%;
+//     right: 5.9%;
+//     gap: rem(40);
+//     align-items: center;
+//   }
+// }
 .page-aboutus__body {
-  position: absolute;
-  top: 7%;
-  left: 10%;
-  max-width: rem(840);
-  margin-inline: auto;
-  z-index: 3;
-  @include mq("md") {
+    @include mq("md") {
     display: flex;
-    width: 100%;
-    top: 35%;
-    right: 5.9%;
+    position: absolute;
+    top: 32%;
+    right: 5%;
     gap: rem(40);
     align-items: center;
+  }
+}
+
+.page-aboutus__head {
+  position: absolute;
+  top: 6%;
+  left: 6%;
+    @include mq("md") {
+    position: static;
   }
 }
 
@@ -106,15 +125,11 @@
   }
 }
 
-.page-aboutus__content {
-  @include mq("md") {
-    max-width: rem(400);
-  }
-}
 
 .page-aboutus__text {
   margin-top: rem(40);
   @include mq("md") {
+    max-width: rem(400);
     margin-top: 0;
   }
 }

@@ -1,0 +1,65 @@
+@use "global" as *;
+
+.site-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.site-nav__left,
+.site-nav__right {
+  @include mq("md") {
+    display: flex;
+    width: 50%;
+    gap: rem(100);
+  }
+}
+
+.site-nav__right {
+  margin-left: rem(30);
+  @include mq("md") {
+    margin-left: rem(50);
+  }
+}
+
+.site-nav__left-item a,
+.site-nav__right-item a {
+  display: block;
+  font-size: rem(16);
+  font-weight: $regular;
+  line-height: calc(18 / 16);
+  padding-top: rem(12);
+  padding-bottom: rem(12);
+  padding-left: rem(22);
+}
+
+.site-nav__left-item:first-child a,
+.site-nav__right-item:first-child a {
+  position: relative;
+  font-weight: $bold;
+}
+
+.site-nav__left-item:first-child a::before,
+.site-nav__right-item:first-child a::before {
+  content: "";
+  mask-image: url(../images/common/section-logo.svg);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  background-color: $white;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: rem(18);
+  height: rem(18);
+}
+
+.site-nav__item-logo--black.site-nav__left-item:first-child a::before,
+.site-nav__item-logo--black.site-nav__right-item:first-child a::before {
+  background-color: $black;
+}
+
+.site-nav__left-items:not(:first-child),
+.site-nav__right-items:not(:first-child) {
+  margin-top: rem(18);
+}

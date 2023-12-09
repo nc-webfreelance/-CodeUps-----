@@ -1,25 +1,14 @@
 @use "global" as *;
 
-.page-siteMap__contents {
+.page-siteMap__nav {
   position: relative;
-  display: flex;
-  gap: rem(16);
-  max-width: rem(335);
-  width: 100%;
   margin-top: rem(42);
-  margin-inline: auto;
-  justify-content: space-between;
   @include mq("md") {
-    gap: rem(120);
-    max-width: rem(1008);
     margin-top: rem(25);
-    margin-inline: 0;
-    margin-left: rem(8);
-    justify-content: space-evenly;
   }
 }
 
-.page-siteMap__contents::before {
+.page-siteMap__nav::before {
   content: "";
   background-image: url(../images/common/blueFish-decoration-left.svg);
   background-repeat: no-repeat;
@@ -37,16 +26,8 @@
   }
 }
 
-.page-siteMap__content {
-  display: grid;
-  gap: rem(39);
+.page-siteMap__left.site-nav__left {
   @include mq("md") {
-    display: flex;
-    gap: rem(120);
+    margin-left: rem(50);
   }
-}
-
-.page-siteMap__wrapper {
-  display: grid;
-  gap: rem(39);
 }

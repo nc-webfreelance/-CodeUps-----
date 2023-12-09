@@ -6,6 +6,7 @@
 
 .pc-nav__items {
   display: flex;
+  gap: rem(40);
   height: inherit;
 }
 
@@ -23,11 +24,6 @@
   align-items: center;
   height: inherit;
   position: relative;
-  padding: 0 rem(20);
-}
-
-.pc-nav__text {
-  display: block;
 }
 
 .pc-nav__item a::after {
@@ -45,6 +41,10 @@
 
 .pc-nav__item a:hover::after {
   transform: scale(1, 1);
+}
+
+.pc-nav__text {
+  display: block;
 }
 
 .pc-nav__engtitle {
