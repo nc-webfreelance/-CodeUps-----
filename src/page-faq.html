@@ -230,10 +230,24 @@
         <div class="sub-mv__image">
           <picture>
             <source
-              media="(max-width: 767px)"
-              srcset="./assets/images/common/sub-mv-faq-sp.jpg"
+              srcset="./assets/images/common/sub-mv-faq-pc.webp"
+              type="image/webp"
+              media="(min-width: 768px)"
             />
-            <img src="./assets/images/common/sub-mv-faq-pc.jpg" alt="" />
+            <source
+              srcset="./assets/images/common/sub-mv-faq-pc.jpg"
+              type="image/jpeg"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="./assets/images/common/sub-mv-faq-sp.webp"
+              type="image/webp"
+              media="(max-width: 767px)"
+            />
+            <img
+              src="./assets/images/common/sub-mv-faq-sp.jpg"
+              alt="晴れ渡った空と、砂浜と海"
+            />
           </picture>
         </div>
         <div class="sub-mv__header">
@@ -245,7 +259,7 @@
     <!-- パンくず -->
     <div class="breadcrumb">パンくずリスト</div>
 
-    <div class="page-faq layout-page-faq">
+    <div class="page-faq layout-subPage">
       <div class="page-faq__inner inner">
         <ul class="page-faq__list page-faq-list">
           <li class="page-faq-list__item">

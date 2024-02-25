@@ -223,10 +223,24 @@
         <div class="sub-mv__image">
           <picture>
             <source
-              media="(max-width: 767px)"
-              srcset="./assets/images/common/sub-mv-contact-sp.jpg"
+              srcset="./assets/images/common/sub-mv-contact-pc.webp"
+              type="image/webp"
+              media="(min-width: 768px)"
             />
-            <img src="./assets/images/common/sub-mv-contact-pc.jpg" alt="" />
+            <source
+              srcset="./assets/images/common/sub-mv-contact-pc.jpg"
+              type="image/jpeg"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="./assets/images/common/sub-mv-contact-sp.webp"
+              type="image/webp"
+              media="(max-width: 767px)"
+            />
+            <img
+              src="./assets/images/common/sub-mv-contact-sp.jpg"
+              alt="浜辺に波が流れている"
+            />
           </picture>
         </div>
         <div class="sub-mv__header">
@@ -238,7 +252,7 @@
     <!-- パンくず -->
     <div class="breadcrumb">パンくずリスト</div>
 
-    <div class="page-contact layout-page-contact">
+    <div class="page-contact layout-subPage">
       <div class="page-contact__inner inner">
         <div class="page-contact__text">
           <p>お問い合わせ内容を送信完了しました。</p>

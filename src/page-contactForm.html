@@ -224,10 +224,24 @@
         <div class="sub-mv__image">
           <picture>
             <source
-              media="(max-width: 767px)"
-              srcset="./assets/images/common/sub-mv-contact-sp.jpg"
+              srcset="./assets/images/common/sub-mv-contact-pc.webp"
+              type="image/webp"
+              media="(min-width: 768px)"
             />
-            <img src="./assets/images/common/sub-mv-contact-pc.jpg" alt="" />
+            <source
+              srcset="./assets/images/common/sub-mv-contact-pc.jpg"
+              type="image/jpeg"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="./assets/images/common/sub-mv-contact-sp.webp"
+              type="image/webp"
+              media="(max-width: 767px)"
+            />
+            <img
+              src="./assets/images/common/sub-mv-contact-sp.jpg"
+              alt="浜辺に波が流れている"
+            />
           </picture>
         </div>
         <div class="sub-mv__header">
@@ -239,7 +253,7 @@
     <!-- パンくず -->
     <div class="breadcrumb">パンくずリスト</div>
 
-    <div class="page-contactForm layout-page-contactForm">
+    <div class="page-contactForm layout-subPage">
       <div class="page-contactForm__inner inner">
         <form class="page-contactForm__items form" action="">
           <dl class="form__wrap">
@@ -313,7 +327,7 @@
             >
           </div>
           <div class="form__btn">
-            <a class="button" href="#"><span>View more</span></a>
+            <a class="button" href="./page-contact.html"><span>View more</span></a>
           </div>
         </form>
       </div>

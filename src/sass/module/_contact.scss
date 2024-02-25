@@ -70,6 +70,7 @@
 .contact__address {
   @include mq("md") {
     text-align: left;
+    white-space: nowrap;
   }
 }
 

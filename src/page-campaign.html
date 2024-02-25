@@ -223,10 +223,24 @@
         <div class="sub-mv__image">
           <picture>
             <source
-              media="(max-width: 767px)"
-              srcset="./assets/images/common/sub-mv-campaign-sp.jpg"
+              srcset="./assets/images/common/sub-mv-campaign-pc.webp"
+              type="image/webp"
+              media="(min-width: 768px)"
             />
-            <img src="./assets/images/common/sub-mv-campaign-pc.jpg" alt="" />
+            <source
+              srcset="./assets/images/common/sub-mv-campaign-pc.jpg"
+              type="image/jpeg"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="./assets/images/common/sub-mv-campaign-sp.webp"
+              type="image/webp"
+              media="(max-width: 767px)"
+            />
+            <img
+              src="./assets/images/common/sub-mv-campaign-sp.jpg"
+              alt="海の中で泳ぐ二匹の黄色い魚"
+            />
           </picture>
         </div>
         <div class="sub-mv__header">
@@ -238,16 +252,22 @@
     <!-- パンくず -->
     <div class="breadcrumb">パンくずリスト</div>
 
-    <div class="page-campaign layout-page-campaign">
+    <div class="page-campaign layout-subPage">
       <div class="page-campaign__inner inner">
         <div class="pagination">ページネーション</div>
         <div class="page-campaign__items">
           <a href="#" class="page-campaign__item campaign-card">
             <div class="page-campaign__image campaign-card__image">
-              <img
-                src="./assets/images/common/campaign-1.jpg"
-                alt="海の中で泳ぐたくさんの魚がライトアップされている"
-              />
+              <picture>
+                <source
+                  srcset="./assets/images/common/campaign-1.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./assets/images/common/campaign-1.jpg"
+                  alt="海の中で泳ぐたくさんの魚がライトアップされている"
+                />
+              </picture>
             </div>
             <div class="campaign-card__body">
               <div class="campaign-card__head">
@@ -284,10 +304,16 @@
           </a>
           <a href="#" class="page-campaign__item campaign-card">
             <div class="page-campaign__image campaign-card__image">
-              <img
-                src="./assets/images/common/campaign-2.jpg"
-                alt="海に浮かむ二艘の船"
-              />
+              <picture>
+                <source
+                  srcset="./assets/images/common/campaign-2.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./assets/images/common/campaign-2.jpg"
+                  alt="海に浮かむ二艘の船"
+                />
+              </picture>
             </div>
             <div class="campaign-card__body">
               <div class="campaign-card__head">
@@ -324,10 +350,16 @@
           </a>
           <a href="#" class="page-campaign__item campaign-card">
             <div class="page-campaign__image campaign-card__image">
-              <img
-                src="./assets/images/common/campaign-3.jpg"
-                alt="海で泳ぐたくさんのクラゲ"
-              />
+              <picture>
+                <source
+                  srcset="./assets/images/common/campaign-3.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./assets/images/common/campaign-3.jpg"
+                  alt="海で泳ぐたくさんのクラゲ"
+                />
+              </picture>
             </div>
             <div class="campaign-card__body">
               <div class="campaign-card__head">
@@ -364,10 +396,16 @@
           </a>
           <a href="#" class="page-campaign__item campaign-card">
             <div class="page-campaign__image campaign-card__image">
-              <img
-                src="./assets/images/common/campaign-4.jpg"
-                alt="水面から複数のダイバーが顔を出している様子"
-              />
+              <picture>
+                <source
+                  srcset="./assets/images/common/campaign-4.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./assets/images/common/campaign-4.jpg"
+                  alt="水面から複数のダイバーが顔を出している様子"
+                />
+              </picture>
             </div>
             <div class="campaign-card__body">
               <div class="campaign-card__head">

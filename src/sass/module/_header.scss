@@ -12,13 +12,14 @@
   }
 }
 
+.header.is-color {
+  background-color: rgba($color: $black, $alpha: 1);
+}
+
 .header.is-active {
   background-color: rgba($color: $green, $alpha: 1);
 }
 
-.header.is-color {
-  background-color: rgba($color: $black, $alpha: 1);
-}
 
 .header__inner {
   display: flex;

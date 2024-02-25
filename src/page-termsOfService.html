@@ -223,10 +223,24 @@
         <div class="sub-mv__image">
           <picture>
             <source
-              media="(max-width: 767px)"
-              srcset="./assets/images/common/sub-mv-sp.jpg"
+              srcset="./assets/images/common/sub-mv-pc.webp"
+              type="image/webp"
+              media="(min-width: 768px)"
             />
-            <img src="./assets/images/common/sub-mv-pc.jpg" alt="" />
+            <source
+              srcset="./assets/images/common/sub-mv-pc.jpg"
+              type="image/jpeg"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="./assets/images/common/sub-mv-sp.webp"
+              type="image/webp"
+              media="(max-width: 767px)"
+            />
+            <img
+              src="./assets/images/common/sub-mv-sp.jpg"
+              alt="海の中を泳ぐたくさんの小さな魚とイソギンチャク"
+            />
           </picture>
         </div>
         <div class="sub-mv__header">
@@ -238,7 +252,7 @@
     <!-- パンくず -->
     <div class="breadcrumb">パンくずリスト</div>
 
-    <section class="page-termsOfService layout-page-termsOfService">
+    <section class="page-termsOfService layout-subPage">
       <div class="page-termsOfService__inner inner">
         <div class="page-termsOfService__content">
           <div class="page-termsOfService__title">
