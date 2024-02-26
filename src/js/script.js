@@ -1,12 +1,8 @@
 jQuery(function ($) {
-
-
-
-// ヘッダー
+  // ヘッダー
   let header = $(".js-header");
   let headerHeight = $(".js-header").height();
   let height = $(".js-mv-height").height();
-
   $(window).scroll(function () {
     if ($(this).scrollTop() > height - headerHeight) {
       header.addClass("is-color");
@@ -14,21 +10,17 @@ jQuery(function ($) {
       header.removeClass("is-color");
     }
   });
-  // ヘッダーの高さ分だけコンテンツを下げる
   $("main").css("margin-top", headerHeight);
-  // ヘッダーの高さ取得
   $('a[href^="#"]').click(function () {
     const speed = 1000;
     let href = $(this).attr("href");
     let target = $(href == "#" || href == "" ? "html" : href);
-    // ヘッダーの高さ分下げる
     let position = target.offset().top - headerHeight;
     $("body,html").animate({ scrollTop: position }, speed, "swing");
     return false;
   });
 
-
-// トップへ戻るボタン
+  // トップへ戻るボタン
   let topBtn = $(".to-top");
   topBtn.hide();
   $(window).scroll(function () {
@@ -49,8 +41,7 @@ jQuery(function ($) {
     return false;
   });
 
-
-// スワイパー
+  // スワイパー
   const swiper = new Swiper(".js-swiper", {
     loop: true,
     effect: "fade",
@@ -80,8 +71,7 @@ jQuery(function ($) {
     },
   });
 
-
-// 画像を出現するアニメーション
+  // 画像を出現するアニメーション
   let box = $(".information__image,.wide-card__image,.price__image"),
     speed = 700;
   box.each(function () {
@@ -105,8 +95,7 @@ jQuery(function ($) {
     });
   });
 
-
-// ハンバーガー,ドロワー
+  // ハンバーガー,ドロワー
   $(".js-hamburger,.js-sp-nav,.js-drawer a").click(function () {
     if ($(".js-hamburger").hasClass("is-active")) {
       $(".js-hamburger").removeClass("is-active");
@@ -121,8 +110,7 @@ jQuery(function ($) {
     }
   });
 
-
-// FAQ
+  // FAQ
   $(function () {
     $(".js-faq-question").addClass("is-open");
     $(".js-faq-question").on("click", function () {
@@ -131,8 +119,16 @@ jQuery(function ($) {
     });
   });
 
+  // sidebarアーカイブの開閉
+  $(function () {
+    $(".js-archive").addClass("is-open");
+    $(".js-archive").on("click", function () {
+      $(this).toggleClass("is-open");
+      $(this).next().slideToggle(300);
+    });
+  });
 
-// Gallery
+  // Gallery
   $(function () {
     $(".gallery-list__item img").click(function () {
       $("#gallery__modal-image").html($(this).prop("outerHTML"));
@@ -145,11 +141,10 @@ jQuery(function ($) {
     });
   });
 
-
-// Informationのタブ
+  // タブ
   jQuery(function ($) {
-    $(".js-tab-menu").on("click", function () {
-      $(".js-tab-menu").removeClass("tab-active");
+    $(".js-tab").on("click", function () {
+      $(".js-tab").removeClass("tab-active");
       $(".js-tab-content").removeClass("tab-active");
       $(this).addClass("tab-active");
       var number = $(this).data("number");

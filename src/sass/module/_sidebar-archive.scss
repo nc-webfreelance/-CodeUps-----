@@ -1,8 +1,47 @@
 @use "global" as *;
 
-.sidebar-archive__item p {
+.sidebar-archive {
+  color: $green;
+}
+
+.sidebar-archive__item-wrap:not(:first-child) {
+  margin-top: rem(4);
+}
+
+.sidebar-archive__items {
+  display: flex;
+  flex-direction: column;
+  gap: rem(4);
+}
+
+.sidebar-archive__item-wrap p,
+.sidebar-archive__item a {
+  position: relative;
+  display: inline-block;
   font-weight: $regular;
   font-size: rem(24);
-  line-height: 1.5;
-  color: red;
+  padding: 0 rem(32);
+}
+
+.sidebar-archive__item a {
+  margin-left: 1em;
+}
+
+.sidebar-archive__item-wrap p::before,
+.sidebar-archive__item a::before  {
+  content: "";
+  position: absolute;
+  top: rem(8);
+  left: rem(0);
+  background-image: url(../images/common/sidebar-archive-triangle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: rem(24);
+  height: rem(24);
+  transition: 0.3s;
+}
+
+.sidebar-archive__item-wrap p.is-open::before {
+  transform: rotate(90deg);
 }

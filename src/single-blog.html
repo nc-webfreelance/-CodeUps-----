@@ -301,7 +301,16 @@
                 ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
               </p>
             </div>
-            <p class="pagenavi">----ページネーション----</p>
+            <div class="single-blog__pagenavi pagenavi">
+              <div class="wp-pagenavi" role="navigation">
+                <a class="previouspostslink pagenavi-pre" rel="prev" href="#"
+                  ><span></span
+                ></a>
+                <a class="nextpostslink pagenavi-next" rel="next" href="#"
+                  ><span></span
+                ></a>
+              </div>
+            </div>
           </div>
           <aside class="single-blog__sidebar sidebar">
             <ul class="sidebar__list">
@@ -507,16 +516,35 @@
                   <h3>アーカイブ</h3>
                 </div>
                 <ul
-                  class="sidebar__archive sidebar-archive sidebar-archive__list"
+                  class="sidebar__archive sidebar-archive"
                 >
-                  <li class="sidebar-archive__item">
-                    <p>2023</p>
-                    <p>１月</p>
-                    <p>２月</p>
-                    <p>３月</p>
+                  <li class="sidebar-archive__item-wrap">
+                    <p class="js-archive">2023</p>
+                    <ul class="sidebar-archive__items">
+                      <li class="sidebar-archive__item">
+                        <a href="#">3月</a>
+                      </li>
+                      <li class="sidebar-archive__item">
+                        <a href="#">2月</a>
+                      </li>
+                      <li class="sidebar-archive__item">
+                        <a href="#">1月</a>
+                      </li>
+                    </ul>
                   </li>
-                  <li class="sidebar-archive__item">
-                    <p>2023</p>
+                  <li class="sidebar-archive__item-wrap">
+                    <p class="js-archive">2022</p>
+                    <ul class="sidebar-archive__items">
+                      <li class="sidebar-archive__item">
+                        <a href="#">3月</a>
+                      </li>
+                      <li class="sidebar-archive__item">
+                        <a href="#">2月</a>
+                      </li>
+                      <li class="sidebar-archive__item">
+                        <a href="#">1月</a>
+                      </li>
+                    </ul>
                   </li>
                 </ul>
               </li>

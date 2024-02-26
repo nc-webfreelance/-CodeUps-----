@@ -112,3 +112,10 @@
 .single-blog__list li:not(:first-child) {
   margin-top: rem(4);
 }
+
+.single-blog__pagenavi {
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: rem(80);
+  }
+}

@@ -1,0 +1,83 @@
+@use "global" as *;
+
+.wp-pagenavi {
+  display: flex;
+  gap: rem(12);
+  justify-content: center;
+}
+
+.pagenavi-pre {
+  margin-right: rem(28);
+}
+
+.pagenavi-next {
+  margin-left: rem(28);
+}
+
+.wp-pagenavi a,
+.wp-pagenavi span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: rem(38);
+  height: rem(38);
+  font-family: $lato-font-family;
+  font-weight: $bold;
+  font-size: rem(16);
+  border: 1px solid $green;
+  background-color: transparent;
+  color: $green;
+  transition: 0.3s ease;
+}
+
+.wp-pagenavi a.u-desktop {
+  display: none;
+  @include mq("md") {
+    display: inline-flex;
+  }
+}
+
+.wp-pagenavi a:hover {
+  background: $green;
+  color: $white;
+  opacity: 1;
+}
+
+.wp-pagenavi span.current {
+  background: $green;
+  color: $white;
+}
+
+.pagenavi-pre,
+.pagenavi-next {
+  position: relative;
+}
+
+.wp-pagenavi a.pagenavi-pre span,
+.wp-pagenavi a.pagenavi-next span {
+  position: absolute;
+  top: 52%;
+  width: rem(12);
+  height: rem(12);
+  background-color: transparent;
+  border-top: 1px solid $green;
+  border-right: 1px solid $green;
+  border-bottom: none;
+  border-left: none;
+}
+
+.wp-pagenavi a.pagenavi-pre span {
+  transform: translate(-50%, -50%) rotate(-138deg);
+  left: 55%;
+}
+
+.wp-pagenavi a.pagenavi-next span {
+  transform: translate(-50%, -50%) rotate(45deg);
+  left: 43%;
+}
+
+.wp-pagenavi a:hover.pagenavi-pre span,
+.wp-pagenavi a:hover.pagenavi-next span {
+  border-top: 1px solid $white;
+  border-right: 1px solid $white;
+}

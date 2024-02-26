@@ -1,10 +1,5 @@
 @use "global" as *;
 
-.page-aboutus {
-  @include mq("md") {
-  }
-}
-
 .page-aboutus__wrap {
   position: relative;
   max-width: rem(550);
@@ -76,7 +71,7 @@
 }
 
 .page-aboutus__body {
-    @include mq("md") {
+  @include mq("md") {
     display: flex;
     position: absolute;
     top: 32%;
@@ -90,7 +85,7 @@
   position: absolute;
   top: 6%;
   left: 6%;
-    @include mq("md") {
+  @include mq("md") {
     position: static;
   }
 }
@@ -107,7 +102,6 @@
     line-height: calc(100 / 80);
   }
 }
-
 
 .page-aboutus__text {
   margin-top: rem(40);

@@ -217,6 +217,7 @@
       </div>
     </header>
 
+
     <!-- 下層ページmv -->
     <div class="sub-mv js-mv-height">
       <div class="sub-mv__inner">
@@ -253,10 +254,25 @@
     <div class="breadcrumb">パンくずリスト</div>
 
     <div class="page-campaign layout-subPage">
+      <div class="page-campaign__tab category-tab">
+        <ul class="category-tab__items">
+          <li class="category-tab__item js-tab tab-active" data-number="ライセンス講習, ファンダイビング, 体験ダイビング">
+            <p>ALL</p>
+          </li>
+          <li class="category-tab__item js-tab" data-number="ライセンス講習">
+            <p>ライセンス講習</p>
+          </li>
+          <li class="category-tab__item js-tab" data-number="ファンダイビング">
+            <p>ファンダイビング</p>
+          </li>
+          <li class="category-tab__item js-tab" data-number="体験ダイビング">
+            <p>体験ダイビング</p>
+          </li>
+        </ul>
+      </div>
       <div class="page-campaign__inner inner">
-        <div class="pagination">ページネーション</div>
         <div class="page-campaign__items">
-          <a href="#" class="page-campaign__item campaign-card">
+          <a href="#" id="ライセンス講習" class="page-campaign__item campaign-card">
             <div class="page-campaign__image campaign-card__image">
               <picture>
                 <source
@@ -302,7 +318,7 @@
               </div>
             </div>
           </a>
-          <a href="#" class="page-campaign__item campaign-card">
+          <a href="#" id="体験ダイビング" class="page-campaign__item campaign-card">
             <div class="page-campaign__image campaign-card__image">
               <picture>
                 <source
@@ -348,7 +364,7 @@
               </div>
             </div>
           </a>
-          <a href="#" class="page-campaign__item campaign-card">
+          <a href="#" id="体験ダイビング" class="page-campaign__item campaign-card">
             <div class="page-campaign__image campaign-card__image">
               <picture>
                 <source
@@ -394,7 +410,7 @@
               </div>
             </div>
           </a>
-          <a href="#" class="page-campaign__item campaign-card">
+          <a href="#" id="ファンダイビング" class="page-campaign__item campaign-card">
             <div class="page-campaign__image campaign-card__image">
               <picture>
                 <source
@@ -441,7 +457,23 @@
             </div>
           </a>
         </div>
-        <p class="pagenavi">----ページネーション-----</p>
+        <div class="page-campaign__pagenavi pagenavi">
+          <div class="wp-pagenavi" role="navigation">
+            <a class="previouspostslink pagenavi-pre" rel="prev" href="#"
+              ><span></span
+            ></a>
+            <span class="current">1</span>
+            <a class="page larger" href="#">2</a>
+            <a class="page larger" href="#">3</a>
+            <a class="page larger" href="#">4</a>
+            <a class="u-desktop page larger" href="#">5</a>
+            <a class="u-desktop page larger" href="#">6</a>
+            <a class="nextpostslink pagenavi-next" rel="next" href="#"
+              ><span></span
+            ></a>
+          </div>
+        </div>
+      </div>
       </div>
     </div>
 
