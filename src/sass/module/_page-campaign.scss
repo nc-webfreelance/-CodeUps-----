@@ -44,7 +44,10 @@
   }
 }
 
-.page-campaign__card-title.campaign-card__title p {
+.page-campaign__card-title.campaign-card__title h2 {
+  font-weight: $medium;
+  font-size: rem(16);
+  line-height: calc(24 / 16);
   @include mq("md") {
     font-size: rem(24);
   }

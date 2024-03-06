@@ -155,15 +155,14 @@ button,
   }
 }
 
-
-.form__lastCheck [type=checkbox] + span::before {
+.form__lastCheck [type="checkbox"] + span::before {
   top: 27%;
   @include mq("md") {
     top: 50%;
   }
 }
 
-.form__lastCheck [type=checkbox]:checked + span::after{
+.form__lastCheck [type="checkbox"]:checked + span::after {
   top: rem(9);
   left: rem(3);
   transform: translateY(-50%) rotate(-48deg);

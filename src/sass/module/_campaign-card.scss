@@ -6,7 +6,7 @@
   width: rem(280);
   height: 100%;
   box-shadow: 2px 2px 10px rgba($color: $black, $alpha: 0.3);
-    @include mq("md") {
+  @include mq("md") {
     width: rem(333);
   }
 }
@@ -64,13 +64,10 @@
 }
 
 .campaign-card__title {
-  margin-top: rem(4);
-}
-
-.campaign-card__title p {
   font-weight: $medium;
   font-size: rem(16);
   line-height: calc(24 / 16);
+  margin-top: rem(4);
 }
 
 .campaign-card__foot {

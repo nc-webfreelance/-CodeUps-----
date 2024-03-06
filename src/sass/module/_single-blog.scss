@@ -11,8 +11,6 @@
   }
 }
 
-
-
 .single-blog__contents {
   position: relative;
   @include mq("md") {
@@ -48,7 +46,6 @@
 }
 
 .single-blog__title {
-  // position: relative;
   font-weight: $medium;
   font-size: rem(24);
   border-bottom: 1px solid $green;
@@ -59,7 +56,6 @@
     padding-bottom: 0;
   }
 }
-
 
 .single-blog__body {
   display: flex;

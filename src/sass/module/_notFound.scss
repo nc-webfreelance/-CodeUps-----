@@ -43,13 +43,13 @@
   }
 }
 
-.notFound__content h2,
+.notFound__content h1,
 .notFound__content p {
   font-family: $lato-font-family;
   font-weight: $regular;
 }
 
-.notFound__content h2 {
+.notFound__content h1 {
   font-size: rem(80);
   line-height: 1;
   letter-spacing: 0.5em;

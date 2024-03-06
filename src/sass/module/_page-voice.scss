@@ -17,5 +17,8 @@
 }
 
 .page-voice__pagenavi {
-  margin-top: rem(70);
+  margin-top: rem(82);
+  @include mq("md") {
+    margin-top: rem(63);
+  }
 }

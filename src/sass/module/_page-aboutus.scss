@@ -28,7 +28,8 @@
   width: 100%;
   height: 100%;
   @include mq("md") {
-    top: -10%;
+    top: -11%;
+    left: calc(51% - min(48vw, rem(630)));
     max-width: rem(301);
     z-index: -1;
   }
@@ -90,7 +91,7 @@
   }
 }
 
-.page-aboutus__head h3 {
+.page-aboutus__head h2 {
   display: inline-block;
   font-family: $gotu-font-family;
   font-weight: $regular;
