@@ -23,7 +23,7 @@
   font-size: rem(16);
   color: $white;
   background-color: $green;
-  padding: rem(16);
+  padding: rem(15);
   @include mq("md") {
     font-size: rem(20);
     padding: rem(26) rem(40);
@@ -61,7 +61,11 @@
 
 .page-faq-list__item-answer {
   font-size: rem(16);
-  padding: rem(24) rem(16);
+  line-height: 1.4;
+  padding-top: rem(24);
+  padding-right: rem(16);
+  padding-bottom: rem(26);
+  padding-left: rem(16);
   border: 1px solid $green;
   @include mq("md") {
     margin-top: rem(16);

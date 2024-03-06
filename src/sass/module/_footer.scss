@@ -4,7 +4,7 @@
   background-color: $green;
   color: $white;
   padding-top: rem(48);
-  padding-bottom: rem(56);
+  padding-bottom: rem(58);
   @include mq("md") {
     padding-top: rem(80);
     padding-bottom: rem(80);
@@ -52,8 +52,28 @@
 }
 
 .footer__nav {
-  margin-top: rem(28);
+  margin-top: rem(30);
+  @include mq("md") {
+    margin-top: rem(10);
+  }
 }
+
+
+.footer__nav-left.site-nav__left,
+.footer__nav-right.site-nav__right {
+    @include mq("md") {
+    gap: rem(120);
+  }
+}
+
+.footer__nav-right.site-nav__right {
+    @include mq("md") {
+    margin-left: rem(31);
+  }
+}
+
+
+
 
 
 .footer__copyright {
@@ -63,10 +83,10 @@
   line-height: calc(18 / 12);
   letter-spacing: 0.08em;
   text-align: center;
-  margin-top: rem(44);
+  margin-top: rem(20);
   @include mq("md") {
     font-size: rem(14);
     line-height: calc(18 / 14);
-    margin-top: rem(80);
+    margin-top: rem(56);
   }
 }

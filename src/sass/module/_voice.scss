@@ -16,7 +16,7 @@
 }
 
 .voice__cards {
-  margin-top: rem(44);
+  margin-top: rem(41);
   @include mq("md") {
     position: relative;
     margin-top: rem(30);
@@ -33,8 +33,8 @@
     background-position: top;
     background-size: contain;
     position: absolute;
-    top: -50%;
-    left: calc(50% - min(48vw, rem(630)));
+    top: -54%;
+    left: calc(51% - min(48vw, rem(630)));
     max-width: rem(301);
     width: 100%;
     height: 100%;
@@ -52,7 +52,7 @@
     background-size: contain;
     position: absolute;
     right: calc(50% - min(48vw, rem(545)));
-    bottom: -50%;
+    bottom: -51%;
     max-width: rem(71);
     width: 100%;
     height: 100%;

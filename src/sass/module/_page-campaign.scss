@@ -9,7 +9,7 @@
 
 .page-campaign__items {
   display: grid;
-  gap: rem(40);
+  gap: rem(41);
   margin-top: rem(40);
   @include mq("md") {
     grid-template-columns: 1fr 1fr;
@@ -25,8 +25,35 @@
   margin-inline: auto;
 }
 
-.page-campaign__image.campaign-card__image {
+.page-campaign__card-image.campaign-card__image {
   width: 100%;
+}
+
+.page-campaign__card-body.campaign-card__body {
+  @include mq("md") {
+    padding-top: rem(20);
+    padding-right: rem(25);
+    padding-bottom: rem(41);
+    padding-left: rem(25);
+  }
+}
+
+.page-campaign__card-head.campaign-card__head {
+  @include mq("md") {
+    padding-bottom: rem(2);
+  }
+}
+
+.page-campaign__card-title.campaign-card__title p {
+  @include mq("md") {
+    font-size: rem(24);
+  }
+}
+
+.page-campaign__card-foot.campaign-card__foot {
+  @include mq("md") {
+    margin-top: rem(24);
+  }
 }
 
 .page-campaign__cardText {
@@ -68,5 +95,8 @@
 }
 
 .page-campaign__pagenavi {
-  margin-top: rem(80);
+  margin-top: rem(79);
+  @include mq("md") {
+    margin-top: rem(82);
+  }
 }

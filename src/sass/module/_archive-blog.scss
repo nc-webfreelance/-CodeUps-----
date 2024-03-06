@@ -21,9 +21,10 @@
 .archive-blog__list {
   display: grid;
   gap: rem(40);
+  margin: 0 rem(5);
   @include mq("md") {
     grid-template-columns: 1fr 1fr;
-    row-gap: rem(80);
+    row-gap: rem(87);
   }
 }
 
@@ -38,19 +39,19 @@
   background-position: top;
   background-size: contain;
   position: absolute;
-  top: -12%;
+  top: -6%;
   left: calc(52% - min(48vw, rem(630)));
   max-width: rem(120);
   width: 100%;
   height: 100%;
   @include mq("md") {
-    top: -24%;
-    left: calc(50% - min(14vw, rem(320)));
+    top: -16%;
+    left: calc(50% - min(48vw, rem(249)));
     max-width: rem(301);
     z-index: -1;
   }
 }
 
 .archive-blog__pagenavi {
-  margin-top: rem(80);
+  margin-top: rem(78);
 }

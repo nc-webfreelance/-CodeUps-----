@@ -18,8 +18,10 @@
   width: 100%;
   height: 100%;
   @include mq("md") {
-    top: -30%;
+    top: -55%;
+    left: calc(51% - min(48vw, rem(630)));
     max-width: rem(301);
+    height: 110%;
   }
 }
 
@@ -30,5 +32,6 @@
 }
 
 .page-contact__text p:not(:first-child) {
+  line-height: 1.44;
   margin-top: rem(40);
 }

@@ -24,9 +24,12 @@
 
 .sub-mv__header {
   position: absolute;
-  top: 55%;
+  top: 49.5%;
   left: 50%;
   transform: translate(-50%, -50%);
+  @include mq("md") {
+    top: 58.5%;
+  }
 }
 
 .sub-mv__header h2 {

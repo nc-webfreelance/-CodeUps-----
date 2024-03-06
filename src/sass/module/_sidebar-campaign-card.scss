@@ -17,8 +17,12 @@
 }
 
 .sidebar-campaign-card__body.campaign-card__body {
+  padding-top: rem(11);
   padding-right: rem(24);
   padding-left: rem(24);
+  @include mq("md") {
+    padding-bottom: rem(17);
+  }
 }
 
 .sidebar-campaign-card__head.campaign-card__head {
@@ -27,6 +31,6 @@
 }
 
 .sidebar-campaign-card__foot.campaign-card__foot {
-  margin-top: rem(8);
+  margin-top: rem(6);
   text-align: center;
 }

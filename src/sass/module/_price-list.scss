@@ -16,12 +16,12 @@
   font-weight: $bold;
   background-color: $green;
   color: $white;
-  height: rem(40);
+  height: rem(38);
   display: flex;
   justify-content: center;
   align-items: center;
   @include mq("md") {
-    width: 28%;
+    width: 28.5%;
     height: auto;
     padding-bottom: 10%;
   }
@@ -30,9 +30,9 @@
 .price-list__head th {
   display: inline-block;
   position: relative;
-  margin-right: rem(-16);
+  padding-left: rem(32);
   @include mq("md") {
-    margin-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -40,7 +40,7 @@
   content: "";
   position: absolute;
   top: 0;
-  left: rem(-32);
+  left: 0;
   background-color: $white;
   mask-image: url(../images/common/whale-logo.svg);
   mask-repeat: no-repeat;
@@ -80,10 +80,11 @@
 }
 
 .price-list__name td {
-  height: rem(64);
   justify-content: center;
+  height: rem(60);
   @include mq("md") {
-    height: rem(60);
+    justify-content: left;
+    padding-left: rem(15);
   }
 }
 
@@ -95,17 +96,18 @@
   display: flex;
   flex-direction: column;
   flex: 1;
+  @include mq("md") {
+    flex: none;
+    width: 33%;
+  }
 }
 
 .price-list__price td {
-  height: rem(64);
+  height: rem(60);
   border-top: 1px solid $green;
   border-left: 1px solid $green;
   justify-content: right;
   padding: 0 rem(16);
-  @include mq("md") {
-    height: rem(60);
-  }
 }
 
 .price-list__price td:first-child {

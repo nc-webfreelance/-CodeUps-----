@@ -27,9 +27,9 @@
 
 .campaign__btn {
   text-align: center;
-  margin-top: rem(35);
+  margin-top: rem(30);
   @include mq("md") {
-    margin-top: rem(75);
+    margin-top: rem(70);
   }
 }
 
@@ -50,14 +50,14 @@
   .swiper-button-prev {
     @include mq("md") {
       top: 3.3%;
-      left: 70.8%;
+      left: 76.7%;
     }
   }
 
   .swiper-button-next {
     @include mq("md") {
       top: 3.2%;
-      right: 12.5%;
+      right: 2.4%;
     }
   }
 

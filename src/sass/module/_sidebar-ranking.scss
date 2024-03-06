@@ -6,6 +6,7 @@
 
 .sidebar-ranking__contents-link {
   display: flex;
+  align-items: start;
   gap: rem(16);
   width: 100%;
   box-shadow: 3px 3px 8px rgba($color: $black, $alpha: 0.3);
@@ -15,7 +16,7 @@
 .sidebar-ranking__contents-image {
   aspect-ratio: 121 / 90;
   overflow: hidden;
-  width: 50%;
+  width: 48%;
 }
 
 .sidebar-ranking__contents-image img {
@@ -26,12 +27,14 @@
 
 .sidebar-ranking__contents-meta {
   width: 50%;
+  display: inline-block;
+  line-height: 1;
 }
 
 .sidebar-ranking__contents-date {
   font-weight: $regular;
   font-size: rem(12);
-  line-height: calc(18 / 12);
+  line-height: 1;
 }
 
 .sidebar-ranking__contents-title {

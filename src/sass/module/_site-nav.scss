@@ -10,14 +10,20 @@
   @include mq("md") {
     display: flex;
     width: 50%;
-    gap: rem(100);
+    gap: rem(147);
   }
 }
 
 .site-nav__right {
-  margin-left: rem(30);
   @include mq("md") {
-    margin-left: rem(50);
+    margin-left: rem(128);
+  }
+}
+
+.site-nav__wrap:nth-child(2) {
+  margin-top: rem(16);
+  @include mq("md") {
+    margin-top: 0;
   }
 }
 
@@ -30,6 +36,9 @@
   padding-top: rem(12);
   padding-bottom: rem(12);
   padding-left: rem(22);
+  @include mq("md") {
+    white-space: nowrap;
+  }
 }
 
 .site-nav__left-item:first-child a,

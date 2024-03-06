@@ -6,13 +6,22 @@
   justify-content: center;
 }
 
+.single-blog__wp-pagenavi.wp-pagenavi {
+  gap: rem(26);
+  @include mq("md") {
+    margin-left: rem(-30);
+  }
+}
+
 .pagenavi-pre {
   margin-right: rem(28);
 }
 
+
 .pagenavi-next {
   margin-left: rem(28);
 }
+
 
 .wp-pagenavi a,
 .wp-pagenavi span {
