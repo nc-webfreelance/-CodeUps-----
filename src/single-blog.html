@@ -32,9 +32,9 @@
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script defer src="./assets/js/jquery.inview.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script defer src="./assets/js/script.js"></script>
   </head>
   <body>
@@ -251,75 +251,75 @@
     </div>
 
     <!-- パンくず -->
-    <div class="breadcrumb">パンくずリスト</div>
+    <div class="breadcrumb">
+      <div class="breadcrumb__inner inner">
+        TOP > パンくず
+      </div>
+    </div>
 
-    <section class="single-blog layout-single-blog">
-      <div class="single-blog__inner inner">
-        <div class="single-blog__wrap">
-          <div class="single-blog__contents">
-            <time class="single-blog__date" datetime="2023-11-17"
+    <section class="two-col layout-single-blog">
+      <div class="two-col__inner inner">
+        <div class="two-col__wrap">
+          <div class="two-col__left">
+            <div class="two-col__article single-blog">
+              <time class="single-blog__date" datetime="2023-11-17"
               >2023.11/17</time
-            >
-            <h2 class="single-blog__title">ライセンス取得</h2>
-            <div class="single-blog__body">
+              >
+              <h2 class="single-blog__title">ライセンス取得</h2>
               <div class="single-blog__image">
                 <picture>
                   <source
-                    srcset="./assets/images/common/blog-1.webp"
-                    type="image/webp"
+                  srcset="./assets/images/common/blog-1.webp"
+                  type="image/webp"
                   />
                   <img
-                    src="./assets/images/common/blog-1.jpg"
-                    alt="ピンク色のサンゴ礁"
+                  src="./assets/images/common/blog-1.jpg"
+                  alt="ピンク色のサンゴ礁"
                   />
                 </picture>
               </div>
-              <p class="single-blog__text">
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-              </p>
-              <div class="single-blog__image">
-                <picture>
-                  <source
+              <div class="single-blog__body">
+                <p>
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                </p>
+                  <picture>
+                    <source
                     srcset="./assets/images/common/blog-1.webp"
                     type="image/webp"
-                  />
-                  <img
+                    />
+                    <img
                     src="./assets/images/common/blog-1.jpg"
                     alt="ピンク色のサンゴ礁"
-                  />
-                </picture>
+                    />
+                  </picture>
+                <p>
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                </p>
+                <ul>
+                  <li>リスト１</li>
+                  <li>リスト２</li>
+                  <li>リスト３</li>
+                </ul>
+                <p>
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                </p>
               </div>
-              <p class="single-blog__text">
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-              </p>
-              <ul class="single-blog__list">
-                <li>リスト１</li>
-                <li>リスト２</li>
-                <li>リスト３</li>
-              </ul>
-              <p class="single-blog__text">
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-              </p>
             </div>
-            <div class="single-blog__pagenavi pagenavi">
+            <div class="two-col__pagenavi two-col__pagenavi--single-blog pagenavi">
               <div class="single-blog__wp-pagenavi wp-pagenavi" role="navigation">
-                <a class="previouspostslink pagenavi-pre" rel="prev" href="#"
-                  ><span></span
-                ></a>
-                <a class="nextpostslink pagenavi-next" rel="next" href="#"
-                  ><span></span
-                ></a>
+                <a class="previouspostslink pagenavi-pre" rel="prev" href="#"><span></span></a>
+                <a class="nextpostslink pagenavi-next" rel="next" href="#"><span></span></a>
               </div>
             </div>
           </div>
-          <aside class="single-blog__sidebar sidebar">
+          <aside class="two-col__right sidebar">
             <ul class="sidebar__list">
               <li class="sidebar__item">
                 <div class="sidebar__title">
                   <h3>人気記事</h3>
                 </div>
                 <ul
-                  class="sidebar__ranking sidebar-ranking sidebar-ranking__list"
+                  class="sidebar__ranking sidebar-ranking"
                 >
                   <li class="sidebar-ranking__item">
                     <article class="sidebar-ranking__contents">
@@ -411,7 +411,7 @@
                 <div class="sidebar__title">
                   <h3>口コミ</h3>
                 </div>
-                <ul class="sidebar__voice sidebar-voice sidebar-voice__list">
+                <ul class="sidebar__voice sidebar-voice">
                   <li class="sidebar-voice__item">
                     <div class="sidebar-voice__image">
                       <picture>
@@ -432,7 +432,9 @@
                   </li>
                 </ul>
                 <div class="sidebar-voice__btn">
-                  <a class="button" href="./page-voice.html"><span>View more</span></a>
+                  <a class="button" href="./page-voice.html"
+                    ><span>View more</span></a
+                  >
                 </div>
               </li>
               <li class="sidebar__item">
@@ -440,11 +442,14 @@
                   <h3>キャンペーン</h3>
                 </div>
                 <ul
-                  class="sidebar__campaign sidebar-campaign sidebar-campaign__list"
+                  class="sidebar__campaign sidebar-campaign"
                 >
                   <li class="sidebar-campaign__item">
-                    <a href="#" class="sidebar-campaign__card sidebar-campaign-card">
-                      <div class="sidebar-campaign-card__image">
+                    <a
+                      href="#"
+                      class="sidebar-campaign__card campaign-card campaign-card--sidebar"
+                    >
+                      <div class="campaign-card__image campaign-card__image--sidebar">
                         <picture>
                           <source
                             srcset="./assets/images/common/campaign-1.webp"
@@ -456,13 +461,19 @@
                           />
                         </picture>
                       </div>
-                      <div class="sidebar-campaign-card__body campaign-card__body">
-                        <div class="sidebar-campaign-card__head campaign-card__head">
+                      <div
+                        class="campaign-card__body campaign-card__body--sidebar"
+                      >
+                        <div
+                          class="campaign-card__head campaign-card__head--sidebar"
+                        >
                           <div class="campaign-card__title">
                             <p>ライセンス取得</p>
                           </div>
                         </div>
-                        <div class="sidebar-campaign-card__foot campaign-card__foot">
+                        <div
+                          class="campaign-card__foot campaign-card__foot--sidebar"
+                        >
                           <div class="campaign-card__text">
                             <p>全部コミコミ(お一人様)</p>
                           </div>
@@ -475,8 +486,11 @@
                     </a>
                   </li>
                   <li class="sidebar-campaign__item">
-                    <a href="#" class="sidebar-campaign__card sidebar-campaign-card">
-                      <div class="sidebar-campaign-card__image">
+                    <a
+                      href="#"
+                      class="sidebar-campaign__card campaign-card campaign-card--sidebar"
+                    >
+                      <div class="campaign-card__image campaign-card__image--sidebar">
                         <picture>
                           <source
                             srcset="./assets/images/common/campaign-1.webp"
@@ -488,13 +502,19 @@
                           />
                         </picture>
                       </div>
-                      <div class="sidebar-campaign-card__body campaign-card__body">
-                        <div class="sidebar-campaign-card__head campaign-card__head">
+                      <div
+                        class="campaign-card__body campaign-card__body--sidebar"
+                      >
+                        <div
+                          class="campaign-card__head campaign-card__head--sidebar"
+                        >
                           <div class="campaign-card__title">
                             <p>ライセンス取得</p>
                           </div>
                         </div>
-                        <div class="sidebar-campaign-card__foot campaign-card__foot">
+                        <div
+                          class="campaign-card__foot campaign-card__foot--sidebar"
+                        >
                           <div class="campaign-card__text">
                             <p>全部コミコミ(お一人様)</p>
                           </div>
@@ -508,16 +528,16 @@
                   </li>
                 </ul>
                 <div class="sidebar-campaign__btn">
-                  <a class="button" href="./page-campaign.html"><span>View more</span></a>
+                  <a class="button" href="./page-campaign.html"
+                    ><span>View more</span></a
+                  >
                 </div>
               </li>
               <li class="sidebar__item">
                 <div class="sidebar__title">
                   <h3>アーカイブ</h3>
                 </div>
-                <ul
-                  class="sidebar__archive sidebar-archive"
-                >
+                <ul class="sidebar__archive sidebar-archive">
                   <li class="sidebar-archive__item-wrap">
                     <p class="js-archive">2023</p>
                     <ul class="sidebar-archive__items">

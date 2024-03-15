@@ -32,9 +32,9 @@
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script defer src="./assets/js/jquery.inview.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script defer src="./assets/js/script.js"></script>
   </head>
   <body>
@@ -250,315 +250,299 @@
     </div>
 
     <!-- パンくず -->
-    <div class="breadcrumb">パンくずリスト</div>
+    <div class="breadcrumb">
+      <div class="breadcrumb__inner inner">
+        TOP > パンくず
+      </div>
+    </div>
 
-    <div class="archive-blog layout-subPage">
-      <div class="archive-blog__inner inner">
-        <div class="archive-blog__wrap">
-          <div class="archive-blog__contents">
-            <div class="archive-blog__list">
-              <article class="archive-blog__item">
-                <a href="./single-blog.html" class="cards__item card">
-                  <div class="card__inner">
-                    <div class="card__image">
-                      <picture>
-                        <source
-                          srcset="./assets/images/common/blog-1.webp"
-                          type="image/webp"
-                        />
-                        <img
-                          src="./assets/images/common/blog-1.jpg"
-                          alt="ピンク色のサンゴ礁"
-                        />
-                      </picture>
-                    </div>
-                    <div class="card__body">
-                      <time class="card__date" datetime="20223-11-17"
-                        >2023.11/17</time
-                      >
-                      <h2 class="card__title">ライセンス取得</h2>
-                      <div class="card__text">
-                        <p>
-                          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                          ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                        </p>
-                      </div>
+    <div class="two-col layout-subPage">
+      <div class="two-col__inner inner">
+        <div class="two-col__wrap">
+          <div class="two-col__left">
+            <div class="two-col__cards cards cards--archive">
+              <a href="./single-blog.html" class="cards__item card">
+                <div class="card__inner">
+                  <div class="card__image">
+                    <picture>
+                      <source
+                        srcset="./assets/images/common/blog-1.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        src="./assets/images/common/blog-1.jpg"
+                        alt="ピンク色のサンゴ礁"
+                      />
+                    </picture>
+                  </div>
+                  <div class="card__body">
+                    <time class="card__date" datetime="20223-11-17"
+                      >2023.11/17</time
+                    >
+                    <h3 class="card__title">ライセンス取得</h3>
+                    <div class="card__text">
+                      <p>
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                      </p>
                     </div>
                   </div>
-                </a>
-              </article>
-              <article class="archive-blog__item">
-                <a href="#" class="cards__item card">
-                  <div class="card__inner">
-                    <div class="card__image">
-                      <picture>
-                        <source
-                          srcset="./assets/images/common/blog-1.webp"
-                          type="image/webp"
-                        />
-                        <img
-                          src="./assets/images/common/blog-1.jpg"
-                          alt="ピンク色のサンゴ礁"
-                        />
-                      </picture>
-                    </div>
-                    <div class="card__body">
-                      <time class="card__date" datetime="20223-11-17"
-                        >2023.11/17</time
-                      >
-                      <h2 class="card__title">ライセンス取得</h2>
-                      <div class="card__text">
-                        <p>
-                          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                          ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                        </p>
-                      </div>
+                </div>
+              </a>
+              <a href="#" class="cards__item card">
+                <div class="card__inner">
+                  <div class="card__image">
+                    <picture>
+                      <source
+                        srcset="./assets/images/common/blog-2.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        src="./assets/images/common/blog-2.jpg"
+                        alt="海の中で泳ぐ一匹の亀"
+                      />
+                    </picture>
+                  </div>
+                  <div class="card__body">
+                    <time class="card__date" datetime="20223-11-17"
+                      >2023.11/17</time
+                    >
+                    <h3 class="card__title">ウミガメと泳ぐ</h3>
+                    <div class="card__text">
+                      <p>
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                      </p>
                     </div>
                   </div>
-                </a>
-              </article>
-              <article class="archive-blog__item">
-                <a href="#" class="cards__item card">
-                  <div class="card__inner">
-                    <div class="card__image">
-                      <picture>
-                        <source
-                          srcset="./assets/images/common/blog-1.webp"
-                          type="image/webp"
-                        />
-                        <img
-                          src="./assets/images/common/blog-1.jpg"
-                          alt="ピンク色のサンゴ礁"
-                        />
-                      </picture>
-                    </div>
-                    <div class="card__body">
-                      <time class="card__date" datetime="20223-11-17"
-                        >2023.11/17</time
-                      >
-                      <h2 class="card__title">ライセンス取得</h2>
-                      <div class="card__text">
-                        <p>
-                          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                          ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                        </p>
-                      </div>
+                </div>
+              </a>
+              <a href="#" class="cards__item card">
+                <div class="card__inner">
+                  <div class="card__image">
+                    <picture>
+                      <source
+                        srcset="./assets/images/common/blog-3.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        src="./assets/images/common/blog-3.jpg"
+                        alt="イソギンチャクの中から顔を出すクマノミ"
+                      />
+                    </picture>
+                  </div>
+                  <div class="card__body">
+                    <time class="card__date" datetime="20223-11-17"
+                      >2023.11/17</time
+                    >
+                    <h3 class="card__title">カクレクマノミ</h3>
+                    <div class="card__text">
+                      <p>
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                      </p>
                     </div>
                   </div>
-                </a>
-              </article>
-              <article class="archive-blog__item">
-                <a href="#" class="cards__item card">
-                  <div class="card__inner">
-                    <div class="card__image">
-                      <picture>
-                        <source
-                          srcset="./assets/images/common/blog-1.webp"
-                          type="image/webp"
-                        />
-                        <img
-                          src="./assets/images/common/blog-1.jpg"
-                          alt="ピンク色のサンゴ礁"
-                        />
-                      </picture>
-                    </div>
-                    <div class="card__body">
-                      <time class="card__date" datetime="20223-11-17"
-                        >2023.11/17</time
-                      >
-                      <h2 class="card__title">ライセンス取得</h2>
-                      <div class="card__text">
-                        <p>
-                          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                          ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                        </p>
-                      </div>
+                </div>
+              </a>
+              <a href="#" class="cards__item card">
+                <div class="card__inner">
+                  <div class="card__image">
+                    <picture>
+                      <source
+                        srcset="./assets/images/common/blog-1.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        src="./assets/images/common/blog-1.jpg"
+                        alt="ピンク色のサンゴ礁"
+                      />
+                    </picture>
+                  </div>
+                  <div class="card__body">
+                    <time class="card__date" datetime="20223-11-17"
+                      >2023.11/17</time
+                    >
+                    <h3 class="card__title">ライセンス取得</h3>
+                    <div class="card__text">
+                      <p>
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                      </p>
                     </div>
                   </div>
-                </a>
-              </article>
-              <article class="archive-blog__item">
-                <a href="#" class="cards__item card">
-                  <div class="card__inner">
-                    <div class="card__image">
-                      <picture>
-                        <source
-                          srcset="./assets/images/common/blog-1.webp"
-                          type="image/webp"
-                        />
-                        <img
-                          src="./assets/images/common/blog-1.jpg"
-                          alt="ピンク色のサンゴ礁"
-                        />
-                      </picture>
-                    </div>
-                    <div class="card__body">
-                      <time class="card__date" datetime="20223-11-17"
-                        >2023.11/17</time
-                      >
-                      <h2 class="card__title">ライセンス取得</h2>
-                      <div class="card__text">
-                        <p>
-                          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                          ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                        </p>
-                      </div>
+                </div>
+              </a>
+              <a href="#" class="cards__item card">
+                <div class="card__inner">
+                  <div class="card__image">
+                    <picture>
+                      <source
+                        srcset="./assets/images/common/blog-2.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        src="./assets/images/common/blog-2.jpg"
+                        alt="海の中で泳ぐ一匹の亀"
+                      />
+                    </picture>
+                  </div>
+                  <div class="card__body">
+                    <time class="card__date" datetime="20223-11-17"
+                      >2023.11/17</time
+                    >
+                    <h3 class="card__title">ウミガメと泳ぐ</h3>
+                    <div class="card__text">
+                      <p>
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                      </p>
                     </div>
                   </div>
-                </a>
-              </article>
-              <article class="archive-blog__item">
-                <a href="#" class="cards__item card">
-                  <div class="card__inner">
-                    <div class="card__image">
-                      <picture>
-                        <source
-                          srcset="./assets/images/common/blog-1.webp"
-                          type="image/webp"
-                        />
-                        <img
-                          src="./assets/images/common/blog-1.jpg"
-                          alt="ピンク色のサンゴ礁"
-                        />
-                      </picture>
-                    </div>
-                    <div class="card__body">
-                      <time class="card__date" datetime="20223-11-17"
-                        >2023.11/17</time
-                      >
-                      <h2 class="card__title">ライセンス取得</h2>
-                      <div class="card__text">
-                        <p>
-                          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                          ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                        </p>
-                      </div>
+                </div>
+              </a>
+              <a href="#" class="cards__item card">
+                <div class="card__inner">
+                  <div class="card__image">
+                    <picture>
+                      <source
+                        srcset="./assets/images/common/blog-3.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        src="./assets/images/common/blog-3.jpg"
+                        alt="イソギンチャクの中から顔を出すクマノミ"
+                      />
+                    </picture>
+                  </div>
+                  <div class="card__body">
+                    <time class="card__date" datetime="20223-11-17"
+                      >2023.11/17</time
+                    >
+                    <h3 class="card__title">カクレクマノミ</h3>
+                    <div class="card__text">
+                      <p>
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                      </p>
                     </div>
                   </div>
-                </a>
-              </article>
-              <article class="archive-blog__item">
-                <a href="#" class="cards__item card">
-                  <div class="card__inner">
-                    <div class="card__image">
-                      <picture>
-                        <source
-                          srcset="./assets/images/common/blog-1.webp"
-                          type="image/webp"
-                        />
-                        <img
-                          src="./assets/images/common/blog-1.jpg"
-                          alt="ピンク色のサンゴ礁"
-                        />
-                      </picture>
-                    </div>
-                    <div class="card__body">
-                      <time class="card__date" datetime="20223-11-17"
-                        >2023.11/17</time
-                      >
-                      <h2 class="card__title">ライセンス取得</h2>
-                      <div class="card__text">
-                        <p>
-                          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                          ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                        </p>
-                      </div>
+                </div>
+              </a>
+              <a href="#" class="cards__item card">
+                <div class="card__inner">
+                  <div class="card__image">
+                    <picture>
+                      <source
+                        srcset="./assets/images/common/blog-3.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        src="./assets/images/common/blog-3.jpg"
+                        alt="イソギンチャクの中から顔を出すクマノミ"
+                      />
+                    </picture>
+                  </div>
+                  <div class="card__body">
+                    <time class="card__date" datetime="20223-11-17"
+                      >2023.11/17</time
+                    >
+                    <h3 class="card__title">カクレクマノミ</h3>
+                    <div class="card__text">
+                      <p>
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                      </p>
                     </div>
                   </div>
-                </a>
-              </article>
-              <article class="archive-blog__item">
-                <a href="#" class="cards__item card">
-                  <div class="card__inner">
-                    <div class="card__image">
-                      <picture>
-                        <source
-                          srcset="./assets/images/common/blog-1.webp"
-                          type="image/webp"
-                        />
-                        <img
-                          src="./assets/images/common/blog-1.jpg"
-                          alt="ピンク色のサンゴ礁"
-                        />
-                      </picture>
-                    </div>
-                    <div class="card__body">
-                      <time class="card__date" datetime="20223-11-17"
-                        >2023.11/17</time
-                      >
-                      <h2 class="card__title">ライセンス取得</h2>
-                      <div class="card__text">
-                        <p>
-                          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                          ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                        </p>
-                      </div>
+                </div>
+              </a>
+              <a href="#" class="cards__item card">
+                <div class="card__inner">
+                  <div class="card__image">
+                    <picture>
+                      <source
+                        srcset="./assets/images/common/blog-1.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        src="./assets/images/common/blog-1.jpg"
+                        alt="ピンク色のサンゴ礁"
+                      />
+                    </picture>
+                  </div>
+                  <div class="card__body">
+                    <time class="card__date" datetime="20223-11-17"
+                      >2023.11/17</time
+                    >
+                    <h3 class="card__title">ライセンス取得</h3>
+                    <div class="card__text">
+                      <p>
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                      </p>
                     </div>
                   </div>
-                </a>
-              </article>
-              <article class="archive-blog__item">
-                <a href="#" class="cards__item card">
-                  <div class="card__inner">
-                    <div class="card__image">
-                      <picture>
-                        <source
-                          srcset="./assets/images/common/blog-1.webp"
-                          type="image/webp"
-                        />
-                        <img
-                          src="./assets/images/common/blog-1.jpg"
-                          alt="ピンク色のサンゴ礁"
-                        />
-                      </picture>
-                    </div>
-                    <div class="card__body">
-                      <time class="card__date" datetime="20223-11-17"
-                        >2023.11/17</time
-                      >
-                      <h2 class="card__title">ライセンス取得</h2>
-                      <div class="card__text">
-                        <p>
-                          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                          ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                        </p>
-                      </div>
+                </div>
+              </a>
+              <a href="#" class="cards__item card">
+                <div class="card__inner">
+                  <div class="card__image">
+                    <picture>
+                      <source
+                        srcset="./assets/images/common/blog-2.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        src="./assets/images/common/blog-2.jpg"
+                        alt="海の中で泳ぐ一匹の亀"
+                      />
+                    </picture>
+                  </div>
+                  <div class="card__body">
+                    <time class="card__date" datetime="20223-11-17"
+                      >2023.11/17</time
+                    >
+                    <h3 class="card__title">ウミガメと泳ぐ</h3>
+                    <div class="card__text">
+                      <p>
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                      </p>
                     </div>
                   </div>
-                </a>
-              </article>
-              <article class="archive-blog__item">
-                <a href="#" class="cards__item card">
-                  <div class="card__inner">
-                    <div class="card__image">
-                      <picture>
-                        <source
-                          srcset="./assets/images/common/blog-1.webp"
-                          type="image/webp"
-                        />
-                        <img
-                          src="./assets/images/common/blog-1.jpg"
-                          alt="ピンク色のサンゴ礁"
-                        />
-                      </picture>
-                    </div>
-                    <div class="card__body">
-                      <time class="card__date" datetime="20223-11-17"
-                        >2023.11/17</time
-                      >
-                      <h2 class="card__title">ライセンス取得</h2>
-                      <div class="card__text">
-                        <p>
-                          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                          ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                        </p>
-                      </div>
+                </div>
+              </a>
+              <a href="#" class="cards__item card">
+                <div class="card__inner">
+                  <div class="card__image">
+                    <picture>
+                      <source
+                        srcset="./assets/images/common/blog-3.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        src="./assets/images/common/blog-3.jpg"
+                        alt="イソギンチャクの中から顔を出すクマノミ"
+                      />
+                    </picture>
+                  </div>
+                  <div class="card__body">
+                    <time class="card__date" datetime="20223-11-17"
+                      >2023.11/17</time
+                    >
+                    <h3 class="card__title">カクレクマノミ</h3>
+                    <div class="card__text">
+                      <p>
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                      </p>
                     </div>
                   </div>
-                </a>
-              </article>
+                </div>
+              </a>
             </div>
-            <div class="archive-blog__pagenavi pagenavi">
+            <div class="two-col__pagenavi pagenavi">
               <div class="wp-pagenavi" role="navigation">
                 <a class="previouspostslink pagenavi-pre" rel="prev" href="#"
                   ><span></span
@@ -575,14 +559,14 @@
               </div>
             </div>
           </div>
-          <aside class="archive-blog__sidebar sidebar">
+          <aside class="two-col__right sidebar">
             <ul class="sidebar__list">
               <li class="sidebar__item">
                 <div class="sidebar__title">
                   <h3>人気記事</h3>
                 </div>
                 <ul
-                  class="sidebar__ranking sidebar-ranking sidebar-ranking__list"
+                  class="sidebar__ranking sidebar-ranking"
                 >
                   <li class="sidebar-ranking__item">
                     <article class="sidebar-ranking__contents">
@@ -674,7 +658,7 @@
                 <div class="sidebar__title">
                   <h3>口コミ</h3>
                 </div>
-                <ul class="sidebar__voice sidebar-voice sidebar-voice__list">
+                <ul class="sidebar__voice sidebar-voice">
                   <li class="sidebar-voice__item">
                     <div class="sidebar-voice__image">
                       <picture>
@@ -705,14 +689,14 @@
                   <h3>キャンペーン</h3>
                 </div>
                 <ul
-                  class="sidebar__campaign sidebar-campaign sidebar-campaign__list"
+                  class="sidebar__campaign sidebar-campaign"
                 >
                   <li class="sidebar-campaign__item">
                     <a
                       href="#"
-                      class="sidebar-campaign__card sidebar-campaign-card"
+                      class="sidebar-campaign__card campaign-card campaign-card--sidebar"
                     >
-                      <div class="sidebar-campaign-card__image">
+                      <div class="campaign-card__image campaign-card__image--sidebar">
                         <picture>
                           <source
                             srcset="./assets/images/common/campaign-1.webp"
@@ -725,17 +709,17 @@
                         </picture>
                       </div>
                       <div
-                        class="sidebar-campaign-card__body campaign-card__body"
+                        class="campaign-card__body campaign-card__body--sidebar"
                       >
                         <div
-                          class="sidebar-campaign-card__head campaign-card__head"
+                          class="campaign-card__head campaign-card__head--sidebar"
                         >
                           <div class="campaign-card__title">
                             <p>ライセンス取得</p>
                           </div>
                         </div>
                         <div
-                          class="sidebar-campaign-card__foot campaign-card__foot"
+                          class="campaign-card__foot campaign-card__foot--sidebar"
                         >
                           <div class="campaign-card__text">
                             <p>全部コミコミ(お一人様)</p>
@@ -751,9 +735,9 @@
                   <li class="sidebar-campaign__item">
                     <a
                       href="#"
-                      class="sidebar-campaign__card sidebar-campaign-card"
+                      class="sidebar-campaign__card campaign-card campaign-card--sidebar"
                     >
-                      <div class="sidebar-campaign-card__image">
+                      <div class="campaign-card__image campaign-card__image--sidebar">
                         <picture>
                           <source
                             srcset="./assets/images/common/campaign-1.webp"
@@ -766,17 +750,17 @@
                         </picture>
                       </div>
                       <div
-                        class="sidebar-campaign-card__body campaign-card__body"
+                        class="campaign-card__body campaign-card__body--sidebar"
                       >
                         <div
-                          class="sidebar-campaign-card__head campaign-card__head"
+                          class="campaign-card__head campaign-card__head--sidebar"
                         >
                           <div class="campaign-card__title">
                             <p>ライセンス取得</p>
                           </div>
                         </div>
                         <div
-                          class="sidebar-campaign-card__foot campaign-card__foot"
+                          class="campaign-card__foot campaign-card__foot--sidebar"
                         >
                           <div class="campaign-card__text">
                             <p>全部コミコミ(お一人様)</p>

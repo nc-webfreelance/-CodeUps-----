@@ -32,9 +32,9 @@
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script defer src="./assets/js/jquery.inview.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script defer src="./assets/js/script.js"></script>
   </head>
   <body>
@@ -219,7 +219,10 @@
 
     <div class="notFound">
       <div class="notFound__inner">
-        <div class="breadcrumb breadcrumb--white">パンくずリスト</div>
+        <!-- パンくず -->
+        <div class="breadcrumb breadcrumb--white">
+          <div class="breadcrumb__inner inner">TOP > パンくず</div>
+        </div>
         <div class="notFound__content">
           <h1>404</h1>
           <p>

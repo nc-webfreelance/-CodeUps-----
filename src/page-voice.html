@@ -32,9 +32,9 @@
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script defer src="./assets/js/jquery.inview.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script defer src="./assets/js/script.js"></script>
   </head>
   <body>
@@ -250,30 +250,34 @@
     </div>
 
     <!-- パンくず -->
-    <div class="breadcrumb">パンくずリスト</div>
+    <div class="breadcrumb">
+      <div class="breadcrumb__inner inner">
+        TOP > パンくず
+      </div>
+    </div>
 
     <div class="page-voice layout-subPage">
-      <div class="page-voice__tab category-tab">
-        <ul class="category-tab__items">
-          <li
-            class="category-tab__item js-tab tab-active"
-            data-number="ライセンス講習, ファンダイビング, 体験ダイビング"
-          >
-            <p>ALL</p>
-          </li>
-          <li class="category-tab__item js-tab" data-number="ライセンス講習">
-            <p>ライセンス講習</p>
-          </li>
-          <li class="category-tab__item js-tab" data-number="ファンダイビング">
-            <p>ファンダイビング</p>
-          </li>
-          <li class="category-tab__item js-tab" data-number="体験ダイビング">
-            <p>体験ダイビング</p>
-          </li>
-        </ul>
-      </div>
       <div class="page-voice__inner inner">
-        <div class="page-voice__cards wide-cards">
+        <div class="page-voice__tab category-tab">
+          <ul class="category-tab__items">
+            <li
+              class="category-tab__item tab-active"
+              data-number="ライセンス講習, ファンダイビング, 体験ダイビング"
+            >
+              <a>ALL</a>
+            </li>
+            <li class="category-tab__item" data-number="ライセンス講習">
+              <a>ライセンス講習</a>
+            </li>
+            <li class="category-tab__item" data-number="ファンダイビング">
+              <a>ファンダイビング</a>
+            </li>
+            <li class="category-tab__item" data-number="体験ダイビング">
+              <a>体験ダイビング</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-voice__cards wide-cards wide-cards--page">
           <div id="ライセンス講習" class="wide-cards__item wide-card">
             <div class="wide-card__inner">
               <div class="wide-card__body">

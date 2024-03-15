@@ -1,13 +1,13 @@
 @use "global" as *;
 
-.page-faq-list {
-  max-width: rem(600);
-  width: 100%;
-  margin-inline: auto;
-  @include mq("md") {
-    max-width: rem(700);
-  }
-}
+// .page-faq-list {
+//   max-width: rem(600);
+//   width: 100%;
+//   margin-inline: auto;
+//   @include mq("md") {
+//     max-width: rem(700);
+//   }
+// }
 
 .page-faq-list__item {
   font-weight: $regular;
@@ -18,12 +18,15 @@
   margin-top: rem(40);
 }
 
+
+
 .page-faq-list__item-question {
   position: relative;
   font-size: rem(16);
   color: $white;
   background-color: $green;
   padding: rem(15);
+  cursor: pointer;
   @include mq("md") {
     font-size: rem(20);
     padding: rem(26) rem(40);
@@ -36,7 +39,7 @@
   position: absolute;
   top: 50%;
   right: rem(16);
-  width: rem(24);
+  width: rem(28);
   height: 1px;
   background-color: $white;
   transition: 0.3s transform, 0.3s opacity;
@@ -51,13 +54,17 @@
 }
 
 .page-faq-list__item-question.is-open::before {
-  width: rem(28);
   transform: rotate(180deg);
 }
 
 .page-faq-list__item-question.is-open::after {
   opacity: 0;
 }
+
+
+
+
+
 
 .page-faq-list__item-answer {
   font-size: rem(16);

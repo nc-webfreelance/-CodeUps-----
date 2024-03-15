@@ -32,9 +32,9 @@
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script defer src="./assets/js/jquery.inview.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script defer src="./assets/js/script.js"></script>
   </head>
   <body>
@@ -250,36 +250,34 @@
     </div>
 
     <!-- パンくず -->
-    <div class="breadcrumb">パンくずリスト</div>
+    <div class="breadcrumb">
+      <div class="breadcrumb__inner inner">TOP > パンくず</div>
+    </div>
 
     <div class="page-campaign layout-subPage">
-      <div class="page-campaign__tab category-tab">
-        <ul class="category-tab__items">
-          <li
-            class="category-tab__item js-tab tab-active"
-            data-number="ライセンス講習, ファンダイビング, 体験ダイビング"
-          >
-            <p>ALL</p>
-          </li>
-          <li class="category-tab__item js-tab" data-number="ライセンス講習">
-            <p>ライセンス講習</p>
-          </li>
-          <li class="category-tab__item js-tab" data-number="ファンダイビング">
-            <p>ファンダイビング</p>
-          </li>
-          <li class="category-tab__item js-tab" data-number="体験ダイビング">
-            <p>体験ダイビング</p>
-          </li>
-        </ul>
-      </div>
       <div class="page-campaign__inner inner">
+        <div class="page-campaign__tab category-tab">
+          <ul class="category-tab__items">
+            <li
+              class="category-tab__item tab-active"
+              data-number="ライセンス講習, ファンダイビング, 体験ダイビング"
+            >
+              <a>ALL</a>
+            </li>
+            <li class="category-tab__item" data-number="ライセンス講習">
+              <a>ライセンス講習</a>
+            </li>
+            <li class="category-tab__item" data-number="ファンダイビング">
+              <a>ファンダイビング</a>
+            </li>
+            <li class="category-tab__item" data-number="体験ダイビング">
+              <a>体験ダイビング</a>
+            </li>
+          </ul>
+        </div>
         <div class="page-campaign__items">
-          <a
-            href="#"
-            id="ライセンス講習"
-            class="page-campaign__item campaign-card"
-          >
-            <div class="page-campaign__card-image campaign-card__image">
+          <div id="ライセンス講習" class="page-campaign__item campaign-card campaign-card--page">
+            <div class="campaign-card__image campaign-card__image--page">
               <picture>
                 <source
                   srcset="./assets/images/common/campaign-1.webp"
@@ -291,16 +289,16 @@
                 />
               </picture>
             </div>
-            <div class="page-campaign__card-body campaign-card__body">
-              <div class="page-campaign__card-head campaign-card__head">
+            <div class="campaign-card__body campaign-card__body--page">
+              <div class="campaign-card__head campaign-card__head--page">
                 <div class="campaign-card__category">
                   <p>ライセンス講習</p>
                 </div>
-                <div class="page-campaign__card-title campaign-card__title">
+                <div class="campaign-card__title campaign-card__title--page">
                   <h2>ライセンス取得</h2>
                 </div>
               </div>
-              <div class="page-campaign__card-foot campaign-card__foot">
+              <div class="campaign-card__foot campaign-card__foot--page">
                 <div class="campaign-card__text">
                   <p>全部コミコミ(お一人様)</p>
                 </div>
@@ -317,19 +315,13 @@
                   ご予約・お問い合わせはコチラ
                 </p>
                 <div class="page-campaign__cardBtn u-desktop">
-                  <object>
-                    <a class="button" href="#"><span>View more</span></a>
-                  </object>
+                  <a class="button" href="#"><span>View more</span></a>
                 </div>
               </div>
             </div>
-          </a>
-          <a
-            href="#"
-            id="体験ダイビング"
-            class="page-campaign__item campaign-card"
-          >
-            <div class="page-campaign__card-image campaign-card__image">
+          </div>
+          <div id="体験ダイビング" class="page-campaign__item campaign-card campaign-card--page">
+            <div class="campaign-card__image campaign-card__image--page">
               <picture>
                 <source
                   srcset="./assets/images/common/campaign-2.webp"
@@ -341,16 +333,16 @@
                 />
               </picture>
             </div>
-            <div class="page-campaign__card-body campaign-card__body">
-              <div class="page-campaign__card-head campaign-card__head">
+            <div class="campaign-card__body campaign-card__body--page">
+              <div class="campaign-card__head campaign-card__head--page">
                 <div class="campaign-card__category">
                   <p>体験ダイビング</p>
                 </div>
-                <div class="page-campaign__card-title campaign-card__title">
+                <div class="campaign-card__title campaign-card__title--page">
                   <h2>貸切体験ダイビング</h2>
                 </div>
               </div>
-              <div class="page-campaign__card-foot campaign-card__foot">
+              <div class="campaign-card__foot campaign-card__foot--page">
                 <div class="campaign-card__text">
                   <p>全部コミコミ(お一人様)</p>
                 </div>
@@ -367,19 +359,13 @@
                   ご予約・お問い合わせはコチラ
                 </p>
                 <div class="page-campaign__cardBtn u-desktop">
-                  <object>
-                    <a class="button" href="#"><span>View more</span></a>
-                  </object>
+                  <a class="button" href="#"><span>View more</span></a>
                 </div>
               </div>
             </div>
-          </a>
-          <a
-            href="#"
-            id="体験ダイビング"
-            class="page-campaign__item campaign-card"
-          >
-            <div class="page-campaign__card-image campaign-card__image">
+          </div>
+          <div id="体験ダイビング" class="page-campaign__item campaign-card campaign-card--page">
+            <div class="campaign-card__image campaign-card__image--page">
               <picture>
                 <source
                   srcset="./assets/images/common/campaign-3.webp"
@@ -391,16 +377,16 @@
                 />
               </picture>
             </div>
-            <div class="page-campaign__card-body campaign-card__body">
-              <div class="page-campaign__card-head campaign-card__head">
+            <div class="campaign-card__body campaign-card__body--page">
+              <div class="campaign-card__head campaign-card__head--page">
                 <div class="campaign-card__category">
                   <p>体験ダイビング</p>
                 </div>
-                <div class="page-campaign__card-title campaign-card__title">
+                <div class="campaign-card__title campaign-card__title--page">
                   <h2>ナイトダイビング</h2>
                 </div>
               </div>
-              <div class="page-campaign__card-foot campaign-card__foot">
+              <div class="campaign-card__foot campaign-card__foot--page">
                 <div class="campaign-card__text">
                   <p>全部コミコミ(お一人様)</p>
                 </div>
@@ -417,19 +403,13 @@
                   ご予約・お問い合わせはコチラ
                 </p>
                 <div class="page-campaign__cardBtn u-desktop">
-                  <object>
-                    <a class="button" href="#"><span>View more</span></a>
-                  </object>
+                  <a class="button" href="#"><span>View more</span></a>
                 </div>
               </div>
             </div>
-          </a>
-          <a
-            href="#"
-            id="ファンダイビング"
-            class="page-campaign__item campaign-card"
-          >
-            <div class="page-campaign__card-image campaign-card__image">
+          </div>
+          <div id="ファンダイビング" class="page-campaign__item campaign-card campaign-card--page">
+            <div class="campaign-card__image campaign-card__image--page">
               <picture>
                 <source
                   srcset="./assets/images/common/campaign-4.webp"
@@ -441,16 +421,16 @@
                 />
               </picture>
             </div>
-            <div class="page-campaign__card-body campaign-card__body">
-              <div class="page-campaign__card-head campaign-card__head">
+            <div class="campaign-card__body campaign-card__body--page">
+              <div class="campaign-card__head campaign-card__head--page">
                 <div class="campaign-card__category">
                   <p>ファンダイビング</p>
                 </div>
-                <div class="page-campaign__card-title campaign-card__title">
+                <div class="campaign-card__title campaign-card__title--page">
                   <h2>貸切ファンダイビング</h2>
                 </div>
               </div>
-              <div class="page-campaign__card-foot campaign-card__foot">
+              <div class="campaign-card__foot campaign-card__foot--page">
                 <div class="campaign-card__text">
                   <p>全部コミコミ(お一人様)</p>
                 </div>
@@ -467,29 +447,27 @@
                   ご予約・お問い合わせはコチラ
                 </p>
                 <div class="page-campaign__cardBtn u-desktop">
-                  <object>
-                    <a class="button" href="#"><span>View more</span></a>
-                  </object>
+                  <a class="button" href="#"><span>View more</span></a>
                 </div>
               </div>
             </div>
-          </a>
+          </div>
         </div>
-      </div>
-      <div class="page-campaign__pagenavi pagenavi">
-        <div class="wp-pagenavi" role="navigation">
-          <a class="previouspostslink pagenavi-pre" rel="prev" href="#"
-            ><span></span
-          ></a>
-          <span class="current">1</span>
-          <a class="page larger" href="#">2</a>
-          <a class="page larger" href="#">3</a>
-          <a class="page larger" href="#">4</a>
-          <a class="u-desktop page larger" href="#">5</a>
-          <a class="u-desktop page larger" href="#">6</a>
-          <a class="nextpostslink pagenavi-next" rel="next" href="#"
-            ><span></span
-          ></a>
+        <div class="page-campaign__pagenavi pagenavi">
+          <div class="wp-pagenavi" role="navigation">
+            <a class="previouspostslink pagenavi-pre" rel="prev" href="#"
+              ><span></span
+            ></a>
+            <span class="current">1</span>
+            <a class="page larger" href="#">2</a>
+            <a class="page larger" href="#">3</a>
+            <a class="page larger" href="#">4</a>
+            <a class="u-desktop page larger" href="#">5</a>
+            <a class="u-desktop page larger" href="#">6</a>
+            <a class="nextpostslink pagenavi-next" rel="next" href="#"
+              ><span></span
+            ></a>
+          </div>
         </div>
       </div>
     </div>

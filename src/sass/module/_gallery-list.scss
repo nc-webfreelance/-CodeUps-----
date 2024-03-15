@@ -11,6 +11,7 @@
 }
 
 .gallery-list__item {
+  cursor: pointer;
   @include mq("md") {
     grid-column: span 6;
     grid-row: span 1;

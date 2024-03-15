@@ -141,8 +141,9 @@ jQuery(function ($) {
     });
   });
 
+
   // タブ
-  jQuery(function ($) {
+  $(function () {
     $(".js-tab").on("click", function () {
       $(".js-tab").removeClass("tab-active");
       $(".js-tab-content").removeClass("tab-active");
@@ -151,4 +152,10 @@ jQuery(function ($) {
       $("#" + number).addClass("tab-active");
     });
   });
+
+
+
+
+
+
 });
