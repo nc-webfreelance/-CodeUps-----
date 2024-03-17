@@ -54,6 +54,7 @@
   height: rem(60);
   padding: rem(10) rem(16);
   box-shadow: 2px 2px 4px rgba($color: $black, $alpha: 0.3);
+  transition: 0.3s;
   cursor: pointer;
   @include mq("md") {
     display: flex;
@@ -101,11 +102,13 @@
   mask-image: url(../images/common/fish-logo.svg);
 }
 
-.tab__menu-item.tab-active p::before {
+.tab__menu-item.tab-active p::before,
+.tab__menu-item:hover p::before {
   background-color: $white;
 }
 
-.tab__menu-item.tab-active {
+.tab__menu-item.tab-active,
+.tab__menu-item:hover {
   color: $white;
   background-color: $green;
 }
@@ -119,13 +122,16 @@
 
 .tab__content-item {
   display: none;
-  padding: rem(24);
-  border: 1px solid $green;
 }
 
 .tab__content-item.tab-active {
   display: block;
-  animation: fade 0.3s;
+  animation: fade 0.5s;
+}
+
+.tab__content-wrap {
+  padding: rem(24);
+  border: 1px solid $green;
   @include mq("md") {
     display: flex;
     gap: rem(48);

@@ -142,20 +142,34 @@ jQuery(function ($) {
   });
 
 
-  // タブ
+  // タブ切り替え
+  // $(function () {
+  //   $(".js-tab").on("click", function () {
+  //     $(".js-tab").removeClass("tab-active");
+  //     $(".js-tab-content").removeClass("tab-active");
+  //     $(this).addClass("tab-active");
+  //     let number = $(this).data("number");
+  //     $("#" + number).addClass("tab-active");
+  //   });
+  // });
+
   $(function () {
     $(".js-tab").on("click", function () {
       $(".js-tab").removeClass("tab-active");
       $(".js-tab-content").removeClass("tab-active");
       $(this).addClass("tab-active");
-      var number = $(this).data("number");
-      $("#" + number).addClass("tab-active");
+      let index = $(this).index();
+      $(".js-tab-content").hide().eq(index).fadeIn(300);
     });
+    let urlParams = new URLSearchParams(window.location.search);
+    let tabId = urlParams.get("tabId");
+    if (tabId) {
+      $(".tab-active").removeClass("tab-active");
+      // タブがクエリパラメーターで指定された場合、該当のタブにtab-activeクラスを付与
+      $(".js-tab[data-tab-id=\"".concat(tabId, "\"]")).addClass("tab-active");
+      let index = $(".js-tab[data-tab-id=\"".concat(tabId, "\"]")).index();
+      $(".js-tab-content").hide().eq(index).fadeIn(300);
+    }
   });
-
-
-
-
-
 
 });

@@ -1,9 +1,5 @@
 @use "global" as *;
 
-.two-col {
-
-}
-
 .two-col__wrap {
   max-width: rem(580);
   width: 100%;
@@ -23,7 +19,6 @@
   }
 }
 
-
 .two-col__left::before {
   content: "";
   position: absolute;
@@ -41,7 +36,6 @@
     top: rem(-70);
     left: calc(79% - min(48vw, rem(630)));
     max-width: rem(301);
-    // height: rem(138);
   }
 }
 

@@ -1,15 +1,5 @@
 @use "global" as *;
 
-// .category-tab {
-//   max-width: rem(600);
-//   width: 100%;
-//   padding: 0 rem(15);
-//   margin-inline: auto;
-//   @include mq("md") {
-//     max-width: rem(1110);
-//   }
-// }
-
 .category-tab__items {
   position: relative;
   display: flex;
