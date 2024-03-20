@@ -35,7 +35,7 @@
 }
 
 .single-blog__body {
-  display: flex;
+  display: grid;
   flex-direction: column;
   gap: rem(24);
   margin-top: rem(24);

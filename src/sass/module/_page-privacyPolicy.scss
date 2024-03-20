@@ -1,9 +1,11 @@
 @use "global" as *;
 
+.page-privacyPolicy__inner.inner {
+  max-width: rem(800);
+}
+
 .page-privacyPolicy__content {
   position: relative;
-  max-width: rem(800);
-  margin-inline: auto;
 }
 
 .page-privacyPolicy__content::before {
@@ -36,6 +38,7 @@
 }
 
 .page-privacyPolicy__text {
+  display: grid;
   font-weight: $regular;
   font-size: rem(16);
   line-height: calc(32 / 16);
@@ -43,6 +46,12 @@
   @include mq("md") {
     margin-top: rem(48);
   }
+}
+
+.page-privacyPolicy__text p:not(:first-child),
+.page-privacyPolicy__text ul,
+.page-privacyPolicy__text ol:nth-child(2) {
+  margin-top: rem(32);
 }
 
 .page-privacyPolicy__text ol {

@@ -8,8 +8,11 @@
   }
 }
 
-.cards--archive.cards {
-  margin: 0 rem(5);
+.cards a:hover {
+opacity: 0.8;
+}
+
+.cards--archive {
   @include mq("md") {
     grid-template-columns: 1fr 1fr;
     row-gap: rem(87);
@@ -18,7 +21,4 @@
 
 .cards__item {
   box-shadow: 2px 2px 10px rgba($color: $black, $alpha: 0.3);
-  :hover {
-    opacity: 0.8;
-  }
 }

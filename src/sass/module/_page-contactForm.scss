@@ -4,6 +4,14 @@
   position: relative;
 }
 
+.page-contactForm__inner.inner {
+  max-width: rem(480);
+  @include mq("md") {
+    max-width: rem(700);
+  }
+
+}
+
 .page-contactForm::before {
   content: "";
   background-image: url(../images/common/blueFish-decoration-left.svg);

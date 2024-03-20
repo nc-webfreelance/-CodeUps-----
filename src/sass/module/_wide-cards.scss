@@ -9,7 +9,7 @@
   }
 }
 
-.wide-cards--page.wide-cards {
+.wide-cards--page {
   @include mq("md") {
     row-gap: rem(80);
   }
@@ -17,7 +17,4 @@
 
 .wide-cards__item {
   box-shadow: 2px 2px 10px rgba($color: $black, $alpha: 0.3);
-  :hover {
-    opacity: 0.8;
-  }
 }

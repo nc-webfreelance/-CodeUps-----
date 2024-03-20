@@ -1,9 +1,11 @@
 @use "global" as *;
 
+.page-termsOfService__inner.inner {
+  max-width: rem(800);
+}
+
 .page-termsOfService__content {
   position: relative;
-  max-width: rem(800);
-  margin-inline: auto;
 }
 
 .page-termsOfService__content::before {
@@ -37,6 +39,7 @@
 }
 
 .page-termsOfService__text {
+  display: grid;
   font-weight: $regular;
   font-size: rem(16);
   line-height: calc(32 / 16);
@@ -45,6 +48,12 @@
     margin-top: rem(48);
   }
 }
+
+.page-termsOfService__text p:last-child,
+.page-termsOfService__text ol {
+  margin-top: rem(32);
+}
+
 
 .page-termsOfService__text ol {
   letter-spacing: 0.009em;
