@@ -63,17 +63,15 @@
   display: inline-block;
   border: 1px solid $green;
   padding: rem(3) rem(11);
+  font-weight: $regular;
+  font-size: rem(12);
+  line-height: calc(22 / 12);
+  color: $green;
   @include mq("md") {
     padding: rem(5) rem(15);
   }
 }
 
-.wide-card__category p {
-  font-weight: $regular;
-  font-size: rem(12);
-  line-height: calc(22 / 12);
-  color: $green;
-}
 
 .wide-card__head {
   margin-top: rem(-1);

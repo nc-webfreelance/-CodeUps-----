@@ -6,6 +6,7 @@
   border-bottom: 1px dashed $green;
   @include mq("md") {
     display: flex;
+    align-items: center;
     padding-bottom: rem(40);
     justify-content: space-between;
   }
@@ -34,7 +35,10 @@
 .form__label {
   font-weight: $bold;
   display: flex;
+  align-items: center;
 }
+
+
 
 .form__label span {
   display: flex;
@@ -103,4 +107,26 @@
 .form__btn-inner.button {
   padding-right: rem(112);
   padding-left: rem(56);
+}
+
+.wpcf7-response-output {
+  display: none;
+}
+.wpcf7-list-item {
+  display: block;
+  margin-left: 0;
+}
+
+.form__input.form-input {
+  display: block;
+}
+
+.form__wrap.form__wrap--textarea {
+  align-items: start;
+}
+
+
+
+.wpcf7-form-control-wrap.form__textarea.form-textarea {
+  display: block;
 }
