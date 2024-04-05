@@ -2,21 +2,7 @@
 
 
 <!-- 下層ページmv -->
-<div class="sub-mv js-mv-height">
-  <div class="sub-mv__inner">
-    <div class="sub-mv__image">
-      <picture>
-        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/sub-mv-voice-pc.webp" type="image/webp" media="(min-width: 768px)" />
-        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/sub-mv-voice-pc.jpg" type="image/jpeg" media="(min-width: 768px)" />
-        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/sub-mv-voice-sp.webp" type="image/webp" media="(max-width: 767px)" />
-        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/sub-mv-voice-sp.jpg" alt="青空とシーサー" />
-      </picture>
-    </div>
-    <div class="sub-mv__header">
-      <h1>Voice</h1>
-    </div>
-  </div>
-</div>
+<?php get_template_part('parts/sub-mv'); ?>
 
 <!-- パンくず -->
 <?php get_template_part('parts/breadcrumb'); ?>

@@ -72,7 +72,6 @@
   }
 }
 
-
 .wide-card__head {
   margin-top: rem(-1);
   @include mq("md") {
@@ -109,6 +108,10 @@
 
 .wide-card__text {
   margin-top: rem(14);
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
   @include mq("md") {
     margin-top: rem(40);
   }

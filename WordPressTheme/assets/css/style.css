@@ -546,14 +546,6 @@ textarea {
 	z-index: -1;
 }
 
-.blog.logged-in.admin-bar.customize-support.vsc-initialized {
-	padding-top: 0;
-}
-
-.blog.logged-in.admin-bar.customize-support.vsc-initialized::before {
-	display: none;
-}
-
 .blog__inner.inner {
 	margin-left: auto;
 	margin-right: auto;
@@ -937,7 +929,11 @@ textarea {
 }
 
 .card__text {
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 5;
+	display: -webkit-box;
 	margin-top: 1rem;
+	overflow: hidden;
 }
 
 .card__text p {
@@ -1198,13 +1194,21 @@ textarea {
 	margin-top: 0.5rem;
 }
 
+.wpcf7-list-item {
+	display: block;
+	margin-left: 0;
+}
+
+.wpcf7-list-item.first [type=checkbox] + span {
+	padding-top: 0;
+}
+
 .form__lastCheck {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 2.5625rem;
 	max-width: 21.5625rem;
-	padding-left: 1.875rem;
-	text-align: left;
+	text-align: center;
 	width: 100%;
 }
 
@@ -1213,7 +1217,6 @@ textarea {
 	font-size: 0.875rem;
 	font-weight: 400;
 	line-height: 1.5;
-	padding-left: 1.875rem;
 	padding-top: 0;
 	text-align: left;
 }
@@ -1223,9 +1226,23 @@ textarea {
 	width: 1.375rem;
 }
 
+.form__lastCheck span .wpcf7-list-item-label {
+	padding-left: 1.875rem;
+}
+
 .form__btn {
 	margin-top: 1.5rem;
 	text-align: center;
+}
+
+button,
+[type=button],
+[type=submit] {
+	padding: 0;
+}
+
+.form__btn-inner.button span {
+	padding: 0;
 }
 
 .form__btn-inner.button {
@@ -1237,21 +1254,17 @@ textarea {
 	display: none;
 }
 
-.wpcf7-list-item {
-	display: block;
-	margin-left: 0;
-}
-
-.form__input.form-input {
-	display: block;
-}
-
-.form__wrap.form__wrap--textarea {
+.form__wrap.form__wrap--textarea,
+.form__wrap.form__wrap--cat {
 	align-items: start;
 }
 
-.wpcf7-form-control-wrap.form__textarea.form-textarea {
-	display: block;
+.wpcf7-spinner {
+	display: none;
+}
+
+.wpcf7-form-control.wpcf7-submit.has-spinner {
+	border-radius: inherit;
 }
 
 .gallery-list {
@@ -2921,7 +2934,11 @@ textarea {
 }
 
 .wide-card__text {
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 7;
+	display: -webkit-box;
 	margin-top: 0.875rem;
+	overflow: hidden;
 }
 
 .wide-card__text p {
@@ -3398,11 +3415,11 @@ select {
 .form__lastCheck {
 	margin-top: 4.9375rem;
 	max-width: 26.25rem;
-	padding-left: 1.5rem;
+	padding: 0;
 }
 
-.form__lastCheck span {
-	padding-left: 2.3125rem;
+.form__lastCheck span .wpcf7-list-item-label {
+	padding-left: 2.375rem;
 }
 
 .form__btn {
@@ -3615,10 +3632,14 @@ select {
 }
 
 .page-campaign__cardText {
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 6;
+	display: -webkit-box;
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;
 	margin-top: 1.5rem;
+	overflow: hidden;
 	text-align: left;
 }
 

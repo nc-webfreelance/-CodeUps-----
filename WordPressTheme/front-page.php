@@ -1,21 +1,36 @@
 <?php get_header(); ?>
 
-
-<?php
-$home = esc_url(home_url('/ '));
-$campaign = esc_url(home_url('/campaign/ '));
-$aboutus = esc_url(home_url('/aboutus/ '));
-$information = esc_url(home_url('/information/ '));
-$blog = esc_url(home_url('/blog/ '));
-$voice = esc_url(home_url('/voice/ '));
-$price = esc_url(home_url('/price/ '));
-$faq = esc_url(home_url('/faq/ '));
-$privacyPolicy = esc_url(home_url('/privacyPolicy/ '));
-$termsOfService = esc_url(home_url('/termsOfService/ '));
-$contact = esc_url(home_url('/contact/ '));
-?>
-
 <body>
+
+
+  <?php
+  $home = esc_url(home_url('/ '));
+  $campaign = esc_url(home_url('/campaign/ '));
+  $aboutus = esc_url(home_url('/aboutus/ '));
+  $information = esc_url(home_url('/information/ '));
+  $blog = esc_url(home_url('/blog/ '));
+  $voice = esc_url(home_url('/voice/ '));
+  $price = esc_url(home_url('/price/ '));
+  $faq = esc_url(home_url('/faq/ '));
+  $privacyPolicy = esc_url(home_url('/privacyPolicy/ '));
+  $termsOfService = esc_url(home_url('/termsOfService/ '));
+  $contact = esc_url(home_url('/contact/ '));
+  ?>
+
+
+
+
+
+  <?php
+  $mv_sp1 = get_field('mv_sp1');
+  $mv_sp2 = get_field('mv_sp2');
+  $mv_sp3 = get_field('mv_sp3');
+  $mv_sp4 = get_field('mv_sp4');
+  $mv_pc1 = get_field('mv_pc1');
+  $mv_pc2 = get_field('mv_pc2');
+  $mv_pc3 = get_field('mv_pc3');
+  $mv_pc4 = get_field('mv_pc4');
+  ?>
 
   <section id="top" class="mv js-mv-height">
     <div class="mv__inner">
@@ -23,34 +38,26 @@ $contact = esc_url(home_url('/contact/ '));
         <div class="mv-swiper__wrapper swiper-wrapper">
           <div class="mv-swiper__slide swiper-slide">
             <picture>
-              <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/mv-pc-1.webp" type="image/webp" media="(min-width: 768px)" />
-              <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/mv-pc-1.jpg" type="image/jpeg" media="(min-width: 768px)" />
-              <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/mv-1.webp" type="image/webp" media="(max-width: 767px)" />
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/mv-1.jpg" alt="透き通る海の中で泳いでいる亀" />
+              <source srcset="<?php echo $mv_pc1 ?>" media="(min-width: 768px)">
+              <img src="<?php echo $mv_sp1 ?>" alt="">
             </picture>
           </div>
           <div class="mv-swiper__slide swiper-slide">
             <picture>
-              <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/mv-pc-2.webp" type="image/webp" media="(min-width: 768px)" />
-              <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/mv-pc-2.jpg" type="image/jpeg" media="(min-width: 768px)" />
-              <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/mv-2.webp" type="image/webp" media="(max-width: 767px)" />
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/mv-2.jpg" alt="海の中で亀が泳いでいるところを下から見た様子" />
+              <source srcset="<?php echo $mv_pc2 ?>" media="(min-width: 768px)">
+              <img src="<?php echo $mv_sp2 ?>" alt="">
             </picture>
           </div>
           <div class="mv-swiper__slide swiper-slide">
             <picture>
-              <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/mv-pc-3.webp" type="image/webp" media="(min-width: 768px)" />
-              <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/mv-pc-3.jpg" type="image/jpeg" media="(min-width: 768px)" />
-              <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/mv-3.webp" type="image/webp" media="(max-width: 767px)" />
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/mv-3.jpg" alt="海に浮かぶ一艘の船" />
+              <source srcset="<?php echo $mv_pc3 ?>" media="(min-width: 768px)">
+              <img src="<?php echo $mv_sp3 ?>" alt="">
             </picture>
           </div>
           <div class="mv-swiper__slide swiper-slide">
             <picture>
-              <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/mv-pc-4.webp" type="image/webp" media="(min-width: 768px)" />
-              <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/mv-pc-4.jpg" type="image/jpeg" media="(min-width: 768px)" />
-              <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/mv-4.webp" type="image/webp" media="(max-width: 767px)" />
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/mv-4.jpg" alt="晴れ渡った空と、砂浜と海" />
+              <source srcset="<?php echo $mv_pc4 ?>" media="(min-width: 768px)">
+              <img src="<?php echo $mv_sp4 ?>" alt="">
             </picture>
           </div>
         </div>
@@ -61,6 +68,9 @@ $contact = esc_url(home_url('/contact/ '));
       </div>
     </div>
   </section>
+
+
+
 
 
 
@@ -121,15 +131,6 @@ $contact = esc_url(home_url('/contact/ '));
         <div class="swiper-button-next u-desktop"></div>
       </div>
     </section>
-
-
-
-
-
-
-
-
-
 
     <section id="aboutus" class="aboutus layout-top">
       <div class="aboutus__inner inner">
@@ -256,10 +257,6 @@ $contact = esc_url(home_url('/contact/ '));
     </section>
 
 
-
-
-
-
     <?php
     $args = array(
       'post_type' => 'voice',
@@ -312,6 +309,7 @@ $contact = esc_url(home_url('/contact/ '));
           </div>
         </div>
       </section>
+
 
       <section id="price" class="price layout-top">
         <div class="price__inner inner">
@@ -423,6 +421,4 @@ $contact = esc_url(home_url('/contact/ '));
       <?php get_template_part('parts/contact'); ?>
 
 </body>
-
-
 <?php get_footer(); ?>

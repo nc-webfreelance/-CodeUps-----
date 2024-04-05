@@ -221,3 +221,10 @@ add_filter('wpcf7_autop_or_not', 'wpcf7_autop_return_false');
 function wpcf7_autop_return_false() {
   return false;
 }
+
+
+// home.phpのbodyからクラス名削除
+add_filter('body_class', function($classes){
+	unset($classes[array_search('blog', $classes)]);
+return $classes;
+});

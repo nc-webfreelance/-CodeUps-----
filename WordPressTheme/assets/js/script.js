@@ -42,15 +42,15 @@ jQuery(function ($) {
   });
 
   // スワイパー
-  var swiper = new Swiper(".js-swiper", {
-    loop: true,
-    effect: "fade",
-    speed: 3000,
-    allowTouchMove: false,
-    autoplay: {
-      delay: 3000
-    }
-  });
+  // const swiper = new Swiper(".js-swiper", {
+  //   loop: true,
+  //   effect: "fade",
+  //   speed: 3000,
+  //   allowTouchMove: false,
+  //   autoplay: {
+  //     delay: 3000,
+  //   },
+  // });
   var campaignSwiper = new Swiper(".js-campaign-swiper", {
     loop: true,
     speed: 1500,

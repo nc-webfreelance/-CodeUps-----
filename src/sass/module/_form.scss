@@ -1,6 +1,5 @@
 @use "global" as *;
 
-
 .form__wrap {
   padding-bottom: rem(24);
   border-bottom: 1px dashed $green;
@@ -38,8 +37,6 @@
   align-items: center;
 }
 
-
-
 .form__label span {
   display: flex;
   align-items: center;
@@ -64,16 +61,26 @@
   }
 }
 
+.wpcf7-list-item {
+  display: block;
+  margin-left: 0;
+}
+
+.wpcf7-list-item.first [type="checkbox"] + span {
+  padding-top: 0;
+}
+
 .form__lastCheck {
-  text-align: left;
-  padding-left: rem(30);
+  text-align: center;
+  // padding-left: rem(30);
   margin-top: rem(41);
   max-width: rem(345);
   width: 100%;
   margin-inline: auto;
   @include mq("md") {
     max-width: rem(420);
-    padding-left: rem(24);
+    // padding-left: rem(24);
+    padding: 0;
     margin-top: rem(79);
   }
 }
@@ -85,15 +92,23 @@
   line-height: 1.5;
   text-align: left;
   padding-top: 0;
-  padding-left: rem(30);
+  // padding-left: rem(30);
   @include mq("md") {
-    padding-left: rem(37);
+    // padding-left: rem(37);
   }
 }
 
 .form__lastCheck span::before {
   width: rem(22);
   height: rem(22);
+}
+
+.form__lastCheck span
+.wpcf7-list-item-label {
+  padding-left: rem(30);
+  @include mq("md") {
+    padding-left: rem(38);
+  }
 }
 
 .form__btn {
@@ -104,6 +119,16 @@
   }
 }
 
+button,
+[type="button"],
+[type="submit"] {
+  padding: 0;
+}
+
+.form__btn-inner.button span {
+  padding: 0;
+}
+
 .form__btn-inner.button {
   padding-right: rem(112);
   padding-left: rem(56);
@@ -112,21 +137,22 @@
 .wpcf7-response-output {
   display: none;
 }
-.wpcf7-list-item {
-  display: block;
-  margin-left: 0;
-}
 
-.form__input.form-input {
-  display: block;
-}
-
-.form__wrap.form__wrap--textarea {
+.form__wrap.form__wrap--textarea,
+.form__wrap.form__wrap--cat {
   align-items: start;
 }
 
-
-
-.wpcf7-form-control-wrap.form__textarea.form-textarea {
-  display: block;
+.wpcf7-spinner {
+  display: none;
 }
+
+.wpcf7-form-control.wpcf7-submit.has-spinner {
+  border-radius: inherit;
+}
+
+// button.form__btn-inner.wpcf7-form-control.wpcf7-submit.has-spinner:hover
+// .button:hover, [type=button]:hover, [type=submit]:hover {
+//   color: $green;
+//   height: inherit;
+// }

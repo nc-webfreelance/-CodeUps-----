@@ -23,13 +23,6 @@
   z-index: -1;
 }
 
-.blog.logged-in.admin-bar.customize-support.vsc-initialized {
-  padding-top: 0;
-}
-
-.blog.logged-in.admin-bar.customize-support.vsc-initialized::before {
-  display: none;
-}
 
 .blog__inner.inner {
   max-width: rem(600);
