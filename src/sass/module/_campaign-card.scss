@@ -83,7 +83,7 @@
 .campaign-card__head {
   padding-bottom: rem(7);
   flex-grow: 1;
-  border-bottom: 2px solid $green;
+  border-bottom: 2px solid $second;
 }
 
 .campaign-card__head--page.campaign-card__head {
@@ -99,12 +99,12 @@
 
 .campaign-card__category {
   display: inline-block;
-  border: 1px solid $green;
+  border: 1px solid $second;
   padding: rem(3) rem(11);
   font-weight: $regular;
   font-size: rem(12);
   line-height: calc(22 / 12);
-  color: $green;
+  color: $base;
   @include mq("md") {
     padding: rem(5) rem(15);
   }
@@ -162,7 +162,7 @@
   justify-content: center;
   align-items: end;
   gap: rem(18);
-  font-family: $lato-font-family;
+  font-family: $mont-font-family;
   font-weight: $bold;
   line-height: 1;
   margin-top: rem(8);
@@ -183,7 +183,7 @@
 
 .campaign-card__price-after {
   font-size: rem(32);
-  color: $green;
+  color: $base;
   @include mq("md") {
     font-size: rem(40);
   }

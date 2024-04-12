@@ -27,9 +27,8 @@ function my_script_init()
 
 	// Googleフォント
 	// wp_enqueue_style('google-font', "https://fonts.googleapis.com/css2?family=Gotu&family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&display=swap", false);
-	wp_enqueue_style('Gotu', '//fonts.googleapis.com/css2?family=Gotu:wght@400;700&display=swap');
-	wp_enqueue_style('Lato', '//fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 	wp_enqueue_style('NotoSansJP', '//fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
+	wp_enqueue_style('Montserrat', '//fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
 	// css
 	wp_enqueue_style('swiper-css', "https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css", false);
@@ -228,3 +227,42 @@ add_filter('body_class', function($classes){
 	unset($classes[array_search('blog', $classes)]);
 return $classes;
 });
+
+//記事のアクセス数を表示
+function getPostViews($postID){
+	$count_key = 'post_views_count';
+	$count = get_post_meta($postID, $count_key, true);
+	if($count==''){
+					delete_post_meta($postID, $count_key);
+					add_post_meta($postID, $count_key, '0');
+					return "0 View";
+	}
+	return $count.' Views';
+}
+
+//記事のアクセス数を保存
+function setPostViews($postID) {
+	$count_key = 'post_views_count';
+	$count = get_post_meta($postID, $count_key, true);
+	if($count==''){
+					$count = 0;
+					delete_post_meta($postID, $count_key);
+					add_post_meta($postID, $count_key, '0');
+	}else{
+					$count++;
+					update_post_meta($postID, $count_key, $count);
+	}
+}
+remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
+
+
+
+/**
+ * @param string $page_title ページのtitle属性値
+ * @param string $menu_title 管理画面のメニューに表示するタイトル
+ * @param string $capability メニューを操作できる権限（manage_options とか）
+ * @param string $menu_slug オプションページのスラッグ。ユニークな値にすること。
+ * @param string|null $icon_url メニューに表示するアイコンの URL
+ * @param int $position メニューの位置
+ */
+SCF::add_options_page( 'faq-list', 'FAQ', 'manage_options', 'theme-options');

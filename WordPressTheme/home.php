@@ -45,7 +45,7 @@
   </div>
 </div>
 
-<!-- sub-contact -->
-<?php get_template_part('parts/sub-contact'); ?>
+<!-- contact -->
+<?php get_template_part('parts/contact'); ?>
 
 <?php get_footer(); ?>

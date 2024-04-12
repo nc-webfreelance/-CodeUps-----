@@ -5,7 +5,7 @@
   @return math.div($pixels, 16) * 1rem;
 }
 /*デフォルト色の指定*/
-$border-cr-default: $green; //デフォルト時のボーダーの色
+$border-cr-default: $base; //デフォルト時のボーダーの色
 $border-cr: $black; //inputのhover or focus時の色
 $back-cr: $white; //input（テキスト系）の背景色
 
@@ -13,7 +13,7 @@ $back-cr: $white; //input（テキスト系）の背景色
 $fz: rem(16); //入力するときのfont-size
 $padding-und: rem(6.5); //paddingの指定（上下） inputの内側の余白で使う
 $padding-lnr: rem(16); //paddingの指定（左右） inputの内側の余白で使う
-$border-r: 0; //border-radius（テキスト系）
+$border-r: rem(12); //border-radius（テキスト系）
 
 /*ボタン系の指定*/
 $fz-btn: rem(14); //送信ボタンのfont-size
@@ -38,7 +38,7 @@ $radio-space-betweenRadio: rem(35); //ラジオボタンの間の距離
 $check-fz: rem(16); //フォントサイズ
 $check-size: rem(14); //外枠の幅高さ
 $check-bg-cr: #fff; //外枠の背景色
-$check-border-cr: $green; //外枠の色
+$check-border-cr: $base; //外枠の色
 $check-bg-cr-inner: #c94800; //チェックマークの背景色
 $check-space: rem(8); //チェックマークと文字の距離
 $check-space-betweenRadio: rem(12); //ラジオボタンの間の距離
@@ -105,7 +105,6 @@ button,
 
 [type="checkbox"] {
   display: none;
-
   + span {
     display: block;
     position: relative;
@@ -115,7 +114,7 @@ button,
     line-height: 1;
     cursor: pointer;
     transition: 0.3s ease;
-
+    
     &::before {
       position: absolute;
       content: "";
@@ -124,6 +123,7 @@ button,
       transform: translateY(-50%);
       background: $check-bg-cr;
       border: 1px solid $check-border-cr;
+      border-radius: rem(4);
       width: $check-size;
       height: $check-size;
       display: block;
@@ -212,5 +212,5 @@ textarea {
 }
 
 ::placeholder {
-  color: $light-green;
+  color: $light;
 }

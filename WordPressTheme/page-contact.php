@@ -7,9 +7,9 @@
 <?php get_template_part('parts/breadcrumb'); ?>
 
 
-<div class="page-contactForm layout-subPage">
-  <div class="page-contactForm__inner inner">
-    <div class="page-contactForm__items">
+<div class="page-contact layout-subPage">
+  <div class="page-contact__inner inner">
+    <div class="page-contact__items">
       <?php echo do_shortcode('[contact-form-7 id="b333011" title="お問い合わせ"]'); ?>
     </div>
   </div>
@@ -18,3 +18,5 @@
 
 
 <?php get_footer(); ?>
+
+

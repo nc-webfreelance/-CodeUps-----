@@ -33,7 +33,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  border-bottom: 1px solid $green;
+  border-bottom: 1px solid $second;
   width: 50%;
   margin-top: rem(-5);
   @include mq("md") {
@@ -61,12 +61,12 @@
 
 .wide-card__category {
   display: inline-block;
-  border: 1px solid $green;
+  border: 1px solid $second;
   padding: rem(3) rem(11);
   font-weight: $regular;
   font-size: rem(12);
   line-height: calc(22 / 12);
-  color: $green;
+  color: $base;
   @include mq("md") {
     padding: rem(5) rem(15);
   }

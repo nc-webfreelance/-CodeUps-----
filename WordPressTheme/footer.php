@@ -1,17 +1,14 @@
 <?php
 $home = esc_url(home_url('/ '));
-$campaign = esc_url(home_url('/campaign/ '));
-$aboutus = esc_url(home_url('/aboutus/ '));
-$information = esc_url(home_url('/information/ '));
+$service = esc_url(home_url('/service/ '));
 $blog = esc_url(home_url('/blog/ '));
-$voice = esc_url(home_url('/voice/ '));
 $price = esc_url(home_url('/price/ '));
 $faq = esc_url(home_url('/faq/ '));
-$privacyPolicy = esc_url(home_url('/privacyPolicy/ '));
-$termsOfService = esc_url(home_url('/termsOfService/ '));
+$information = esc_url(home_url('/information/ '));
 $contact = esc_url(home_url('/contact/ '));
+$privacypolicy = esc_url(home_url('/privacypolicy/ '));
+$sitemap = esc_url(home_url('/sitemap/ '));
 ?>
-
 
 
 
@@ -25,7 +22,7 @@ $contact = esc_url(home_url('/contact/ '));
 
 <?php if (is_404()) : ?>
   <footer class="footer">
-  <?php elseif (is_page('thanks')) : ?>
+  <?php elseif (is_page (array('contact','thanks')) ): ?>
     <footer class="footer layout-page-contact-footer">
     <?php else : ?>
       <footer class="footer layout-footer">
@@ -45,98 +42,67 @@ $contact = esc_url(home_url('/contact/ '));
           </div>
         </div>
         <nav class="footer__nav site-nav">
-          <div class="footer__nav-left site-nav__left">
-            <div class="site-nav__wrap">
-              <ul class="site-nav__left-items">
-                <li class="site-nav__left-item">
-                  <a href="<?php echo $campaign; ?>">キャンペーン</a>
-                </li>
-                <li class="site-nav__left-item">
-                  <a href="<?php echo $campaign; ?>">ライセンス取得</a>
-                </li>
-                <li class="site-nav__left-item">
-                  <a href="<?php echo $campaign; ?>">貸切体験ダイビング</a>
-                </li>
-                <li class="site-nav__left-item">
-                  <a href="<?php echo $campaign; ?>">ナイトダイビング</a>
-                </li>
-              </ul>
-              <ul class="site-nav__left-items">
-                <li class="site-nav__left-item">
-                  <a href="<?php echo $aboutus; ?>">私たちについて</a>
-                </li>
-              </ul>
-            </div>
-            <div class="site-nav__wrap">
-              <ul class="site-nav__left-items">
-                <li class="site-nav__left-item">
-                  <a href="<?php echo $information; ?>">ダイビング情報</a>
-                </li>
-                <li class="site-nav__left-item">
-                  <a href="<?php echo $information; ?>?tabId=tab1">ライセンス講習</a>
-                </li>
-                <li class="site-nav__left-item">
-                  <a href="<?php echo $information; ?>?tabId=tab3">体験ダイビング</a>
-                </li>
-                <li class="site-nav__left-item">
-                  <a href="<?php echo $information; ?>?tabId=tab2">ファンダイビング</a>
-                </li>
-              </ul>
-              <ul class="site-nav__left-items">
-                <li class="site-nav__left-item">
-                  <a href="<?php echo $blog; ?>">ブログ</a>
-                </li>
-              </ul>
-            </div>
+          <div class="site-nav__wrap">
+            <ul class="site-nav__items">
+              <li class="site-nav__item">
+                <a href="<?php echo $service; ?>">サービス</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="<?php echo $service; ?>?tabId=tab1">ホテル</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="<?php echo $service; ?>?tabId=tab2">トリミング</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="<?php echo $service; ?>?tabId=tab3">ドッグラン</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="<?php echo $service; ?>?tabId=tab4">グッズ販売</a>
+              </li>
+            </ul>
           </div>
-          <div class="footer__nav-right site-nav__right">
-            <div class="site-nav__wrap">
-              <ul class="site-nav__right-items">
-                <li class="site-nav__right-item">
-                  <a href="<?php echo $voice; ?>">お客様の声</a>
-                </li>
-              </ul>
-              <ul class="site-nav__right-items">
-                <li class="site-nav__right-item">
-                  <a href="<?php echo $price; ?>">料金一覧</a>
-                </li>
-                <li class="site-nav__right-item">
-                  <a href="<?php echo $price; ?>">ライセンス講習</a>
-                </li>
-                <li class="site-nav__right-item">
-                  <a href="<?php echo $price; ?>">体験ダイビング</a>
-                </li>
-                <li class="site-nav__right-item">
-                  <a href="<?php echo $price; ?>">ファンダイビング</a>
-                </li>
-              </ul>
-            </div>
-            <div class="site-nav__wrap">
-              <ul class="site-nav__right-items">
-                <li class="site-nav__right-item">
-                  <a href="<?php echo $faq; ?>">よくある質問</a>
-                </li>
-              </ul>
-              <ul class="site-nav__right-items">
-                <li class="site-nav__right-item">
-                  <a href="<?php echo $privacyPolicy; ?>">プライバシー<br class="u-mobile" />ポリシー</a>
-                </li>
-              </ul>
-              <ul class="site-nav__right-items">
-                <li class="site-nav__right-item">
-                  <a href="<?php echo $termsOfService; ?>">利用規約</a>
-                </li>
-              </ul>
-              <ul class="site-nav__right-items">
-                <li class="site-nav__right-item">
-                  <a href="<?php echo $contact; ?>">お問い合わせ</a>
-                </li>
-              </ul>
-            </div>
+          <div class="site-nav__wrap">
+            <ul class="site-nav__items">
+              <li class="site-nav__item">
+                <a href="<?php echo $blog; ?>">ブログ</a>
+              </li>
+            </ul>
+            <ul class="site-nav__items">
+              <li class="site-nav__item">
+                <a href="<?php echo $price; ?>">料金表</a>
+              </li>
+            </ul>
+            <ul class="site-nav__items">
+              <li class="site-nav__item">
+                <a href="<?php echo $faq; ?>">よくある質問</a>
+              </li>
+            </ul>
+            <ul class="site-nav__items">
+              <li class="site-nav__item">
+                <a href="<?php echo $information; ?>">店舗情報</a>
+              </li>
+            </ul>
+          </div>
+          <div class="site-nav__wrap">
+            <ul class="site-nav__items">
+              <li class="site-nav__item">
+                <a href="<?php echo $contact; ?>">お問い合わせ</a>
+              </li>
+            </ul>
+            <ul class="site-nav__items">
+              <li class="site-nav__item">
+                <a href="<?php echo $privacypolicy; ?>">プライバシー<br class="u-mobile" />ポリシー</a>
+              </li>
+            </ul>
+            <ul class="site-nav__items">
+              <li class="site-nav__item">
+                <a href="<?php echo $sitemap; ?>">サイトマップ</a>
+              </li>
+            </ul>
           </div>
         </nav>
         <div class="footer__copyright">
-          <small>Copyright &copy; 2021 - 2023 CodeUps LLC. All Rights
+          <small>&copy; 2001 - 2024 Star Violet. All Rights
             Reserved.</small>
         </div>
       </div>

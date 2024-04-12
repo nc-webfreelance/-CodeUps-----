@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="robots" content="noindex" />
+  <!-- <meta name="robots" content="noindex" /> -->
   <?php wp_head(); ?>
 </head>
 
@@ -17,16 +17,14 @@
 
   <?php
   $home = esc_url(home_url('/ '));
-  $campaign = esc_url(home_url('/campaign/ '));
-  $aboutus = esc_url(home_url('/aboutus/ '));
-  $information = esc_url(home_url('/information/ '));
+  $service = esc_url(home_url('/service/ '));
   $blog = esc_url(home_url('/blog/ '));
-  $voice = esc_url(home_url('/voice/ '));
   $price = esc_url(home_url('/price/ '));
   $faq = esc_url(home_url('/faq/ '));
-  $privacyPolicy = esc_url(home_url('/privacyPolicy/ '));
-  $termsOfService = esc_url(home_url('/termsOfService/ '));
+  $information = esc_url(home_url('/information/ '));
   $contact = esc_url(home_url('/contact/ '));
+  $privacypolicy = esc_url(home_url('/privacypolicy/ '));
+  $sitemap = esc_url(home_url('/sitemap/ '));
   ?>
 
 
@@ -59,35 +57,19 @@
         <div class="sp-nav__left js-drawer">
           <ul class="sp-nav__left-items">
             <li class="sp-nav__left-item">
-              <a href="<?php echo $campaign; ?>">キャンペーン</a>
+              <a href="<?php echo $service; ?>">サービス</a>
             </li>
             <li class="sp-nav__left-item">
-              <a href="<?php echo $campaign; ?>">ライセンス取得</a>
+              <a href="<?php echo $service; ?>?tabId=tab1">ホテル</a>
             </li>
             <li class="sp-nav__left-item">
-              <a href="<?php echo $campaign; ?>">貸切体験ダイビング</a>
+              <a href="<?php echo $service; ?>?tabId=tab2">トリミング</a>
             </li>
             <li class="sp-nav__left-item">
-              <a href="<?php echo $campaign; ?>">ナイトダイビング</a>
-            </li>
-          </ul>
-          <ul class="sp-nav__left-items">
-            <li class="sp-nav__left-item">
-              <a href="<?php echo $aboutus; ?>">私たちについて</a>
-            </li>
-          </ul>
-          <ul class="sp-nav__left-items">
-            <li class="sp-nav__left-item">
-              <a href="<?php echo $information; ?>">ダイビング情報</a>
+              <a href="<?php echo $service; ?>?tabId=tab3">ドッグラン</a>
             </li>
             <li class="sp-nav__left-item">
-              <a href="<?php echo $information; ?>?tabId=tab1">ライセンス講習</a>
-            </li>
-            <li class="sp-nav__left-item">
-              <a href="<?php echo $information; ?>?tabId=tab3">体験ダイビング</a>
-            </li>
-            <li class="sp-nav__left-item">
-              <a href="<?php echo $information; ?>">ファンダイビング</a>
+              <a href="<?php echo $service; ?>?tabId=tab4">グッズ販売</a>
             </li>
           </ul>
           <ul class="sp-nav__left-items">
@@ -95,27 +77,13 @@
               <a href="<?php echo $blog; ?>">ブログ</a>
             </li>
           </ul>
+          <ul class="sp-nav__left-items">
+            <li class="sp-nav__left-item">
+              <a href="<?php echo $price; ?>">料金表</a>
+            </li>
+          </ul>
         </div>
         <div class="sp-nav__right js-drawer">
-          <ul class="sp-nav__right-items">
-            <li class="sp-nav__right-item">
-              <a href="<?php echo $voice; ?>">お客様の声</a>
-            </li>
-          </ul>
-          <ul class="sp-nav__right-items">
-            <li class="sp-nav__right-item">
-              <a href="<?php echo $price; ?>">料金一覧</a>
-            </li>
-            <li class="sp-nav__right-item">
-              <a href="<?php echo $price; ?>">ライセンス講習</a>
-            </li>
-            <li class="sp-nav__right-item">
-              <a href="<?php echo $price; ?>">体験ダイビング</a>
-            </li>
-            <li class="sp-nav__right-item">
-              <a href="<?php echo $price; ?>">ファンダイビング</a>
-            </li>
-          </ul>
           <ul class="sp-nav__right-items">
             <li class="sp-nav__right-item">
               <a href="<?php echo $faq; ?>">よくある質問</a>
@@ -123,18 +91,22 @@
           </ul>
           <ul class="sp-nav__right-items">
             <li class="sp-nav__right-item">
-              <a href="<?php echo $privacyPolicy; ?>">プライバシー<br />
-                ポリシー</a>
-            </li>
-          </ul>
-          <ul class="sp-nav__right-items">
-            <li class="sp-nav__right-item">
-              <a href="<?php echo $termsOfService; ?>">利用規約</a>
+              <a href="<?php echo $information; ?>">店舗情報</a>
             </li>
           </ul>
           <ul class="sp-nav__right-items">
             <li class="sp-nav__right-item">
               <a href="<?php echo $contact; ?>">お問い合わせ</a>
+            </li>
+          </ul>
+          <ul class="sp-nav__right-items">
+            <li class="sp-nav__right-item">
+              <a href="<?php echo $privacypolicy; ?>">プライバシー <br class="u-mobile">ポリシー</a>
+            </li>
+          </ul>
+          <ul class="sp-nav__right-items">
+            <li class="sp-nav__right-item">
+              <a href="<?php echo $sitemap; ?>">サイトマップ</a>
             </li>
           </ul>
         </div>
@@ -145,26 +117,10 @@
   <nav class="header__pc-nav pc-nav js-pc-nav u-desktop">
     <ul class="pc-nav__items">
       <li class="pc-nav__item">
-        <a href="<?php echo $campaign; ?>">
+        <a href="<?php echo $service; ?>">
           <div class="pc-nav__text">
-            <p class="pc-nav__engtitle">Campaign</p>
-            <p class="pc-nav__jatitle">キャンペーン</p>
-          </div>
-        </a>
-      </li>
-      <li class="pc-nav__item">
-        <a href="<?php echo $aboutus; ?>">
-          <div class="pc-nav__text">
-            <p class="pc-nav__engtitle">About us</p>
-            <p class="pc-nav__jatitle">私たちについて</p>
-          </div>
-        </a>
-      </li>
-      <li class="pc-nav__item">
-        <a href="<?php echo $information; ?>">
-          <div class="pc-nav__text">
-            <p class="pc-nav__engtitle">Information</p>
-            <p class="pc-nav__jatitle">ダイビング情報</p>
+            <p class="pc-nav__engtitle">Service</p>
+            <p class="pc-nav__jatitle">サービス</p>
           </div>
         </a>
       </li>
@@ -177,18 +133,10 @@
         </a>
       </li>
       <li class="pc-nav__item">
-        <a href="<?php echo $voice; ?>">
-          <div class="pc-nav__text">
-            <p class="pc-nav__engtitle">Voice</p>
-            <p class="pc-nav__jatitle">お客様の声</p>
-          </div>
-        </a>
-      </li>
-      <li class="pc-nav__item">
         <a href="<?php echo $price; ?>">
           <div class="pc-nav__text">
             <p class="pc-nav__engtitle">Price</p>
-            <p class="pc-nav__jatitle">料金一覧</p>
+            <p class="pc-nav__jatitle">料金</p>
           </div>
         </a>
       </li>
@@ -197,6 +145,14 @@
           <div class="pc-nav__text">
             <p class="pc-nav__engtitle">FAQ</p>
             <p class="pc-nav__jatitle">よくある質問</p>
+          </div>
+        </a>
+      </li>
+      <li class="pc-nav__item">
+        <a href="<?php echo $information; ?>">
+          <div class="pc-nav__text">
+            <p class="pc-nav__engtitle">Information</p>
+            <p class="pc-nav__jatitle">店舗情報</p>
           </div>
         </a>
       </li>

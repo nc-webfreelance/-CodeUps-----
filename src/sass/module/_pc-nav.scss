@@ -48,13 +48,14 @@
 }
 
 .pc-nav__engtitle {
-  font-family: $gotu-font-family;
+  font-family: $mont-font-family;
   font-weight: $regular;
   font-size: rem(18);
   line-height: calc(22 / 18);
 }
 
 .pc-nav__jatitle {
+  font-family: $mont-font-family;
   font-weight: $regular;
   font-size: rem(10);
   line-height: 2;

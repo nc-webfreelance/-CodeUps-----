@@ -5,48 +5,44 @@
 }
 
 .section-header::first-letter {
-  color: $green;
+  color: $base;
 }
 
-.section-header.section-header--white::first-letter {
-  @include mq("md") {
-    color: $white;
-  }
-}
+// .section-header.section-header--white::first-letter {
+//   @include mq("md") {
+//     color: $white;
+//   }
+// }
 
-.section-header__engtitle {
+.section-header__title {
   display: block;
-  font-family: $gotu-font-family;
-  font-weight: $regular;
+  font-family: $mont-font-family;
+  font-weight: $bold;
   font-size: rem(32);
   line-height: calc(40 / 32);
-  color: $black;
+  color: $second;
   @include mq("md") {
     font-size: rem(40);
     line-height: 1;
   }
 }
 
-.section-header__engtitle.section-header__engtitle--white {
-  @include mq("md") {
-    color: $white;
-  }
+.section-header__title.section-header__title--white {
+  color: $white;
 }
 
-.section-header__jatitle {
-  font-family: $base-font-family;
-  font-weight: $regular;
+.section-header__subtitle {
+  font-family: $mont-font-family;
+  font-weight: $medium;
   font-size: rem(12);
   line-height: calc(18 / 12);
-  color: $green;
+  color: $base;
   margin-top: rem(4);
   @include mq("md") {
     margin-top: rem(8);
   }
 }
 
-.section-header__jatitle.section-header__jatitle--white {
-  @include mq("md") {
-    color: $white;
-  }
-}
+// .section-header__subtitle.section-header__subtitle--white {
+//   color: $white;
+// }

@@ -1,1 +1,21 @@
 @use "global" as *;
+
+.page-information {
+
+}
+
+.page-information__inner.inner {
+  max-width: rem(650);
+  width: 100%;
+  margin-inline: auto;
+  @include mq("md") {
+    max-width: rem(1160);
+  }
+}
+
+.page-information__company {
+  margin-top: rem(120);
+  @include mq("md") {
+    margin-top: rem(240);
+  }
+}

@@ -37,9 +37,9 @@
   font-weight: $regular;
   font-size: rem(14);
   line-height: calc(22 / 14);
-  color: $green;
+  color: $base;
   background-color: $white;
-  border: 1px solid $green;
+  border: 1px solid $second;
   text-align: center;
   width: rem(160);
   transition: 0.3s;
@@ -56,5 +56,5 @@
 .category-tab__item.tab-active,
 .category-tab__item:hover {
   color: $white;
-  background-color: $green;
+  background-color: $base;
 }

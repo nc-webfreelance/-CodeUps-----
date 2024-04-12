@@ -42,15 +42,15 @@ jQuery(function ($) {
   });
 
   // スワイパー
-  // const swiper = new Swiper(".js-swiper", {
-  //   loop: true,
-  //   effect: "fade",
-  //   speed: 3000,
-  //   allowTouchMove: false,
-  //   autoplay: {
-  //     delay: 3000,
-  //   },
-  // });
+  var swiper = new Swiper(".js-swiper", {
+    loop: true,
+    effect: "fade",
+    speed: 3000,
+    allowTouchMove: false,
+    autoplay: {
+      delay: 3000
+    }
+  });
   var campaignSwiper = new Swiper(".js-campaign-swiper", {
     loop: true,
     speed: 1500,
@@ -72,33 +72,28 @@ jQuery(function ($) {
   });
 
   // 画像を出現するアニメーション
-  var box = $(".information__image,.wide-card__image,.price__image"),
-    speed = 700;
-  box.each(function () {
-    $(this).append('<div class="img-color"></div>');
-    var color = $(this).find($(".img-color")),
-      image = $(this).find("img");
-    var counter = 0;
-    image.css("opacity", "0");
-    color.css("width", "0%");
-    color.on("inview", function () {
-      if (counter == 0) {
-        $(this).delay(200).animate({
-          width: "100%"
-        }, speed, function () {
-          image.css("opacity", "1");
-          $(this).css({
-            left: "0",
-            right: "auto"
-          });
-          $(this).animate({
-            width: "0%"
-          }, speed);
-        });
-        counter = 1;
-      }
-    });
-  });
+  // let box = $(".service__image,.wide-card__image,.price__image"),
+  //   speed = 700;
+  // box.each(function () {
+  //   $(this).append('<div class="img-color"></div>');
+  //   var color = $(this).find($(".img-color")),
+  //     image = $(this).find("img");
+  //   var counter = 0;
+  //   image.css("opacity", "0");
+  //   color.css("width", "0%");
+  //   color.on("inview", function () {
+  //     if (counter == 0) {
+  //       $(this)
+  //         .delay(200)
+  //         .animate({ width: "100%" }, speed, function () {
+  //           image.css("opacity", "1");
+  //           $(this).css({ left: "0", right: "auto" });
+  //           $(this).animate({ width: "0%" }, speed);
+  //         });
+  //       counter = 1;
+  //     }
+  //   });
+  // });
 
   // ハンバーガー,ドロワー
   $(".js-hamburger,.js-sp-nav,.js-drawer a").click(function () {

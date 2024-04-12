@@ -1,21 +1,29 @@
 
 <?php
-if (is_page('aboutus')) {
+if (is_page('service')) {
     $imagePc = '/assets/images/common/sub-mv-aboutus-pc';
     $imageSp = '/assets/images/common/sub-mv-aboutus-sp';
-    $title = 'About us';
-} elseif (is_page('contact')) {
-    $imagePc = '/assets/images/common/sub-mv-contact-pc';
-    $imageSp = '/assets/images/common/sub-mv-contact-sp';
-    $title = 'Contact';
-} elseif (is_page('information')) {
-    $imagePc = '/assets/images/common/sub-mv-information-pc';
-    $imageSp = '/assets/images/common/sub-mv-information-sp';
-    $title = 'Information';
+    $title = 'Service';
 } elseif (is_page('price')) {
     $imagePc = '/assets/images/common/sub-mv-price-pc';
     $imageSp = '/assets/images/common/sub-mv-price-sp';
     $title = 'Price';
+} elseif (is_page('service')) {
+    $imagePc = '/assets/images/common/sub-mv-service-pc';
+    $imageSp = '/assets/images/common/sub-mv-service-sp';
+    $title = 'service';
+} elseif (is_page('faq')) {
+    $imagePc = '/assets/images/common/sub-mv-faq-pc';
+    $imageSp = '/assets/images/common/sub-mv-faq-sp';
+    $title = 'FAQ';
+} elseif (is_page('information')) {
+    $imagePc = '/assets/images/common/sub-mv-pc';
+    $imageSp = '/assets/images/common/sub-mv-sp';
+    $title = 'Information';
+} elseif (is_page('contact')) {
+    $imagePc = '/assets/images/common/sub-mv-contact-pc';
+    $imageSp = '/assets/images/common/sub-mv-contact-sp';
+    $title = 'Contact';
 } elseif (is_page('privacypolicy')) {
     $imagePc = '/assets/images/common/sub-mv-pc';
     $imageSp = '/assets/images/common/sub-mv-sp';
@@ -24,10 +32,6 @@ if (is_page('aboutus')) {
     $imagePc = '/assets/images/common/sub-mv-pc';
     $imageSp = '/assets/images/common/sub-mv-sp';
     $title = 'Site MAP';
-} elseif (is_page('termsofservice')) {
-    $imagePc = '/assets/images/common/sub-mv-pc';
-    $imageSp = '/assets/images/common/sub-mv-sp';
-    $title = 'Terms of Service';
 } elseif (is_page('thanks')) {
     $imagePc = '/assets/images/common/sub-mv-contact-pc';
     $imageSp = '/assets/images/common/sub-mv-contact-sp';
@@ -36,26 +40,6 @@ if (is_page('aboutus')) {
     $imagePc = '/assets/images/common/sub-mv-blog-pc';
     $imageSp = '/assets/images/common/sub-mv-blog-sp';
     $title = 'Blog';
-} elseif (is_tax('campaign-category')) {
-    $imagePc = '/assets/images/common/sub-mv-campaign-pc';
-    $imageSp = '/assets/images/common/sub-mv-campaign-sp';
-    $title = 'Campaign';
-} elseif (is_tax('voice-category')) {
-    $imagePc = '/assets/images/common/sub-mv-voice-pc';
-    $imageSp = '/assets/images/common/sub-mv-voice-sp';
-    $title = 'Voice';
-} elseif (is_post_type_archive('campaign')) {
-    $imagePc = '/assets/images/common/sub-mv-campaign-pc';
-    $imageSp = '/assets/images/common/sub-mv-campaign-sp';
-    $title = 'Campaign';
-} elseif (is_post_type_archive('faq')) {
-    $imagePc = '/assets/images/common/sub-mv-faq-pc';
-    $imageSp = '/assets/images/common/sub-mv-faq-sp';
-    $title = 'FAQ';
-} elseif (is_post_type_archive('voice')) {
-    $imagePc = '/assets/images/common/sub-mv-voice-pc';
-    $imageSp = '/assets/images/common/sub-mv-voice-sp';
-    $title = 'Voice';
 } elseif (is_home()) {
     $imagePc = '/assets/images/common/sub-mv-blog-pc';
     $imageSp = '/assets/images/common/sub-mv-blog-sp';

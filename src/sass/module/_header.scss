@@ -2,7 +2,8 @@
 
 .header {
   position: fixed;
-  background-color: rgba($color: $black, $alpha: 0.68);
+  background-color: rgba($color: $base, $alpha: 0.4);
+  // background-color: transparent;
   width: 100%;
   height: rem(80);
   transition: 0.3s;
@@ -13,11 +14,14 @@
 }
 
 .header.is-color {
-  background-color: rgba($color: $black, $alpha: 1);
+  // background-color: rgba($color: $black, $alpha: 1);
+  background-color: $base;
 }
 
 .header.is-active {
-  background-color: rgba($color: $green, $alpha: 1);
+  // background-color: rgba($color: $base, $alpha: 1);
+  background-color: rgba($color: $base, $alpha: 0.8);
+  // background-color: $base;
 }
 
 .header__inner {
@@ -105,7 +109,8 @@
 
 .header__sp-nav {
   display: none;
-  background-color: $green;
+  // background-color: $base;
+  background-color: rgba($color: $base, $alpha: 0.8);
   height: 100vh;
   left: 0;
   overflow-y: scroll;
@@ -114,6 +119,9 @@
   top: rem(80);
   width: 100%;
   z-index: $hamburger-z-index;
+  @include mq("md") {
+    top: rem(90);
+  }
 }
 
 .header__pc-nav {

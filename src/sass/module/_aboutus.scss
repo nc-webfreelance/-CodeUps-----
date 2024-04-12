@@ -94,11 +94,11 @@
 }
 
 .aboutus__head h3 {
-  font-family: $gotu-font-family;
+  font-family: $mont-font-family;
   font-weight: $regular;
   font-size: rem(40);
   line-height: 1;
-  color: $green;
+  color: $base;
   @include mq("md") {
     font-size: rem(80);
     line-height: calc(100 / 80);

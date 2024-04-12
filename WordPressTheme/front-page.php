@@ -5,16 +5,14 @@
 
   <?php
   $home = esc_url(home_url('/ '));
-  $campaign = esc_url(home_url('/campaign/ '));
-  $aboutus = esc_url(home_url('/aboutus/ '));
-  $information = esc_url(home_url('/information/ '));
+  $service = esc_url(home_url('/service/ '));
   $blog = esc_url(home_url('/blog/ '));
-  $voice = esc_url(home_url('/voice/ '));
   $price = esc_url(home_url('/price/ '));
   $faq = esc_url(home_url('/faq/ '));
-  $privacyPolicy = esc_url(home_url('/privacyPolicy/ '));
-  $termsOfService = esc_url(home_url('/termsOfService/ '));
+  $information = esc_url(home_url('/information/ '));
   $contact = esc_url(home_url('/contact/ '));
+  $privacypolicy = esc_url(home_url('/privacypolicy/ '));
+  $sitemap = esc_url(home_url('/sitemap/ '));
   ?>
 
 
@@ -22,14 +20,9 @@
 
 
   <?php
-  $mv_sp1 = get_field('mv_sp1');
-  $mv_sp2 = get_field('mv_sp2');
-  $mv_sp3 = get_field('mv_sp3');
-  $mv_sp4 = get_field('mv_sp4');
-  $mv_pc1 = get_field('mv_pc1');
-  $mv_pc2 = get_field('mv_pc2');
-  $mv_pc3 = get_field('mv_pc3');
-  $mv_pc4 = get_field('mv_pc4');
+  $mv_1 = get_field('mv_1');
+  $mv_2 = get_field('mv_2');
+  $mv_3 = get_field('mv_3');
   ?>
 
   <section id="top" class="mv js-mv-height">
@@ -37,34 +30,19 @@
       <div class="mv__slider mv-swiper swiper js-swiper">
         <div class="mv-swiper__wrapper swiper-wrapper">
           <div class="mv-swiper__slide swiper-slide">
-            <picture>
-              <source srcset="<?php echo $mv_pc1 ?>" media="(min-width: 768px)">
-              <img src="<?php echo $mv_sp1 ?>" alt="">
-            </picture>
+            <img src="<?php echo $mv_1 ?>" alt="">
           </div>
           <div class="mv-swiper__slide swiper-slide">
-            <picture>
-              <source srcset="<?php echo $mv_pc2 ?>" media="(min-width: 768px)">
-              <img src="<?php echo $mv_sp2 ?>" alt="">
-            </picture>
+            <img src="<?php echo $mv_2 ?>" alt="">
           </div>
           <div class="mv-swiper__slide swiper-slide">
-            <picture>
-              <source srcset="<?php echo $mv_pc3 ?>" media="(min-width: 768px)">
-              <img src="<?php echo $mv_sp3 ?>" alt="">
-            </picture>
-          </div>
-          <div class="mv-swiper__slide swiper-slide">
-            <picture>
-              <source srcset="<?php echo $mv_pc4 ?>" media="(min-width: 768px)">
-              <img src="<?php echo $mv_sp4 ?>" alt="">
-            </picture>
+            <img src="<?php echo $mv_3 ?>" alt="">
           </div>
         </div>
       </div>
       <div class="mv__header">
-        <h2>DIVING</h2>
-        <p>into the ocean</p>
+        <h2>Star Violet</h2>
+        <p>Dog-exclusive hotel</p>
       </div>
     </div>
   </section>
@@ -74,149 +52,102 @@
 
 
 
-  <?php
-  $args = array(
-    'post_type' => 'campaign',
-    'posts_per_page' => -1,
-  ); // カスタム投稿タイプ Products
-  $the_query = new WP_Query($args);
-  if ($the_query->have_posts()) :
-  ?>
-    <section id="campaign" class="campaign layout-top-campaign">
-      <div class="campaign__inner inner">
-        <div class="campaign__title">
-          <div class="section-header">
-            <span class="section-header__engtitle">Campaign</span>
-            <h2 class="section-header__jatitle">キャンペーン</h2>
-          </div>
-        </div>
-        <div class="campaign__swiper swiper js-campaign-swiper">
-          <div class="campaign__cards swiper-wrapper">
-            <!-- ループ開始 -->
-            <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-              <a href="#" class="campaign__card campaign-card swiper-slide">
-                <div class="campaign-card__image">
-                  <?php the_post_thumbnail('post-thumbnail', array('alt' => the_title_attribute('echo=0'))); ?>
-                </div>
-                <div class="campaign-card__body">
-                  <div class="campaign-card__head">
-                    <div class="campaign-card__category">
-                      <?php echo esc_html(get_the_terms(get_the_ID(), 'campaign-category')[0]->name); ?>
-                    </div>
-                    <div class="campaign-card__title">
-                      <p><?php the_title(); ?></p>
-                    </div>
-                  </div>
-                  <div class="campaign-card__foot">
-                    <div class="campaign-card__text">
-                      <p>全部コミコミ(お一人様)</p>
-                    </div>
-                    <div class="campaign-card__price">
-                      <p class="campaign-card__price-before">¥<?php the_field('price_before'); ?></p>
-                      <p class="campaign-card__price-after">¥<?php the_field('price_after'); ?></p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-          <?php endwhile;
-            wp_reset_postdata();
-          endif; ?>
-          <!-- ループ終了 -->
-          </div>
-        </div>
-        <div class="campaign__btn">
-          <a class="button" href="<?php echo $campaign; ?>"><span>View more</span></a>
-        </div>
-        <div class="swiper-button-prev u-desktop"></div>
-        <div class="swiper-button-next u-desktop"></div>
-      </div>
-    </section>
 
-    <section id="aboutus" class="aboutus layout-top">
-      <div class="aboutus__inner inner">
-        <div class="aboutus__title">
+
+  <section id="service" class="service layout-top">
+    <div class="service__inner inner">
+      <div class="service__wrap">
+        <div class="service__title">
           <div class="section-header">
-            <span class="section-header__engtitle">About us</span>
-            <h2 class="section-header__jatitle">私たちについて</h2>
+            <span class="section-header__title">Service</span>
+            <h2 class="section-header__subtitle">サービス</h2>
           </div>
         </div>
-        <div class="aboutus__images">
-          <div class="aboutus__first-image">
-            <picture>
-              <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/aboutus-house.webp" type="image/webp" />
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/aboutus-house.jpg" alt="青空の下に、屋根の上にシーサーの置物がある家" />
-            </picture>
+        <div class="service__contents">
+          <div class="service__content">
+            <div class="service__image">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/dog-hotel.jpg" alt="" />
+            </div>
+            <div class="service__textBody">
+              <div class="service__head">
+                <h3>ホテル</h3>
+              </div>
+              <div class="service__text">
+                <p>
+                24時間体制で安全かつ快適な滞在環境を提供しています。専用のケージやスイートルームを完備し、定期的な散歩や運動、特別な食事、医療管理など、ペットの健康と幸福をサポートするさまざまなサービスを提供しています。飼い主の皆様が安心してペットを預けられるよう、常に心を込めたケアを行っています。
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="aboutus__second-image">
-            <picture>
-              <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/aboutus-ocean.webp" type="image/webp" />
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/aboutus-ocean.jpg" alt="海の中で泳ぐ二匹の黄色い魚" />
-            </picture>
+          <div class="service__content">
+            <div class="service__image">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/dog-trimming.jpg" alt="" />
+            </div>
+            <div class="service__textBody">
+              <div class="service__head">
+                <h3>トリミング</h3>
+              </div>
+              <div class="service__text">
+                <p>
+                ペットの美容と健康を重視し、専門のトリマーが丁寧にケアいたします。毛のカット、爪の手入れ、耳の清掃、バス＆ブローなど、ペットの個々のニーズに合わせたトリミングプランを提供しています。安全かつ快適な環境で、ペットたちがリラックスして美しくなれるよう心がけています。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="service__content">
+            <div class="service__image">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/dog-run.jpg" alt="" />
+            </div>
+            <div class="service__textBody">
+              <div class="service__head">
+                <h3>ドッグラン</h3>
+              </div>
+              <div class="service__text">
+                <p>
+                広々とした安全なエリアで、愛犬たちが思い切り遊び、社交するのに最適な場所です。フェンスで囲まれたエリアで、愛犬たちは安心して自由に走り回ることができます。専用の遊具や障害物も備え、愛犬たちが楽しく運動できる環境を整えています。また、専門のスタッフが常駐しており、安全かつ清潔な状態を保ちながら、愛犬たちが快適に遊べるように配慮しています。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="service__content">
+            <div class="service__image">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/dog-toy.jpg" alt="" />
+            </div>
+            <div class="service__textBody">
+              <div class="service__head">
+                <h3>グッズ販売</h3>
+              </div>
+              <div class="service__text">
+                <p>
+                高品質な犬用グッズを幅広く取り揃えており、愛犬との素敵な生活をサポートします。お散歩用のリードやハーネス、快適なベッドやクレート、健康や遊びを促進するおもちゃ、栄養バランスの整ったフードなど、豊富な品揃えが自慢です。専門的なアドバイスやお手入れ方法のアドバイスもご提供し、飼い主様と愛犬の生活をより充実させるお手伝いをいたします。
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="aboutus__body">
-          <div class="aboutus__head">
-            <h3>
-              Dive into<br />
-              the Ocean
-            </h3>
-          </div>
-          <div class="aboutus__content">
-            <div class="aboutus__text">
-              <p>
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-              </p>
-            </div>
-            <div class="aboutus__btn">
-              <a class="button" href="<?php echo $aboutus; ?>"><span>View more</span></a>
-            </div>
-          </div>
+        <div class="service__btn">
+          <!-- <a class="button" href=""><span>View more</span></a> -->
+          <a href="<?php echo $service; ?>" class="button">
+            <span class="button-front">View more</span>
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="information" class="information layout-top-information">
-      <div class="information__inner inner">
-        <div class="information__title">
-          <div class="section-header">
-            <span class="section-header__engtitle">Information</span>
-            <h2 class="section-header__jatitle">ダイビング情報</h2>
-          </div>
-        </div>
-        <div class="information__body">
-          <div class="information__image">
-            <picture>
-              <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/information-ocean.webp" type="image/webp" />
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/information-ocean.jpg" alt="たくさんの魚とサンゴ礁" />
-            </picture>
-          </div>
-          <div class="information__textBody">
-            <div class="information__head">
-              <h3>ライセンス講習</h3>
-            </div>
-            <div class="information__text">
-              <p>
-                当店はダイビングライセンス（Cカード）世界最大の教育機関PADIの「正規店」として店舗登録されています。<br />
-                正規登録店として、安心安全に初めての方でも安心安全にライセンス取得をサポート致します。
-              </p>
-            </div>
-            <div class="information__btn">
-              <a class="button" href="<?php echo $information; ?>"><span>View more</span></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section id="blog" class="blog">
-      <div class="blog__inner inner">
+
+
+
+  <section id="blog" class="blog layout-top">
+    <div class="blog__inner inner">
+      <div class="blog__wrap">
         <div class="blog__title">
-          <div class="section-header section-header--white">
-            <span class="section-header__engtitle section-header__engtitle--white">
+          <div class="section-header">
+            <span class="section-header__title">
               Blog
             </span>
-            <h2 class="section-header__jatitle section-header__jatitle--white">
+            <h2 class="section-header__subtitle">
               ブログ
             </h2>
           </div>
@@ -225,7 +156,7 @@
           <?php
           $args = array(
             'post_type' => 'post',
-            'posts_per_page' => 3,
+            'posts_per_page' => -1,
           ); // カスタム投稿タイプ Products
           $the_query = new WP_Query($args);
           if ($the_query->have_posts()) :
@@ -251,174 +182,208 @@
           <!-- ループ処理終了 -->
         </div>
         <div class="blog__btn">
-          <a class="button" href="<?php echo $blog; ?>"><span>View more</span></a>
+          <!-- <a class="button" href=""><span>View more</span></a> -->
+          <a href="<?php echo $blog; ?>" class="button">
+            <span class="button-front">View more</span>
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
 
-    <?php
-    $args = array(
-      'post_type' => 'voice',
-      'posts_per_page' => 2,
-    ); // カスタム投稿タイプ Products
-    $the_query = new WP_Query($args);
-    if ($the_query->have_posts()) :
-    ?>
-      <section id="voice" class="voice layout-top">
-        <div class="voice__inner inner">
-          <div class="voice__title">
-            <div class="section-header">
-              <span class="section-header__engtitle">Voice</span>
-              <h2 class="section-header__jatitle">お客様の声</h2>
-            </div>
-          </div>
-          <div class="voice__cards wide-cards">
-            <!-- ループ開始 -->
-            <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-              <div class="wide-cards__item wide-card">
-                <div class="wide-card__inner">
-                  <div class="wide-card__body">
-                    <div class="wide-card__content">
-                      <div class="wide-card__meta">
-                        <p class="wide-card__age"><?php the_field('voice_age'); ?>(<?php the_field('voice_gene'); ?>)</p>
-                        <div class="wide-card__category">
-                          <?php echo esc_html(get_the_terms(get_the_ID(), 'voice-category')[0]->name); ?>
-                        </div>
-                      </div>
-                      <div class="wide-card__head">
-                        <p><?php the_title(); ?></p>
-                      </div>
-                    </div>
-                    <div class="wide-card__image">
-                      <?php the_post_thumbnail('post-thumbnail', array('alt' => the_title_attribute('echo=0'))); ?>
-                    </div>
-                  </div>
-                  <div class="wide-card__text">
-                    <?php the_content(); ?>
-                  </div>
-                </div>
-              </div>
-          <?php endwhile;
-            wp_reset_postdata();
-          endif; ?>
-          <!-- ループ終了 -->
-          </div>
-          <div class="voice__btn">
-            <a class="button" href="<?php echo $voice; ?>"><span>View more</span></a>
+
+
+  <section id="price" class="price layout-top">
+    <div class="price__inner inner">
+      <div class="price__wrap">
+        <div class="price__title">
+          <div class="section-header">
+            <span class="section-header__title">Price</span>
+            <h2 class="section-header__subtitle">料金一覧</h2>
           </div>
         </div>
-      </section>
-
-
-      <section id="price" class="price layout-top">
-        <div class="price__inner inner">
-          <div class="price__title">
-            <div class="section-header">
-              <span class="section-header__engtitle">Price</span>
-              <h2 class="section-header__jatitle">料金一覧</h2>
-            </div>
+        <div class="price__contents">
+          <div class="price__image">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/dog-mv-1.jpg" alt="" />
           </div>
-          <div class="price__wrapper">
-            <div class="price__image">
-              <picture>
-                <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/price-pc.webp" type="image/webp" media="(min-width: 768px)" />
-                <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/price-pc.jpg" type="image/jpeg" media="(min-width: 768px)" />
-                <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/price-sp.webp" type="image/webp" media="(max-width: 767px)" />
-                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/price-sp.jpg" alt="海の中を泳ぐたくさんの小さな赤い魚とサンゴ礁" />
-              </picture>
+          <div class="price__list">
+            <div class="price__list-item price-menu">
+              <div class="price-menu__head">
+                <h3>ホテル</h3>
+              </div>
+              <dl class="price-menu__items">
+                <div class="price-menu__item">
+                  <dt>小型犬</dt>
+                  <dd>¥5,000 (1泊)</dd>
+                </div>
+                <div class="price-menu__item">
+                  <dt>中型犬</dt>
+                  <dd>¥6,500 (1泊)</dd>
+                </div>
+                <div class="price-menu__item">
+                  <dt>大型犬</dt>
+                  <dd>¥8,000 (1泊)</dd>
+                </div>
+                <div class="price-menu__item">
+                  <dt>スイートルーム</dt>
+                  <dd>＋¥1,500 (1泊)</dd>
+                </div>
+              </dl>
             </div>
-            <div class="price__contents">
-              <div class="price__content price-menu">
-                <div class="price-menu__head">
-                  <h3>ライセンス講習</h3>
-                </div>
-                <dl class="price-menu__items">
-                  <div class="price-menu__item">
-                    <dt>オープンウォーターダイバーコース</dt>
-                    <dd>¥50,000</dd>
-                  </div>
-                  <div class="price-menu__item">
-                    <dt>アドバンスドオープンウォーターコース</dt>
-                    <dd>¥60,000</dd>
-                  </div>
-                  <div class="price-menu__item">
-                    <dt>レスキュー＋EFRコース</dt>
-                    <dd>¥70,000</dd>
-                  </div>
-                </dl>
+            <div class="price__list-item price-menu">
+              <div class="price-menu__head">
+                <h3>トリミング</h3>
               </div>
-              <div class="price__content price-menu">
-                <div class="price-menu__head">
-                  <h3>体験ダイビング</h3>
+              <dl class="price-menu__items">
+              <div class="price-menu__item">
+                  <dt>小型犬</dt>
+                  <dd>¥3,500</dd>
                 </div>
-                <dl class="price-menu__items">
-                  <div class="price-menu__item">
-                    <dt>ビーチ体験ダイビング(半日)</dt>
-                    <dd>¥7,000</dd>
-                  </div>
-                  <div class="price-menu__item">
-                    <dt>ビーチ体験ダイビング(1日)</dt>
-                    <dd>¥14,000</dd>
-                  </div>
-                  <div class="price-menu__item">
-                    <dt>ボート体験ダイビング(半日)</dt>
-                    <dd>¥10,000</dd>
-                  </div>
-                  <div class="price-menu__item">
-                    <dt>ボート体験ダイビング(1日)</dt>
-                    <dd>¥18,000</dd>
-                  </div>
-                </dl>
-              </div>
-              <div class="price__content price-menu">
-                <div class="price-menu__head">
-                  <h3>ファンダイビング</h3>
+                <div class="price-menu__item">
+                  <dt>中型犬</dt>
+                  <dd>¥4,000</dd>
                 </div>
-                <dl class="price-menu__items">
-                  <div class="price-menu__item">
-                    <dt>ビーチダイビング(2ダイブ)</dt>
-                    <dd>¥14,000</dd>
-                  </div>
-                  <div class="price-menu__item">
-                    <dt>ボートダイビング(2ダイブ)</dt>
-                    <dd>¥18,000</dd>
-                  </div>
-                  <div class="price-menu__item">
-                    <dt>スペシャルダイビング(2ダイブ)</dt>
-                    <dd>¥24,000</dd>
-                  </div>
-                  <div class="price-menu__item">
-                    <dt>ナイトダイビング(1ダイブ)</dt>
-                    <dd>¥10,000</dd>
-                  </div>
-                </dl>
-              </div>
-              <div class="price__content price-menu">
-                <div class="price-menu__head">
-                  <h3>スペシャルダイビング</h3>
+                <div class="price-menu__item">
+                  <dt>大型犬</dt>
+                  <dd>¥5,500</dd>
                 </div>
-                <dl class="price-menu__items">
-                  <div class="price-menu__item">
-                    <dt>貸切ダイビング(2ダイブ)</dt>
-                    <dd>¥24,000</dd>
-                  </div>
-                  <div class="price-menu__item">
-                    <dt>1日ダイビング(3ダイブ)</dt>
-                    <dd>¥32,000</dd>
-                  </div>
-                </dl>
-              </div>
+                <div class="price-menu__item">
+                  <dt>シャンプー持ち込み</dt>
+                  <dd>−¥500</dd>
+                </div>
+              </dl>
             </div>
-          </div>
-          <div class="price__btn">
-            <a class="button" href="<?php echo $price; ?>"><span>View more</span></a>
+            <div class="price__list-item price-menu">
+              <div class="price-menu__head">
+                <h3>ドッグラン</h3>
+              </div>
+              <dl class="price-menu__items">
+                <div class="price-menu__item">
+                  <dt>30分</dt>
+                  <dd>¥1,000</dd>
+                </div>
+                <div class="price-menu__item">
+                  <dt>フリーパス(8:30~19:00)</dt>
+                  <dd>¥2,800</dd>
+                </div>
+              </dl>
+            </div>
+            <div class="price__list-item price-menu">
+              <div class="price-menu__head">
+                <h3>グッズ販売&emsp;<br class="u-mobile"><span>( その他商品の種類は、料金ページをご覧ください。)</span></h3>
+              </div>
+              <dl class="price-menu__items">
+                <div class="price-menu__item">
+                  <dt>玩具</dt>
+                  <dd>¥500~</dd>
+                </div>
+                <div class="price-menu__item">
+                  <dt>ドッグフード</dt>
+                  <dd>¥1,200~</dd>
+                </div>
+                <div class="price-menu__item">
+                  <dt>お散歩グッズ</dt>
+                  <dd>¥1,000~</dd>
+                </div>
+              </dl>
+            </div>
           </div>
         </div>
-      </section>
+        <div class="price__btn">
+          <!-- <a class="button" href=""><span>View more</span></a> -->
+          <a href="<?php echo $price; ?>" class="button">
+            <span class="button-front">View more</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <!-- contact-->
-      <?php get_template_part('parts/contact'); ?>
+
+
+
+
+
+
+  <section id="faq" class="faq layout-top">
+    <div class="faq__inner inner">
+      <div class="faq__wrap">
+        <div class="faq__title">
+          <div class="section-header">
+            <span class="section-header__title  section-header__title--white">FAQ</span>
+            <h2 class="section-header__subtitle">よくある質問</h2>
+          </div>
+        </div>
+        <ul class="faq__items faq-list">
+          <?php
+          $fields = SCF::get_option_meta('theme-options', 'faq-list');
+          foreach ($fields as $field_name => $fields_value) {
+          ?>
+            <li class="faq-list__item">
+              <p class="faq-list__item-question js-faq-question is-open">
+                <span><?php echo nl2br($fields_value['question']); ?></span>
+              </p>
+              <p class="faq-list__item-answer">
+                <?php echo nl2br($fields_value['answer']); ?>
+              </p>
+            </li>
+          <?php } ?>
+        </ul>
+        <div class="faq__btn">
+          <a href="<?php echo $faq; ?>" class="button">
+            <span class="button-front">View more</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <section id="information" class="information layout-top">
+    <div class="information__inner inner">
+      <div class="information__wrap">
+        <div class="information__title">
+          <div class="section-header">
+            <span class="section-header__title">Information</span>
+            <h2 class="section-header__subtitle">店舗情報</h2>
+          </div>
+        </div>
+        <div class="information__access">
+          <div class="information__textBody">
+            <div class="information__head">
+              <h3><span>犬専用&nbsp;ペットホテル</span>&emsp; <ruby>Star Violet<rt>スター&nbsp;バイオレット</rt></ruby></h3>
+            </div>
+            <div class="information__text">
+              <p>〒060-0806&emsp;北海道札幌市北区北６条西４丁目</p>
+              <p>TEL&nbsp;:&nbsp;0120-000-0000</p>
+              <p>営業時間&nbsp;:&nbsp;8:30-19:00 <br>(ペットホテルは24時間営業しております。)</p>
+              <p>駐車場&nbsp;:&nbsp;10台</p>
+            </div>
+          </div>
+          <div class="information__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5991.798240212549!2d141.34786704909456!3d43.07195482380939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2974d2c3f903%3A0xa5e2b18cdd4a47a5!2z5pyt5bmM6aeF!5e0!3m2!1sja!2sjp!4v1712648736124!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="information__btn">
+          <a href="<?php echo $information; ?>" class="button">
+            <span class="button-front">View more</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- contact-->
+  <?php get_template_part('parts/contact'); ?>
 
 </body>
 <?php get_footer(); ?>

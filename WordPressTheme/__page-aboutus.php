@@ -49,14 +49,14 @@
   <div class="gallery__inner inner">
     <div class="gallery__title">
       <div class="section-header">
-        <span class="section-header__engtitle"> Gallery</span>
-        <h3 class="section-header__jatitle">フォト</h3>
+        <span class="section-header__title"> Gallery</span>
+        <h3 class="section-header__subtitle">フォト</h3>
       </div>
     </div>
     <ul class="gallery__list gallery-list">
       <?php
-      $repeat_group = SCF::get('gallery-images');
-      foreach ($repeat_group as $fields) { ?>
+      $gallery_group = SCF::get('gallery-images');
+      foreach ($gallery_group as $fields) { ?>
         <li class="gallery-list__item">
           <?php
           $image = get_post_meta($post->ID, 'gallery', true);

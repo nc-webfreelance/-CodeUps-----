@@ -18,7 +18,7 @@
   width: rem(48);
   height: rem(48);
   background-color: rgba($color: $white, $alpha: 0.5);
-  border: 1px solid $green;
+  border: 1px solid $second;
   border-radius: 100%;
   @include mq("md") {
     width: rem(80);
@@ -34,7 +34,7 @@
   transform: translateY(calc(-50% - rem(2))) rotate(135deg);
   width: rem(10);
   height: rem(1);
-  background: $green;
+  background: $base;
 }
 
 .to-top a span::after {
@@ -45,7 +45,7 @@
   transform: translateY(calc(-50% - rem(2))) rotate(90deg);
   width: rem(28);
   height: rem(1);
-  background-color: $green;
+  background-color: $base;
   @include mq("md") {
     right: 23%;
     width: rem(40);

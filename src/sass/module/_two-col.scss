@@ -12,32 +12,32 @@
 }
 
 .two-col__left {
-  position: relative;
+  // position: relative;
   @include mq("md") {
     width: 70%;
     height: 100%;
   }
 }
 
-.two-col__left::before {
-  content: "";
-  position: absolute;
-  background-image: url(../images/common/blueFish-decoration-left.svg);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: contain;
-  top: rem(-24);
-  left: calc(51% - min(47vw, rem(630)));
-  max-width: rem(120);
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  @include mq("md") {
-    top: rem(-70);
-    left: calc(79% - min(48vw, rem(630)));
-    max-width: rem(301);
-  }
-}
+// .two-col__left::before {
+//   content: "";
+//   position: absolute;
+//   background-image: url(../images/common/blueFish-decoration-left.svg);
+//   background-repeat: no-repeat;
+//   background-position: top;
+//   background-size: contain;
+//   top: rem(-24);
+//   left: calc(51% - min(47vw, rem(630)));
+//   max-width: rem(120);
+//   width: 100%;
+//   height: 100%;
+//   z-index: -1;
+//   @include mq("md") {
+//     top: rem(-70);
+//     left: calc(79% - min(48vw, rem(630)));
+//     max-width: rem(301);
+//   }
+// }
 
 .two-col__pagenavi {
   margin-top: rem(78);

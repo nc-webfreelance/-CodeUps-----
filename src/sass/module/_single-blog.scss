@@ -9,7 +9,7 @@
 .single-blog__title {
   font-weight: $medium;
   font-size: rem(24);
-  border-bottom: 1px solid $green;
+  border-bottom: 1px solid $second;
   padding-bottom: rem(2);
   margin-top: rem(8);
   @include mq("md") {
@@ -70,7 +70,7 @@
   position: absolute;
   top: rem(4);
   left: rem(-27);
-  background-color: $green;
+  background-color: $base;
   mask-image: url(../images/common/section-logo.svg);
   mask-repeat: no-repeat;
   mask-position: center;

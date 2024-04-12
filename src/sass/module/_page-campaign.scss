@@ -27,11 +27,11 @@
 
 .page-campaign__cardDate {
   @include mq("md") {
-    font-family: $lato-font-family;
+    font-family: $mont-font-family;
     font-weight: $bold;
     font-size: rem(16);
     line-height: calc(18 / 16);
-    color: $green;
+    color: $base;
     margin-top: rem(32);
   }
 }
@@ -41,7 +41,7 @@
     font-weight: $regular;
     font-size: rem(14);
     line-height: calc(18 / 14);
-    color: $green;
+    color: $base;
     margin-top: rem(7);
   }
 }

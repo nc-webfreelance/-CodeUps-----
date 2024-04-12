@@ -8,11 +8,112 @@
 
 <div class="page-price layout-subPage">
   <div class="page-price__inner inner">
-    <div class="page-price__lists">
-      <table class="page-price__list price-list">
+    <div class="page-price__list">
+      <div class="page-price__list-item price-menu">
+        <div class="price-menu__head price-menu__head--page">
+          <h3>ホテル</h3>
+        </div>
+        <dl class="price-menu__items">
+          <div class="price-menu__item">
+            <dt>小型犬</dt>
+            <dd>¥5,000 (1泊)</dd>
+          </div>
+          <div class="price-menu__item">
+            <dt>中型犬</dt>
+            <dd>¥6,500 (1泊)</dd>
+          </div>
+          <div class="price-menu__item">
+            <dt>大型犬</dt>
+            <dd>¥8,000 (1泊)</dd>
+          </div>
+          <div class="price-menu__item">
+            <dt>スイートルーム</dt>
+            <dd>＋¥1,500 (1泊)</dd>
+          </div>
+        </dl>
+      </div>
+      <div class="page-price__list-item price-menu">
+        <div class="price-menu__head price-menu__head--page">
+          <h3>トリミング</h3>
+        </div>
+        <dl class="price-menu__items">
+          <div class="price-menu__item">
+            <dt>小型犬</dt>
+            <dd>¥3,500</dd>
+          </div>
+          <div class="price-menu__item">
+            <dt>中型犬</dt>
+            <dd>¥4,000</dd>
+          </div>
+          <div class="price-menu__item">
+            <dt>大型犬</dt>
+            <dd>¥5,500</dd>
+          </div>
+          <div class="price-menu__item">
+            <dt>シャンプー持ち込み</dt>
+            <dd>−¥500</dd>
+          </div>
+        </dl>
+      </div>
+      <div class="page-price__list-item price-menu">
+        <div class="price-menu__head price-menu__head--page">
+          <h3>ドッグラン</h3>
+        </div>
+        <dl class="price-menu__items">
+          <div class="price-menu__item">
+            <dt>30分</dt>
+            <dd>¥1,000</dd>
+          </div>
+          <div class="price-menu__item">
+            <dt>フリーパス(8:30~19:00)</dt>
+            <dd>¥2,800</dd>
+          </div>
+        </dl>
+      </div>
+      <div class="page-price__list-item price-menu">
+        <div class="price-menu__head price-menu__head--page">
+          <h3>グッズ販売</h3>
+        </div>
+        <dl class="price-menu__items">
+          <div class="price-menu__item">
+            <dt>玩具</dt>
+            <dd>¥500~</dd>
+          </div>
+          <div class="price-menu__item">
+            <dt>ドッグフード</dt>
+            <dd>¥1,200~</dd>
+          </div>
+          <div class="price-menu__item">
+            <dt>お散歩グッズ</dt>
+            <dd>¥1,000~</dd>
+          </div>
+          <div class="price-menu__item">
+            <dt>洋服</dt>
+            <dd>¥3,200~</dd>
+          </div>
+          <div class="price-menu__item">
+            <dt>ケージ</dt>
+            <dd>¥5,600~</dd>
+          </div>
+          <div class="price-menu__item">
+            <dt>食器</dt>
+            <dd>¥1,600~</dd>
+          </div>
+          <div class="price-menu__item">
+            <dt>サプリメント</dt>
+            <dd>¥1,000~</dd>
+          </div>
+          <div class="price-menu__item">
+            <dt>バースデーケーキ</dt>
+            <dd>¥800~</dd>
+          </div>
+        </dl>
+        <p>※料金は全て税込価格となっております。</p>
+      </div>
+      <!-- <table class="page-price__list price-list">
         <thead class="price-list__head">
           <tr>
-            <th>ライセンス講習</th>
+            <th>ホテル</th>
           </tr>
         </thead>
         <tbody class="price-list__body">
@@ -25,13 +126,12 @@
           </tr>
           <tr class="price-list__item">
             <td class="price-list__name">
-              アドバンスド<br class="u-mobile" />
-              オープンウォーターコース
+              トリミング
             </td>
             <td class="price-list__price">¥60,000</td>
           </tr>
           <tr class="price-list__item">
-            <td class="price-list__name">レスキュー＋EFRコース</td>
+            <td class="price-list__name">グッズ販売</td>
             <td class="price-list__price">¥70,000</td>
           </tr>
         </tbody>
@@ -39,7 +139,7 @@
       <table class="page-price__list price-list">
         <thead class="price-list__head">
           <tr>
-            <th>体験ダイビング</th>
+            <th>トリミング</th>
           </tr>
         </thead>
         <tbody class="price-list__body">
@@ -76,7 +176,7 @@
       <table class="page-price__list price-list">
         <thead class="price-list__head">
           <tr>
-            <th>ファンダイビング</th>
+            <th>ドッグラン</th>
           </tr>
         </thead>
         <tbody class="price-list__body">
@@ -113,7 +213,7 @@
       <table class="page-price__list price-list">
         <thead class="price-list__head">
           <tr>
-            <th>スペシャルダイビング</th>
+            <th>グッズ販売</th>
           </tr>
         </thead>
         <tbody class="price-list__body">
@@ -139,12 +239,12 @@
             <td class="price-list__price">¥14,000</td>
           </tr>
         </tbody>
-      </table>
+      </table> -->
     </div>
   </div>
 </div>
 
 <!-- sub-contact -->
-<?php get_template_part('parts/sub-contact'); ?>
+<?php get_template_part('parts/contact'); ?>
 
 <?php get_footer(); ?>

@@ -29,7 +29,7 @@
 }
 
 .card__date {
-  font-family: $gotu-font-family;
+  font-family: $mont-font-family;
   font-weight: $regular;
   font-size: rem(12);
   line-height: calc(18 / 12);
@@ -39,7 +39,7 @@
   font-weight: $medium;
   font-size: rem(16);
   line-height: calc(24 / 16);
-  border-bottom: 1px solid $green;
+  border-bottom: 1px solid $second;
   padding-bottom: rem(3.5);
   margin-top: rem(0.5);
 }

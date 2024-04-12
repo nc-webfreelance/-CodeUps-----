@@ -9,6 +9,7 @@
 
 
 
+
 <section class="two-col layout-single-blog">
   <div class="two-col__inner inner">
     <div class="two-col__wrap">
@@ -43,7 +44,7 @@
 </section>
 
 
-<!-- sub-contact -->
-<?php get_template_part('parts/sub-contact'); ?>
+<!-- contact -->
+<?php get_template_part('parts/contact'); ?>
 
 <?php get_footer(); ?>

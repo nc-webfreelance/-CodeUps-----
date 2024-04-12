@@ -14,7 +14,9 @@
         申し訳ありません。<br />
         お探しのページが見つかりません。
       </p>
-      <a class="button button--white" href="<?php echo esc_url(home_url('/')); ?>"><span>Page TOP</span></a>
+      <a href="<?php echo esc_url(home_url('/')); ?>" class="button">
+        <span class="button-front">TOP</span>
+      </a>
     </div>
   </div>
 </div>

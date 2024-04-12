@@ -28,12 +28,12 @@
   align-items: center;
   width: rem(38);
   height: rem(38);
-  font-family: $lato-font-family;
+  // font-family: $mont-font-family;
   font-weight: $bold;
   font-size: rem(16);
-  border: 1px solid $green;
+  border: 1px solid $second;
   background-color: transparent;
-  color: $green;
+  color: $base;
   transition: 0.3s ease;
 }
 
@@ -45,13 +45,13 @@
 }
 
 .wp-pagenavi a:hover {
-  background: $green;
+  background: $base;
   color: $white;
   opacity: 1;
 }
 
 .wp-pagenavi span.current {
-  background: $green;
+  background: $base;
   color: $white;
 }
 
@@ -68,8 +68,8 @@
   width: rem(12);
   height: rem(12);
   background-color: transparent;
-  border-top: 1px solid $green;
-  border-right: 1px solid $green;
+  border-top: 1px solid $second;
+  border-right: 1px solid $second;
   border-bottom: none;
   border-left: none;
 }

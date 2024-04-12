@@ -2,12 +2,13 @@
 
 .form__wrap {
   padding-bottom: rem(24);
-  border-bottom: 1px dashed $green;
+  border-bottom: 1px dashed $base;
   @include mq("md") {
     display: flex;
     align-items: center;
-    padding-bottom: rem(40);
     justify-content: space-between;
+    gap: rem(20);
+    padding-bottom: rem(40);
   }
 }
 
@@ -20,7 +21,8 @@
 
 .form__wrap dt {
   @include mq("md") {
-    width: rem(221);
+    width: rem(240);
+    justify-content: space-between;
   }
 }
 
@@ -50,6 +52,7 @@
   margin-left: rem(8);
   width: rem(61);
   height: rem(21);
+  border-radius: rem(24);
   @include mq("md") {
   }
 }
@@ -103,12 +106,15 @@
   height: rem(22);
 }
 
-.form__lastCheck span
-.wpcf7-list-item-label {
+.form__lastCheck span.wpcf7-list-item-label {
   padding-left: rem(30);
   @include mq("md") {
     padding-left: rem(38);
   }
+}
+
+.form__lastCheck span.wpcf7-form-control-wrap {
+  text-align: center;
 }
 
 .form__btn {
@@ -119,40 +125,44 @@
   }
 }
 
+.wpcf7-form-control.wpcf7-submit.has-spinner {
+  color: $base;
+  line-height: inherit;
+  border-radius: 0;
+  padding: rem(12) rem(32);
+  width: -webkit-fill-available;
+}
+
 button,
 [type="button"],
 [type="submit"] {
   padding: 0;
 }
 
+.form__btn
+
 .form__btn-inner.button span {
   padding: 0;
 }
 
-.form__btn-inner.button {
-  padding-right: rem(112);
-  padding-left: rem(56);
-}
+// .form__btn-inner.button {
+//   padding-right: rem(112);
+//   padding-left: rem(56);
+// }
 
 .wpcf7-response-output {
   display: none;
 }
 
-.form__wrap.form__wrap--textarea,
-.form__wrap.form__wrap--cat {
-  align-items: start;
-}
+// .form__wrap.form__wrap--textarea,
+// .form__wrap.form__wrap--cat {
+//   align-items: start;
+// }
 
 .wpcf7-spinner {
   display: none;
 }
 
-.wpcf7-form-control.wpcf7-submit.has-spinner {
-  border-radius: inherit;
-}
-
-// button.form__btn-inner.wpcf7-form-control.wpcf7-submit.has-spinner:hover
-// .button:hover, [type=button]:hover, [type=submit]:hover {
-//   color: $green;
-//   height: inherit;
+// .wpcf7-form-control.wpcf7-submit.has-spinner {
+//   border-radius: inherit;
 // }

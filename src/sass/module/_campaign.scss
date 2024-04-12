@@ -38,7 +38,7 @@
       width: rem(80);
       height: rem(80);
       background-color: rgba($color: $white, $alpha: 1);
-      border: 1px solid $green;
+      border: 1px solid $second;
       border-radius: 100%;
     }
   }
@@ -66,7 +66,7 @@
     transform: translateY(calc(-50% - rem(2))) rotate(40deg);
     width: rem(10);
     height: rem(1);
-    background: $green;
+    background: $base;
   }
 
   .swiper-button-prev::before {
@@ -84,7 +84,7 @@
     transform: translateY(-50%);
     width: rem(40);
     height: rem(1);
-    background-color: $green;
+    background-color: $base;
   }
 
   .swiper-button-prev::after {
