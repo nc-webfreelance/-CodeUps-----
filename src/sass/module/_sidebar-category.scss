@@ -1,0 +1,35 @@
+@use "global" as *;
+
+.sidebar-category {
+
+}
+
+.sidebar-category__items {
+  display: flex;
+  flex-direction: column;
+  gap: rem(12);
+}
+
+.sidebar-category__item a{
+  position: relative;
+  display: inline-block;
+  font-weight: $bold;
+  font-size: rem(20);
+  padding: 0 rem(32);
+  margin-left: 1em;
+  cursor: pointer;
+}
+
+.sidebar-category__item a::before {
+  content: "";
+  position: absolute;
+  top: rem(8);
+  left: rem(2);
+  mask-image: url(../images/common/sidebar-archive-triangle.svg);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  background-color: $base;
+  width: rem(20);
+  height: rem(20);
+}

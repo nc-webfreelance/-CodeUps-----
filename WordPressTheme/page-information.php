@@ -37,7 +37,7 @@
         </div>
         <div class="info-message__ceo">
           <div class="info-message__ceo-image">
-            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/ceo.jpg" alt="" />
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/ceo-img.jpg" alt="" />
           </div>
           <div class="info-message__ceo-text">
             <p>
@@ -67,7 +67,7 @@
         </div>
         <div class="info-company__list-item">
           <dt>設立</dt>
-          <dd>2001.01.21</dd>
+          <dd>2024.04.01</dd>
         </div>
         <div class="info-company__list-item">
           <dt>代表取締役</dt>

@@ -19,6 +19,14 @@
   }
 }
 
+.two-col__cards {
+  display: grid;
+  gap: rem(64);
+  @include mq("md") {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 // .two-col__left::before {
 //   content: "";
 //   position: absolute;

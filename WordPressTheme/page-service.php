@@ -76,7 +76,7 @@
               <p>料金につきましては、お手軽なものから高価なものまで幅広く取り揃えております。</p>
             </div>
             <div class="tab__content-image">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/dog-toy.jpg" alt="" />
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/dog-sales.jpg" alt="" />
             </div>
           </div>
         </li>

@@ -1,6 +1,8 @@
 @use "global" as *;
 
 .sidebar {
+  display: flex;
+  justify-content: center;
   max-width: rem(350);
   width: 100%;
   margin-top: rem(80);
@@ -51,6 +53,6 @@
   margin-top: rem(24);
 }
 
-.sidebar__archive {
+.sidebar__category {
   margin-top: rem(24);
 }

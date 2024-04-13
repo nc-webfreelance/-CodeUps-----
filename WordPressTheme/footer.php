@@ -102,7 +102,7 @@ $sitemap = esc_url(home_url('/sitemap/ '));
           </div>
         </nav>
         <div class="footer__copyright">
-          <small>&copy; 2001 - 2024 Star Violet. All Rights
+          <small>&copy; 2024 Star Violet. All Rights
             Reserved.</small>
         </div>
       </div>

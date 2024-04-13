@@ -31,7 +31,6 @@
   display: flex;
   gap: rem(20);
   margin-top: rem(18);
-  margin-left: rem(2);
   @include mq("md") {
     position: absolute;
     left: 22.2%;

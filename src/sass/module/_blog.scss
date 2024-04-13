@@ -9,6 +9,8 @@
   }
 }
 
+
+
 // .blog::before {
 //   content: "";
 //   background-image: url(../images/common/blog-bgi.png);
@@ -72,6 +74,36 @@
 //     z-index: 5;
 //   }
 // }
+
+
+.blog__swiper {
+  margin-top: rem(28);
+  margin-inline: calc(50% - 49.5vw);
+  // padding-left: 6%;
+  padding-bottom: rem(10);
+  @include mq("md") {
+    margin-top: rem(38);
+  }
+}
+
+.blog {
+  .swiper {
+    // margin-inline: initial;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .blog__btn {
   text-align: center;

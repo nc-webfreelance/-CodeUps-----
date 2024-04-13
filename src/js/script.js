@@ -51,7 +51,7 @@ jQuery(function ($) {
       delay: 3000,
     },
   });
-  const campaignSwiper = new Swiper(".js-campaign-swiper", {
+  const blogSwiper = new Swiper(".js-blog-swiper", {
     loop: true,
     speed: 1500,
     autoplay: {
@@ -141,7 +141,6 @@ jQuery(function ($) {
     });
   });
 
-
   // タブ切り替え
   // $(function () {
   //   $(".js-tab").on("click", function () {
@@ -166,10 +165,44 @@ jQuery(function ($) {
     if (tabId) {
       $(".tab-active").removeClass("tab-active");
       // タブがクエリパラメーターで指定された場合、該当のタブにtab-activeクラスを付与
-      $(".js-tab[data-tab-id=\"".concat(tabId, "\"]")).addClass("tab-active");
-      let index = $(".js-tab[data-tab-id=\"".concat(tabId, "\"]")).index();
+      $('.js-tab[data-tab-id="'.concat(tabId, '"]')).addClass("tab-active");
+      let index = $('.js-tab[data-tab-id="'.concat(tabId, '"]')).index();
       $(".js-tab-content").hide().eq(index).fadeIn(300);
     }
   });
 
+  // js-popUp
+  gsap.utils.toArray(".js-popUp").forEach((target) => {
+    gsap.fromTo(
+      target,
+      { scale: 0.9, autoAlpha: 0 },
+      {
+        scale: 1,
+        autoAlpha: 1,
+        ease: "back.out(1.7)",
+        scrollTrigger: {
+          trigger: target,
+          start: "top 80%",
+        },
+      }
+    );
+  });
+
+  // js-popUps
+  gsap.utils.toArray(".js-popUps").forEach((element) => {
+    let targets = element.querySelectorAll(":scope > *");
+    gsap.fromTo(
+      targets,
+      { scale: 0.9, autoAlpha: 0 },
+      {
+        scale: 1,
+        autoAlpha: 1,
+        ease: "back.out(1.7)",
+        scrollTrigger: {
+          trigger: element,
+          start: "top 80%",
+        },
+      }
+    );
+  });
 });
