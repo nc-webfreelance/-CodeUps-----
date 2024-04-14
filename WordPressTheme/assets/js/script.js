@@ -51,24 +51,45 @@ jQuery(function ($) {
       delay: 3000
     }
   });
-  var blogSwiper = new Swiper(".js-blog-swiper", {
-    loop: true,
-    speed: 1500,
-    autoplay: {
-      delay: 1500,
-      disableOnInteraction: false
-    },
-    slidesPerView: "auto",
-    spaceBetween: 24,
-    breakpoints: {
-      768: {
-        spaceBetween: 40
+  // const blogSwiper = new Swiper(".js-blog-swiper", {
+  //   loop: true,
+  //   speed: 1500,
+  //   autoplay: {
+  //     delay: 1500,
+  //     disableOnInteraction: false,
+  //   },
+  //   slidesPerView: "auto",
+  //   spaceBetween: 24,
+  //   breakpoints: {
+  //     768: {
+  //       spaceBetween: 40,
+  //     },
+  //   },
+  //   navigation: {
+  //     nextEl: ".swiper-button-next",
+  //     prevEl: ".swiper-button-prev",
+  //   },
+  // });
+  jQuery(function ($) {
+    var blogSwiper = new Swiper(".js-blog-swiper", {
+      loop: true,
+      speed: 2000,
+      slidesPerView: 1,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 4
+        }
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
       }
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    }
+    });
   });
 
   // 画像を出現するアニメーション

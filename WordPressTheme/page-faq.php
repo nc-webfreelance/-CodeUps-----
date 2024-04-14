@@ -15,18 +15,18 @@
     <ul class="page-faq__list faq-list">
       <!-- ループ開始 -->
       <?php
-      $faq_item = SCF::get('faq-list');
-      foreach ($faq_item as $fields) {
-      ?>
-        <li class="faq-list__item">
-          <p class="faq-list__item-question js-faq-question is-open">
-            <span><?php echo nl2br($fields['question']);?></span>
-          </p>
-          <p class="faq-list__item-answer">
-            <?php echo nl2br($fields['answer']); ?>
-          </p>
-        </li>
-      <?php } ?>
+          $fields = SCF::get_option_meta('theme-options', 'faq-list');
+          foreach ($fields as $field_name => $fields_value) {
+          ?>
+            <li class="faq-list__item">
+              <p class="faq-list__item-question js-faq-question is-open">
+                <span><?php echo nl2br($fields_value['question']); ?></span>
+              </p>
+              <p class="faq-list__item-answer">
+                <?php echo nl2br($fields_value['answer']); ?>
+              </p>
+            </li>
+          <?php } ?>
       <!-- ループ終了 -->
     </ul>
   </div>

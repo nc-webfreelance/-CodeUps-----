@@ -1,6 +1,7 @@
 @use "global" as *;
 
 .blog {
+  position: relative;
   background-color: $light;
   padding: rem(80) 0;
   @include mq("md") {
@@ -25,6 +26,7 @@
 //   height: rem(500);
 //   z-index: -1;
 // }
+
 
 
 // .blog__inner.inner {
@@ -77,9 +79,11 @@
 
 
 .blog__swiper {
+  position: relative;
   margin-top: rem(28);
   margin-inline: calc(50% - 49.5vw);
   // padding-left: 6%;
+  padding-inline: rem(20);
   padding-bottom: rem(10);
   @include mq("md") {
     margin-top: rem(38);
@@ -87,9 +91,84 @@
 }
 
 .blog {
-  .swiper {
-    // margin-inline: initial;
+  .swiper-slide {
+    transform: scale(.7);
+    transition: 1s;
+}
+
+.swiper-slide-active {
+    transform: scale(1);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  @include mq("md") {
+    position: absolute;
+    display: block;
+    width: rem(80);
+    height: rem(80);
+    border: 2px solid $second;
+    border-radius: 100%;
   }
+}
+
+.swiper-button-prev {
+  @include mq("md") {
+    // top: 3.3%;
+    // left: 76.7%;
+    top: 74%;
+    left: 4%;
+  }
+}
+
+.swiper-button-next {
+  @include mq("md") {
+    // top: 3.2%;
+    // right: 2.4%;
+    top: 74%;
+    right: 4%;
+  }
+}
+
+.swiper-button-prev::before,
+.swiper-button-next::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 22%;
+  transform: translateY(calc(-50% - rem(2))) rotate(40deg);
+  width: rem(10);
+  height: rem(2);
+  background: $base;
+}
+
+.swiper-button-prev::before {
+  top: 51%;
+  left: 24%;
+  transform: translateY(calc(-50% - rem(2))) rotate(142deg);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "";
+  position: absolute;
+  top: 51%;
+  right: 25%;
+  transform: translateY(-50%);
+  width: rem(40);
+  height: rem(2);
+  background-color: $base;
+}
+
+.swiper-button-prev::after {
+  top: 52.4%;
+  left: 25%;
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 1;
+}
 }
 
 

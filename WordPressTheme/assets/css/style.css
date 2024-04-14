@@ -372,7 +372,8 @@ textarea {
 }
 
 .wp-pagenavi a,
-.wp-pagenavi span {
+.wp-pagenavi span,
+.wp-pagenavi div {
 	align-items: center;
 	background-color: transparent;
 	border: 1px solid #d4c4ae;
@@ -384,6 +385,10 @@ textarea {
 	justify-content: center;
 	transition: 0.3s ease;
 	width: 2.375rem;
+}
+
+.wp-pagenavi div {
+	border: none;
 }
 
 .wp-pagenavi a.u-desktop {
@@ -407,7 +412,9 @@ textarea {
 }
 
 .wp-pagenavi a.previouspostslink::before,
-.wp-pagenavi a.nextpostslink:before {
+.wp-pagenavi a.nextpostslink:before,
+.category-pre a::before,
+.category-next a::before {
 	background-color: transparent;
 	border-bottom: none;
 	border-left: none;
@@ -420,18 +427,22 @@ textarea {
 	width: 0.75rem;
 }
 
-.wp-pagenavi a.previouspostslink::before {
+.wp-pagenavi a.previouspostslink::before,
+.category-next a::before {
 	left: 55%;
 	transform: translate(-50%, -50%) rotate(-138deg);
 }
 
-.wp-pagenavi a.nextpostslink:before {
+.wp-pagenavi a.nextpostslink:before,
+.category-pre a::before {
 	left: 43%;
 	transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .wp-pagenavi a:hover.previouspostslink::before,
-.wp-pagenavi a:hover.nextpostslink::before {
+.wp-pagenavi a:hover.nextpostslink::before,
+.category-pre a:hover::before,
+.category-next a:hover::before {
 	border-right: 1px solid #ffffff;
 	border-top: 1px solid #ffffff;
 }
@@ -516,6 +527,7 @@ textarea {
 .blog {
 	background-color: #f5f0e9;
 	padding: 5rem 0;
+	position: relative;
 }
 
 .blog__wrap {
@@ -529,6 +541,58 @@ textarea {
 	margin-right: calc(50% - 49.5vw);
 	margin-top: 1.75rem;
 	padding-bottom: 0.625rem;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	position: relative;
+}
+
+.blog .swiper-slide {
+	transform: scale(0.7);
+	transition: 1s;
+}
+
+.blog .swiper-slide-active {
+	transform: scale(1);
+}
+
+.blog .swiper-button-prev::before,
+.blog .swiper-button-next::before {
+	background: #806c65;
+	content: "";
+	height: 0.125rem;
+	position: absolute;
+	right: 22%;
+	top: 50%;
+	transform: translateY(calc(-50% - 0.125rem)) rotate(40deg);
+	width: 0.625rem;
+}
+
+.blog .swiper-button-prev::before {
+	left: 24%;
+	top: 51%;
+	transform: translateY(calc(-50% - 0.125rem)) rotate(142deg);
+}
+
+.blog .swiper-button-prev::after,
+.blog .swiper-button-next::after {
+	background-color: #806c65;
+	content: "";
+	height: 0.125rem;
+	position: absolute;
+	right: 25%;
+	top: 51%;
+	transform: translateY(-50%);
+	width: 2.5rem;
+}
+
+.blog .swiper-button-prev::after {
+	left: 25%;
+	top: 52.4%;
+}
+
+.blog .swiper-button-next.swiper-button-disabled,
+.blog .swiper-button-prev.swiper-button-disabled {
+	opacity: 1;
 }
 
 .blog__btn {
@@ -3055,6 +3119,26 @@ select {
 
 .blog__swiper {
 	margin-top: 2.375rem;
+}
+
+.blog .swiper-button-prev,
+.blog .swiper-button-next {
+	border: 2px solid #d4c4ae;
+	border-radius: 100%;
+	display: block;
+	height: 5rem;
+	position: absolute;
+	width: 5rem;
+}
+
+.blog .swiper-button-prev {
+	left: 4%;
+	top: 74%;
+}
+
+.blog .swiper-button-next {
+	right: 4%;
+	top: 74%;
 }
 
 .campaign-card {

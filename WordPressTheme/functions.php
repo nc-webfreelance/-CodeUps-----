@@ -201,61 +201,67 @@ add_action('after_setup_theme', 'my_setup');
 
 
 // 表示件数の変更
-add_action('pre_get_posts','my_custom_query_vars');
-function my_custom_query_vars( $query ) {
-	if ( !is_admin() && $query->is_main_query()) {
-		if ( is_post_type_archive('campaign')) {
+add_action('pre_get_posts', 'my_custom_query_vars');
+function my_custom_query_vars($query)
+{
+	if (!is_admin() && $query->is_main_query()) {
+		if (is_post_type_archive('campaign')) {
 			// 全部表記なら-1
-			$query->set( 'posts_per_page' , 4);
+			$query->set('posts_per_page', 4);
 		}
-		if ( is_post_type_archive('voice')) {
+		if (is_post_type_archive('voice')) {
 			// 全部表記なら-1
-			$query->set( 'posts_per_page' , 6);
+			$query->set('posts_per_page', 6);
 		}
 	}
 	return $query;
 }
 
 
+
+
 // Contact Form 7で自動挿入されるPタグ、brタグを削除
 add_filter('wpcf7_autop_or_not', 'wpcf7_autop_return_false');
-function wpcf7_autop_return_false() {
-  return false;
+function wpcf7_autop_return_false()
+{
+	return false;
 }
 
 
 // home.phpのbodyからクラス名削除
-add_filter('body_class', function($classes){
+add_filter('body_class', function ($classes) {
 	unset($classes[array_search('blog', $classes)]);
-return $classes;
+	return $classes;
 });
 
 //記事のアクセス数を表示
-function getPostViews($postID){
+function getPostViews($postID)
+{
 	$count_key = 'post_views_count';
 	$count = get_post_meta($postID, $count_key, true);
-	if($count==''){
-					delete_post_meta($postID, $count_key);
-					add_post_meta($postID, $count_key, '0');
-					return "0 View";
+	if ($count == '') {
+		delete_post_meta($postID, $count_key);
+		add_post_meta($postID, $count_key, '0');
+		return "0 View";
 	}
-	return $count.' Views';
+	return $count . ' Views';
 }
 
 //記事のアクセス数を保存
-function setPostViews($postID) {
+function setPostViews($postID)
+{
 	$count_key = 'post_views_count';
 	$count = get_post_meta($postID, $count_key, true);
-	if($count==''){
-					$count = 0;
-					delete_post_meta($postID, $count_key);
-					add_post_meta($postID, $count_key, '0');
-	}else{
-					$count++;
-					update_post_meta($postID, $count_key, $count);
+	if ($count == '') {
+		$count = 0;
+		delete_post_meta($postID, $count_key);
+		add_post_meta($postID, $count_key, '0');
+	} else {
+		$count++;
+		update_post_meta($postID, $count_key, $count);
 	}
 }
-remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
+remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
 
 
 
@@ -267,4 +273,25 @@ remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
  * @param string|null $icon_url メニューに表示するアイコンの URL
  * @param int $position メニューの位置
  */
-SCF::add_options_page( 'faq-list', 'FAQ', 'manage_options', 'theme-options');
+SCF::add_options_page('faq-list', 'FAQ', 'manage_options', 'theme-options', '', 5);
+
+
+function is_parent_slug()
+{
+	global $post;
+	if ($post->post_parent) {
+		$post_data = get_post($post->post_parent);
+		return $post_data->post_name;
+	}
+}
+
+
+
+add_action('registered_post_type', 'kaiza_posts_hierarchical', 10, 2);
+function kaiza_posts_hierarchical($post_type, $pto)
+{
+	global $wp_post_types;
+	if ($post_type != 'post') return;
+	$wp_post_types['post']->hierarchical = 1;
+	add_post_type_support('post', 'page-attributes');
+}

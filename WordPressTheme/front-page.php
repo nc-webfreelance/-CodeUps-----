@@ -200,12 +200,13 @@
           </div>
         </div>
         <div class="blog__btn">
-          <!-- <a class="button" href=""><span>View more</span></a> -->
           <a href="<?php echo $blog; ?>" class="button">
             <span class="button-front">View more</span>
           </a>
         </div>
       </div>
+      <div class="swiper-button-prev u-desktop"></div>
+      <div class="swiper-button-next u-desktop"></div>
     </div>
   </section>
 
@@ -336,9 +337,10 @@
         <ul class="faq__items faq-list">
           <?php
           $fields = SCF::get_option_meta('theme-options', 'faq-list');
+          $display_count = 0;
           foreach ($fields as $field_name => $fields_value) {
           ?>
-            <li class="faq-list__item  js-popUp">
+            <li class="faq-list__item js-popUp">
               <p class="faq-list__item-question js-faq-question is-open">
                 <span><?php echo nl2br($fields_value['question']); ?></span>
               </p>
@@ -346,7 +348,13 @@
                 <?php echo nl2br($fields_value['answer']); ?>
               </p>
             </li>
-          <?php } ?>
+          <?php
+            $display_count++;
+            if ($display_count == 4) { // 5件を超えたらループを抜ける
+              break;
+            }
+          }
+          ?>
         </ul>
         <div class="faq__btn">
           <a href="<?php echo $faq; ?>" class="button">
