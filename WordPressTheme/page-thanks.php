@@ -18,11 +18,10 @@
       </p>
     </div>
     <div class="page-thanks__btn">
-          <!-- <a class="button" href=""><span>Contact us</span></a> -->
-          <a href="<?php echo esc_url(home_url('/')); ?>" class="button">
-            <span class="button-front">TOP</span>
-          </a>
-        </div>
+      <a href="<?php echo esc_url(home_url('/')); ?>" class="button">
+        <span class="button__front">TOP</span>
+      </a>
+    </div>
   </div>
 </div>
 

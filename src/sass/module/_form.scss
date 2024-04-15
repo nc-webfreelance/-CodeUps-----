@@ -75,14 +75,12 @@
 
 .form__lastCheck {
   text-align: center;
-  // padding-left: rem(30);
   margin-top: rem(41);
   max-width: rem(345);
   width: 100%;
   margin-inline: auto;
   @include mq("md") {
     max-width: rem(420);
-    // padding-left: rem(24);
     padding: 0;
     margin-top: rem(79);
   }
@@ -95,10 +93,6 @@
   line-height: 1.5;
   text-align: left;
   padding-top: 0;
-  // padding-left: rem(30);
-  @include mq("md") {
-    // padding-left: rem(37);
-  }
 }
 
 .form__lastCheck span::before {
@@ -145,24 +139,14 @@ button,
   padding: 0;
 }
 
-// .form__btn-inner.button {
-//   padding-right: rem(112);
-//   padding-left: rem(56);
-// }
+
 
 .wpcf7-response-output {
   display: none;
 }
 
-// .form__wrap.form__wrap--textarea,
-// .form__wrap.form__wrap--cat {
-//   align-items: start;
-// }
 
 .wpcf7-spinner {
   display: none;
 }
 
-// .wpcf7-form-control.wpcf7-submit.has-spinner {
-//   border-radius: inherit;
-// }

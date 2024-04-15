@@ -1,15 +1,5 @@
 @use "global" as *;
 
-// .price {
-//   // background-color: $light-green;
-//   padding-top: rem(78);
-//   padding-bottom: rem(82);
-//   @include mq("md") {
-//     position: relative;
-//     padding-top: rem(97);
-//     padding-bottom: rem(102);
-//   }
-// }
 
 .price__inner.inner {
   max-width: rem(650);
@@ -28,36 +18,13 @@
 
 
 .price__contents {
-  // margin-top: rem(28);
   @include mq("md") {
-    // position: relative;
     display: flex;
     flex-direction: row-reverse;
-    // max-width: rem(1077);
-    // width: 100%;
     gap: rem(64);
-    // margin-top: rem(39.6);
-    // margin-inline: auto;
   }
 }
 
-// .price__wrapper::after {
-//   display: none;
-//   @include mq("md") {
-//     display: block;
-//     content: "";
-//     background-image: url(../images/common/blueFish-decoration.svg);
-//     background-repeat: no-repeat;
-//     background-position: bottom;
-//     background-size: contain;
-//     position: absolute;
-//     bottom: -24%;
-//     left: calc(51% - min(48vw, rem(630)));
-//     max-width: rem(437);
-//     width: 100%;
-//     height: 100%;
-//   }
-// }
 
 .price__image {
   position: relative;
@@ -84,7 +51,6 @@
   width: 100%;
   margin-inline: auto;
   @include mq("md") {
-    // text-align: left;
     max-width: rem(600);
     margin-top: 0;
     margin-inline: initial;
@@ -97,8 +63,4 @@
 
 .price__btn {
   text-align: center;
-  // margin-top: rem(39.5);
-  // @include mq("md") {
-  //   margin-top: rem(80);
-  // }
 }

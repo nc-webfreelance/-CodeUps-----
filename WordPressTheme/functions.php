@@ -1,32 +1,11 @@
 <?php
 
-/**
- * Functions
- */
-
-/**
- * WordPress標準機能
- *
- * @codex https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/add_theme_support
- */
-
-
-
-
-/**
- * CSSとJavaScriptの読み込み
- *
- * @codex https://wpdocs.osdn.jp/%E3%83%8A%E3%83%93%E3%82%B2%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC
- */
 function my_script_init()
 {
-	// wp_enqueue_style( 'my', get_template_directory_uri() . '/assets/css/style.css', array(), '1.0.1', 'all' );
-	// wp_enqueue_script( 'my', get_template_directory_uri() . '/assets/js/script.js', array( 'jquery' ), '1.0.1', true );
 
 
 
 	// Googleフォント
-	// wp_enqueue_style('google-font', "https://fonts.googleapis.com/css2?family=Gotu&family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&display=swap", false);
 	wp_enqueue_style('NotoSansJP', '//fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
 	wp_enqueue_style('Montserrat', '//fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
@@ -47,46 +26,7 @@ add_action('wp_enqueue_scripts', 'my_script_init');
 
 
 
-/**
- * メニューの登録
- *
- * @codex https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/register_nav_menus
- */
-// function my_menu_init() {
-// 	register_nav_menus(
-// 		array(
-// 			'global'  => 'ヘッダーメニュー',
-// 			'utility' => 'ユーティリティメニュー',
-// 			'drawer'  => 'ドロワーメニュー',
-// 		)
-// 	);
-// }
-// add_action( 'init', 'my_menu_init' );
-/**
- * メニューの登録
- *
- * 参考：https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/register_nav_menus
- */
 
-
-/**
- * ウィジェットの登録
- *
- * @codex http://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/register_sidebar
- */
-// function my_widget_init() {
-// 	register_sidebar(
-// 		array(
-// 			'name'          => 'サイドバー',
-// 			'id'            => 'sidebar',
-// 			'before_widget' => '<div id="%1$s" class="p-widget %2$s">',
-// 			'after_widget'  => '</div>',
-// 			'before_title'  => '<div class="p-widget__title">',
-// 			'after_title'   => '</div>',
-// 		)
-// 	);
-// }
-// add_action( 'widgets_init', 'my_widget_init' );
 
 
 
@@ -159,14 +99,6 @@ add_filter('excerpt_more', 'my_excerpt_more');
 
 
 
-// エディタ非表示
-// function remove_wysiwyg() {
-// 	remove_post_type_support( 'recruit', 'editor');
-// 	remove_post_type_support( 'page', 'editor');
-// }
-// add_action( 'init' , 'remove_wysiwyg');
-
-
 
 // アイキャッチ画像
 function my_setup()
@@ -189,15 +121,6 @@ add_action('after_setup_theme', 'my_setup');
 
 
 
-//アーカイブの表示件数変更
-// function change_posts_per_page($query) {
-// 	if ( is_admin() || ! $query->is_main_query() )
-// 			return;
-// 	if ( $query->is_archive('works') ) { //カスタム投稿タイプを指定
-// 			$query->set( 'posts_per_page', '6' ); //表示件数を指定
-// 	}
-// }
-// add_action( 'pre_get_posts', 'change_posts_per_page' );
 
 
 // 表示件数の変更
@@ -295,3 +218,12 @@ function kaiza_posts_hierarchical($post_type, $pto)
 	$wp_post_types['post']->hierarchical = 1;
 	add_post_type_support('post', 'page-attributes');
 }
+
+
+
+// エディタ非表示
+// function remove_wysiwyg() {
+// 	remove_post_type_support( 'recruit', 'editor');
+// 	remove_post_type_support( 'page', 'editor');
+// }
+// add_action( 'init' , 'remove_wysiwyg');

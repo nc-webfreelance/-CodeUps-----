@@ -10,7 +10,7 @@
   <div class="page-service__inner inner">
     <div class="page-service__tab tab">
       <ul class="tab__menu">
-        <li class="tab__menu-item js-tab tab-active" data-tab-id="tab1">
+        <li class="tab__menu-item js-tab is-active" data-tab-id="tab1">
           <p>ホテル</p>
         </li>
         <li class="tab__menu-item js-tab" data-tab-id="tab2">
@@ -24,7 +24,7 @@
         </li>
       </ul>
       <ul class="tab__content">
-        <li class="tab__content-item js-tab-content tab-active">
+        <li class="tab__content-item js-tab-content is-active">
           <div class="tab__content-wrap">
             <div class="tab__content-body">
               <h2>ホテル</h2>

@@ -8,12 +8,6 @@
   color: $base;
 }
 
-// .section-header.section-header--white::first-letter {
-//   @include mq("md") {
-//     color: $white;
-//   }
-// }
-
 .section-header__title {
   display: block;
   font-family: $mont-font-family;
@@ -42,7 +36,3 @@
     margin-top: rem(8);
   }
 }
-
-// .section-header__subtitle.section-header__subtitle--white {
-//   color: $white;
-// }

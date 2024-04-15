@@ -15,7 +15,7 @@
         お探しのページが見つかりません。
       </p>
       <a href="<?php echo esc_url(home_url('/')); ?>" class="button">
-        <span class="button-front">TOP</span>
+        <span class="button__front">TOP</span>
       </a>
     </div>
   </div>

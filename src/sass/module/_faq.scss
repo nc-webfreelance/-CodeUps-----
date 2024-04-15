@@ -1,17 +1,10 @@
 @use "global" as *;
 
-
-.faq {
-  // background-color: $light;
-  // padding: rem(100) 0;
-}
-
 .faq__inner.inner {
   @include mq("mx") {
     max-width: rem(1440);
   }
 }
-
 
 .faq__wrap {
   display: flex;
@@ -24,9 +17,6 @@
     padding: rem(100) rem(20);
   }
 }
-
-
-
 
 .faq__btn {
   text-align: center;

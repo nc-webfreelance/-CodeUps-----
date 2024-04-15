@@ -1,7 +1,6 @@
 @use "global" as *;
 
-.cards__item {
-}
+
 
 .cards a:hover {
   opacity: 0.8;
@@ -16,8 +15,3 @@
     row-gap: rem(87);
   }
 }
-
-// .cards__item {
-//   box-shadow: 2px 2px 10px rgba($color: $black, $alpha: 0.3);
-//   border-radius: rem(24);
-// }

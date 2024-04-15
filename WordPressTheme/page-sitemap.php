@@ -78,7 +78,7 @@ $sitemap = esc_url(home_url('/sitemap/ '));
           </li>
         </ul>
         <ul class="site-nav__items">
-          <li class="site-nav__item">
+          <li class="site-nav__item site-nav__item--white">
             <a href="<?php echo $sitemap; ?>">サイトマップ</a>
           </li>
         </ul>

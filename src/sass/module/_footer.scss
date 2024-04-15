@@ -3,8 +3,6 @@
 .footer {
   background-color: $base;
   color: $white;
-  // padding-top: rem(48);
-  // padding-bottom: rem(58);
   padding-top: rem(58);
   padding-bottom: rem(80);
   @include mq("md") {
@@ -14,7 +12,6 @@
 
 .footer__head {
   display: flex;
-  // gap: rem(10);
   position: relative;
   @include mq("md") {
   }
@@ -40,7 +37,6 @@
 .footer__icons {
   display: flex;
   gap: rem(14);
-  // margin-top: rem(18);
   position: absolute;
   left: rem(160);
   bottom: 12%;
@@ -66,20 +62,6 @@
     margin-top: rem(40);
   }
 }
-
-// .footer__nav-left.site-nav__left,
-// .footer__nav-right.site-nav__right {
-//   @include mq("md") {
-//     gap: rem(120);
-//   }
-// }
-
-// .footer__nav-right.site-nav__right {
-//   @include mq("md") {
-//     margin-left: rem(31);
-//   }
-// }
-
 .footer__copyright {
   font-family: $mont-font-family;
   font-weight: $regular;

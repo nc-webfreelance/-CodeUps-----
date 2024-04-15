@@ -1,12 +1,7 @@
 @use "global" as *;
 
-.info-company {
-}
 
 .info-company__list {
-  // display: flex;
-  // flex-direction: column;
-  // gap: rem(20);
   margin-top: rem(64);
   @include mq("md") {
     margin-top: rem(80);
@@ -19,7 +14,6 @@
   @include mq("md") {
     display: flex;
     padding-bottom: rem(30);
-    // gap: rem(20);
   }
 }
 
@@ -27,7 +21,6 @@
   padding-top: rem(20);
   @include mq("md") {
     padding-top: rem(30);
-    // gap: rem(20);
   }
 }
 

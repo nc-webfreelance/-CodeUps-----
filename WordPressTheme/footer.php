@@ -25,7 +25,7 @@ $sitemap = esc_url(home_url('/sitemap/ '));
   <?php elseif (is_page (array('contact','thanks')) ): ?>
     <footer class="footer layout-page-contact-footer">
     <?php else : ?>
-      <footer class="footer layout-footer">
+      <footer class="footer">
       <?php endif; ?>
       <div class="footer__inner inner">
         <div class="footer__head">

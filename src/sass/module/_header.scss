@@ -3,7 +3,6 @@
 .header {
   position: fixed;
   background-color: rgba($color: $base, $alpha: 0.4);
-  // background-color: transparent;
   width: 100%;
   height: rem(80);
   transition: 0.3s;
@@ -14,14 +13,11 @@
 }
 
 .header.is-color {
-  // background-color: rgba($color: $black, $alpha: 1);
   background-color: $base;
 }
 
 .header.is-active {
-  // background-color: rgba($color: $base, $alpha: 1);
   background-color: rgba($color: $base, $alpha: 0.8);
-  // background-color: $base;
 }
 
 .header__inner {
@@ -54,8 +50,6 @@
   height: rem(80);
   overflow: hidden;
   @include mq("md") {
-    // width: rem(133);
-    // height: rem(50);
   }
 }
 
@@ -116,7 +110,6 @@
 
 .header__sp-nav {
   display: none;
-  // background-color: $base;
   background-color: rgba($color: $base, $alpha: 0.8);
   height: 100vh;
   left: 0;

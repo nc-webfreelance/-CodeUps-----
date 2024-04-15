@@ -128,7 +128,7 @@
         <div class="service__btn">
           <!-- <a class="button" href=""><span>View more</span></a> -->
           <a href="<?php echo $service; ?>" class="button">
-            <span class="button-front">View more</span>
+            <span class="button__front">View more</span>
           </a>
         </div>
       </div>
@@ -201,7 +201,7 @@
         </div>
         <div class="blog__btn">
           <a href="<?php echo $blog; ?>" class="button">
-            <span class="button-front">View more</span>
+            <span class="button__front">View more</span>
           </a>
         </div>
       </div>
@@ -310,9 +310,8 @@
           </div>
         </div>
         <div class="price__btn">
-          <!-- <a class="button" href=""><span>View more</span></a> -->
           <a href="<?php echo $price; ?>" class="button">
-            <span class="button-front">View more</span>
+            <span class="button__front">View more</span>
           </a>
         </div>
       </div>
@@ -358,7 +357,7 @@
         </ul>
         <div class="faq__btn">
           <a href="<?php echo $faq; ?>" class="button">
-            <span class="button-front">View more</span>
+            <span class="button__front">View more</span>
           </a>
         </div>
       </div>
@@ -396,7 +395,7 @@
         </div>
         <div class="information__btn">
           <a href="<?php echo $information; ?>" class="button">
-            <span class="button-front">View more</span>
+            <span class="button__front">View more</span>
           </a>
         </div>
       </div>

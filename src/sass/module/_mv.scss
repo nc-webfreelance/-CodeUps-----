@@ -23,20 +23,16 @@
 }
 
 .mv__header h2 {
-  // font-family: $mont-font-family;
   font-weight: $bold;
   font-size: rem(40);
-  // line-height: calc(48 / 40);
   letter-spacing: 0.53em;
   text-indent: 0.53em;
   @include mq("md") {
     font-size: rem(80);
-    // line-height: calc(100 / 80);
   }
 }
 
 .mv__header p {
   font-weight: $regular;
   font-size: rem(28);
-  // line-height: calc(33 / 20);
 }

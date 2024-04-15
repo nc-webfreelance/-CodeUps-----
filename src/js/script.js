@@ -51,70 +51,28 @@ jQuery(function ($) {
       delay: 3000,
     },
   });
-  // const blogSwiper = new Swiper(".js-blog-swiper", {
-  //   loop: true,
-  //   speed: 1500,
-  //   autoplay: {
-  //     delay: 1500,
-  //     disableOnInteraction: false,
-  //   },
-  //   slidesPerView: "auto",
-  //   spaceBetween: 24,
-  //   breakpoints: {
-  //     768: {
-  //       spaceBetween: 40,
-  //     },
-  //   },
-  //   navigation: {
-  //     nextEl: ".swiper-button-next",
-  //     prevEl: ".swiper-button-prev",
-  //   },
-  // });
+
   jQuery(function ($) {
     const blogSwiper = new Swiper(".js-blog-swiper", {
-        loop: true,
-        speed: 2000,
-        slidesPerView: 1,
-        centeredSlides: true,
-        autoplay: {
-            delay: 2000,
-            disableOnInteraction: false,
+      loop: true,
+      speed: 2000,
+      slidesPerView: 1,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 4,
         },
-        breakpoints: {
-            768: {
-                slidesPerView: 4,
-            }
-        },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
     });
-});
-
-  // 画像を出現するアニメーション
-  // let box = $(".service__image,.wide-card__image,.price__image"),
-  //   speed = 700;
-  // box.each(function () {
-  //   $(this).append('<div class="img-color"></div>');
-  //   var color = $(this).find($(".img-color")),
-  //     image = $(this).find("img");
-  //   var counter = 0;
-  //   image.css("opacity", "0");
-  //   color.css("width", "0%");
-  //   color.on("inview", function () {
-  //     if (counter == 0) {
-  //       $(this)
-  //         .delay(200)
-  //         .animate({ width: "100%" }, speed, function () {
-  //           image.css("opacity", "1");
-  //           $(this).css({ left: "0", right: "auto" });
-  //           $(this).animate({ width: "0%" }, speed);
-  //         });
-  //       counter = 1;
-  //     }
-  //   });
-  // });
+  });
 
   // ハンバーガー,ドロワー
   $(".js-hamburger,.js-sp-nav,.js-drawer a").click(function () {
@@ -162,31 +120,19 @@ jQuery(function ($) {
     });
   });
 
-  // タブ切り替え
-  // $(function () {
-  //   $(".js-tab").on("click", function () {
-  //     $(".js-tab").removeClass("tab-active");
-  //     $(".js-tab-content").removeClass("tab-active");
-  //     $(this).addClass("tab-active");
-  //     let number = $(this).data("number");
-  //     $("#" + number).addClass("tab-active");
-  //   });
-  // });
-
   $(function () {
     $(".js-tab").on("click", function () {
-      $(".js-tab").removeClass("tab-active");
-      $(".js-tab-content").removeClass("tab-active");
-      $(this).addClass("tab-active");
+      $(".js-tab").removeClass("is-active");
+      $(".js-tab-content").removeClass("is-active");
+      $(this).addClass("is-active");
       let index = $(this).index();
       $(".js-tab-content").hide().eq(index).fadeIn(300);
     });
     let urlParams = new URLSearchParams(window.location.search);
     let tabId = urlParams.get("tabId");
     if (tabId) {
-      $(".tab-active").removeClass("tab-active");
-      // タブがクエリパラメーターで指定された場合、該当のタブにtab-activeクラスを付与
-      $('.js-tab[data-tab-id="'.concat(tabId, '"]')).addClass("tab-active");
+      $(".is-active").removeClass("is-active");
+      $('.js-tab[data-tab-id="'.concat(tabId, '"]')).addClass("is-active");
       let index = $('.js-tab[data-tab-id="'.concat(tabId, '"]')).index();
       $(".js-tab-content").hide().eq(index).fadeIn(300);
     }

@@ -1,4 +1,4 @@
-<section id="contact" class="contact layout-top">
+<section id="contact" class="contact layout-contact">
   <div class="contact__inner inner">
     <div class="contact__body">
       <div class="contact__inquiry">
@@ -13,9 +13,8 @@
           </p>
         </div>
         <div class="contact__btn">
-          <!-- <a class="button" href=""><span>Contact us</span></a> -->
           <a href="<?php echo esc_url(home_url('/contact')); ?>" class="button">
-            <span class="button-front">Contact us</span>
+            <span class="button__front">Contact us</span>
           </a>
         </div>
       </div>
