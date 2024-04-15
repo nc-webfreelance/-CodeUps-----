@@ -37,7 +37,7 @@
           <div class="header__logo">
           <?php endif; ?>
           <a href="<?php echo $home; ?>" class="header__logoLink">
-            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/CodeUps--white.svg" alt="コードアップスのロゴ" />
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/company-logo.png" alt="スターバイオレット" />
           </a>
           <?php if (is_front_page()) : ?>
         </h1>

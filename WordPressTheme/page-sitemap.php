@@ -27,7 +27,7 @@ $sitemap = esc_url(home_url('/sitemap/ '));
     <nav class="page-sitemap__nav site-nav">
       <div class="site-nav__wrap">
         <ul class="site-nav__items">
-          <li class="site-nav__item">
+          <li class="site-nav__item site-nav__item--white">
             <a href="<?php echo $service; ?>">サービス</a>
           </li>
           <li class="site-nav__item">
@@ -46,34 +46,34 @@ $sitemap = esc_url(home_url('/sitemap/ '));
       </div>
       <div class="site-nav__wrap">
         <ul class="site-nav__items">
-          <li class="site-nav__item">
+          <li class="site-nav__item site-nav__item--white">
             <a href="<?php echo $blog; ?>">ブログ</a>
           </li>
         </ul>
         <ul class="site-nav__items">
-          <li class="site-nav__item">
+          <li class="site-nav__item site-nav__item--white">
             <a href="<?php echo $price; ?>">料金表</a>
           </li>
         </ul>
         <ul class="site-nav__items">
-          <li class="site-nav__item">
+          <li class="site-nav__item site-nav__item--white">
             <a href="<?php echo $faq; ?>">よくある質問</a>
           </li>
         </ul>
         <ul class="site-nav__items">
-          <li class="site-nav__item">
+          <li class="site-nav__item site-nav__item--white">
             <a href="<?php echo $information; ?>">店舗情報</a>
           </li>
         </ul>
       </div>
       <div class="site-nav__wrap">
         <ul class="site-nav__items">
-          <li class="site-nav__item">
+          <li class="site-nav__item site-nav__item--white">
             <a href="<?php echo $contact; ?>">お問い合わせ</a>
           </li>
         </ul>
         <ul class="site-nav__items">
-          <li class="site-nav__item">
+          <li class="site-nav__item site-nav__item--white">
             <a href="<?php echo $privacypolicy; ?>">プライバシー<br class="u-mobile" />ポリシー</a>
           </li>
         </ul>

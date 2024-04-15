@@ -14,9 +14,17 @@
       <div class="two-col__left">
         <div class="two-col__cards cards cards--archive">
           <!-- ループ処理開始 -->
+
           <?php
-          $cat_info = get_category(get_query_var('cat'));
+          $catId = get_query_var('cat');
           $paged = get_query_var('paged') ? get_query_var('paged') : 1;
+          $cat_info = get_category($catId);
+          $post_slug = get_post_field('post_name', get_queried_object_id());
+          $category_link = get_category_link($catId);
+          // $category_link_with_param = add_query_arg('cat', $catId, $category_link);
+          // global $post;
+          // $slug = $post->post_name;
+          // $category_link_with_param = add_query_arg('slug', $slug, $category_link_with_param);
           ?>
           <?php
           if (wp_is_mobile()) {
@@ -34,9 +42,9 @@
           if ($wp_query->have_posts()) : while ($wp_query->have_posts()) :
               $wp_query->the_post();
           ?>
-              <a href="<?php the_permalink(); ?>" class="cards__item card">
+              <a href="<?php echo the_permalink(); ?>?previous_page=category" class="cards__item card">
                 <div class="card__inner">
-                <div class="card__image">
+                  <div class="card__image">
                     <?php if (has_post_thumbnail()) : ?>
                       <img src="<?php the_post_thumbnail_url('full'); ?>" alt="<?php the_title(); ?>のアイキャッチ画像">
                     <?php else : ?>

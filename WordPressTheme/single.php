@@ -29,22 +29,17 @@
                 <?php the_content(); ?>
               </div>
             </div>
-              <div class="two-col__pagenavi two-col__pagenavi--single-blog pagenavi">
-                <div class="single-blog__wp-pagenavi wp-pagenavi" role="navigation">
-
-
-
-
-                  <div class="previouspostslink pagenavi-pre category-next"><?php next_post_link('%link', '', true); ?></div>
-                  <div class="nextpostslink pagenavi-next category-pre" rel="next" href=""><?php previous_post_link('%link', '', true); ?></div>
-
-
-
-
-
+            <div class="two-col__pagenavi two-col__pagenavi--single-blog pagenavi">
+              <div class="single-blog__wp-pagenavi wp-pagenavi" role="navigation">
+                <div class="previouspostslink pagenavi-pre category-next">
+                  <?php next_post_link('%link', '', ((isset($_GET['previous_page']) && $_GET['previous_page'] === 'category') ? true : false)); ?>
                 </div>
-
+                <div class="nextpostslink pagenavi-next category-pre">
+                  <?php previous_post_link('%link', '', ((isset($_GET['previous_page']) && $_GET['previous_page'] === 'category') ? true : false)); ?>
+                </div>
               </div>
+
+            </div>
           </div>
       <?php endwhile;
       endif; ?>

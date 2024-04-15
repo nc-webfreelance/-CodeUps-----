@@ -2,7 +2,7 @@
 
 .site-nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .site-nav__wrap {
@@ -37,14 +37,17 @@
 
 .site-nav__item a {
   display: block;
-  font-size: rem(16);
+  font-size: rem(14);
   font-weight: $regular;
   line-height: calc(18 / 16);
   padding-top: rem(12);
+  padding-right: rem(12);
   padding-bottom: rem(12);
-  padding-left: rem(22);
+  padding-left: rem(26);
+  white-space: nowrap;
   @include mq("md") {
-    white-space: nowrap;
+    font-size: rem(18);
+    padding-left: rem(34);
   }
 }
 
@@ -53,20 +56,27 @@
   font-weight: $bold;
 }
 
-// .site-nav__left-item:first-child a::before,
-// .site-nav__right-item:first-child a::before {
-//   content: "";
-//   mask-image: url(../images/common/section-logo.svg);
-//   mask-repeat: no-repeat;
-//   mask-position: center;
-//   mask-size: contain;
-//   background-color: $white;
-//   position: absolute;
-//   top: 30%;
-//   left: 0;
-//   width: rem(18);
-//   height: rem(18);
-// }
+.site-nav__item:first-child a::before{
+  content: "";
+  mask-image: url(../images/common/dog-logo.png);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  background-color: $white;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: rem(20);
+  height: rem(20);
+  @include mq("md") {
+    width: rem(26);
+    height: rem(26);
+  }
+}
+
+.site-nav__item--white:first-child a::before {
+  background-color: $base;
+}
 
 // .site-nav__item-logo--black.site-nav__left-item:first-child a::before,
 // .site-nav__item-logo--black.site-nav__right-item:first-child a::before {

@@ -38,15 +38,15 @@
 .sidebar__title h3::before {
   content: "";
   position: absolute;
-  top: rem(-3);
+  top: 0;
   left: rem(-54);
-  background-color: $black;
-  mask-image: url(../images/common/whale-logo.svg);
+  background-color: $base;
+  mask-image: url(../images/common/dog-logo.png);
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: contain;
-  width: rem(42);
-  height: rem(42);
+  width: rem(40);
+  height: rem(40);
 }
 
 .sidebar__article {

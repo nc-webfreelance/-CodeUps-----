@@ -1,14 +1,5 @@
 @use "global" as *;
 
-.service {
-  // background-color: $light-green;
-  // padding-top: rem(80);
-  // padding-bottom: rem(81);
-  // @include mq("md") {
-  //   padding-top: rem(101);
-  //   padding-bottom: rem(79);
-  // }
-}
 
 .service__inner.inner {
   max-width: rem(650);

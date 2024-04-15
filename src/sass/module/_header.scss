@@ -43,7 +43,7 @@
   justify-content: center;
   height: inherit;
   margin-right: auto;
-  z-index: $CodeUps-z-index;
+  z-index: $company-logo-z-index;
   @include mq("md") {
     margin-right: 0;
   }
@@ -51,11 +51,18 @@
 
 .header__logoLink {
   width: rem(102);
-  height: rem(38);
+  height: rem(80);
+  overflow: hidden;
   @include mq("md") {
-    width: rem(133);
-    height: rem(50);
+    // width: rem(133);
+    // height: rem(50);
   }
+}
+
+.header__logoLink img {
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
 }
 
 .header__hamburger {

@@ -30,7 +30,7 @@ $sitemap = esc_url(home_url('/sitemap/ '));
       <div class="footer__inner inner">
         <div class="footer__head">
           <a href="<?php echo $home; ?>" class="footer__logo">
-            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/CodeUps--white.svg" alt="コードアップスのロゴ" />
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/company-logo.png" alt="スターバイオレット" />
           </a>
           <div class="footer__icons">
             <a href="#" class="footer__icon">
