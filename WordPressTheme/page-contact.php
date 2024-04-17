@@ -8,7 +8,7 @@
 <div class="page-contact layout-subPage">
   <div class="page-contact__inner inner">
     <div class="page-contact__items">
-      <?php echo do_shortcode('[contact-form-7 id="b333011" title="お問い合わせ"]'); ?>
+      <?php echo do_shortcode('[contact-form-7 id="b6d81fe" title="お問い合わせ"]'); ?>
     </div>
   </div>
 </div>

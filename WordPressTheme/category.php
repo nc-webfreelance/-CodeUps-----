@@ -39,7 +39,7 @@
                     <?php if (has_post_thumbnail()) : ?>
                       <img src="<?php the_post_thumbnail_url('full'); ?>" alt="<?php the_title(); ?>のアイキャッチ画像">
                     <?php else : ?>
-                      <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/no-image.jpeg" alt="" />
+                      <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/no-image.jpeg" alt="ノーイメージ" />
                     <?php endif; ?>
                   </div>
                   <div class="card__body">

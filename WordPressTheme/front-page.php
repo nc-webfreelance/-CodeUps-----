@@ -58,7 +58,7 @@
         <div class="service__contents">
           <div class="service__content js-popUp">
             <div class="service__image">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/dog-hotel.jpg" alt="" />
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/dog-hotel.jpg" alt="眠っている犬の画像" />
             </div>
             <div class="service__textBody">
               <div class="service__head">
@@ -73,7 +73,7 @@
           </div>
           <div class="service__content js-popUp">
             <div class="service__image">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/dog-trimming.jpg" alt="" />
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/dog-trimming.jpg" alt="女性が犬をトリミングしている画像" />
             </div>
             <div class="service__textBody">
               <div class="service__head">
@@ -88,7 +88,7 @@
           </div>
           <div class="service__content js-popUp">
             <div class="service__image">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/dog-run.jpg" alt="" />
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/dog-run.jpg" alt="2匹の犬が歩いている様子の画像" />
             </div>
             <div class="service__textBody">
               <div class="service__head">
@@ -103,7 +103,7 @@
           </div>
           <div class="service__content js-popUp">
             <div class="service__image">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/dog-sales.jpg" alt="" />
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/dog-sales.jpg" alt="犬のお菓子の画像" />
             </div>
             <div class="service__textBody">
               <div class="service__head">
@@ -208,7 +208,7 @@
         </div>
         <div class="price__contents  js-popUps">
           <div class="price__image">
-            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/price-img.jpg" alt="" />
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/price-img.jpg" alt="犬が笑いながら歩いている画像" />
           </div>
           <div class="price__list">
             <div class="price__list-item price-menu">
