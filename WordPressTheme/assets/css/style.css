@@ -653,7 +653,6 @@ textarea {
 	font-weight: 500;
 	line-height: 1.5;
 	margin-top: 1rem;
-	min-height: 0;
 	overflow: hidden;
 	padding-bottom: 0.25rem;
 }
@@ -663,7 +662,6 @@ textarea {
 	-webkit-line-clamp: 4;
 	display: -webkit-box;
 	margin-top: 0.625rem;
-	min-height: 0;
 	overflow: hidden;
 }
 
@@ -688,7 +686,7 @@ textarea {
 }
 
 .contact__text {
-	margin-top: 0.6875rem;
+	margin-top: 2.5rem;
 }
 
 .contact__text p {
@@ -1088,14 +1086,11 @@ button,
 	margin-right: auto;
 	margin-top: 5rem;
 	max-width: 40.625rem;
-	overflow: hidden;
 	width: 100%;
 }
 
 .info-company__map iframe {
-	-o-object-fit: cover;
 	height: 100%;
-	object-fit: cover;
 	vertical-align: bottom;
 	width: 100%;
 }
@@ -1164,6 +1159,8 @@ button,
 
 .info-message__ceo-text p:last-child {
 	margin-top: 1rem;
+	padding: 0 1.25rem;
+	text-align: right;
 }
 
 .information__inner.inner {
@@ -1366,6 +1363,12 @@ button,
 
 .page-price__list-item:not(:first-child) {
 	margin-top: 3rem;
+}
+
+.page-price__detail {
+	font-size: 0.875rem;
+	margin-top: 2.5rem;
+	text-align: center;
 }
 
 .page-privacypolicy__inner.inner {
@@ -1577,7 +1580,7 @@ button,
 
 .section-header__title {
 	color: #d4c4ae;
-	display: block;
+	display: inline;
 	font-family: "Montserrat", sans-serif;
 	font-size: 2rem;
 	font-weight: 700;
@@ -2457,6 +2460,7 @@ select {
 
 .info-message__ceo-text p:last-child {
 	margin-top: 1.25rem;
+	text-align: left;
 }
 
 .information__inner.inner {
@@ -2553,6 +2557,10 @@ select {
 
 .page-price__list-item:not(:first-child) {
 	margin-top: 5rem;
+}
+
+.page-price__detail {
+	margin-top: 3.75rem;
 }
 
 .page-privacypolicy__title h2 {

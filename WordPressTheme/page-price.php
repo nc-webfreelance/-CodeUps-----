@@ -107,8 +107,8 @@
             <dd>¥800~</dd>
           </div>
         </dl>
-        <p>※料金は全て税込価格となっております。</p>
       </div>
+      <p class="page-price__detail">※料金は全て税込価格となっております。</p>
     </div>
   </div>
 </div>

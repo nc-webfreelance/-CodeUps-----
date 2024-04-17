@@ -33,7 +33,7 @@
           if ($wp_query->have_posts()) : while ($wp_query->have_posts()) :
               $wp_query->the_post();
           ?>
-              <a href="<?php echo the_permalink(); ?>?previous_page=category" class="cards__item card">
+              <a href="<?php echo the_permalink(); ?>?previous_page=category" class="cards__item card card--archive">
                 <div class="card__inner">
                   <div class="card__image">
                     <?php if (has_post_thumbnail()) : ?>
@@ -54,7 +54,7 @@
                     </div>
                     <h3 class="card__title"><?php the_title(); ?></h3>
                     <div class="card__text">
-                      <?php the_content(); ?>
+                      <?php the_excerpt(); ?>
                     </div>
                   </div>
                 </div>

@@ -80,8 +80,11 @@
 }
 
 .info-message__ceo-text p:last-child {
+  text-align: right;
+  padding: 0 rem(20);
   margin-top: rem(16);
   @include mq("md") {
+    text-align: left;
     margin-top: rem(20);
   }
 }

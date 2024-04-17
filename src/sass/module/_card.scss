@@ -77,7 +77,6 @@
   overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
-  min-height: 0;
   margin-top: rem(16);
   @include mq("md") {
     margin-top: rem(10);
@@ -89,7 +88,6 @@
   overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
-  min-height: 0;
   margin-top: rem(10);
 }
 

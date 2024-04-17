@@ -175,7 +175,7 @@
                           <h3 class="card__title"> <?php the_title(); ?></h3>
                         </div>
                         <div class="card__text">
-                          <?php the_content(); ?>
+                          <?php the_excerpt(); ?>
                         </div>
                       </div>
                     </div>

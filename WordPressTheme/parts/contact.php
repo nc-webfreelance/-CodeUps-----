@@ -9,7 +9,7 @@
           </div>
         </div>
         <div class="contact__text">
-          <p>ご質問やご相談など、お問い合わせは下記よりお願いいたします。
+          <p>ご質問やご相談など、お問い合わせは<br class="u-mobile">下記よりお願いいたします。
           </p>
         </div>
         <div class="contact__btn">
