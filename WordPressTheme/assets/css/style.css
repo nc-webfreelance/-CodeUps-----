@@ -653,6 +653,7 @@ textarea {
 	font-weight: 500;
 	line-height: 1.5;
 	margin-top: 1rem;
+	min-height: 0;
 	overflow: hidden;
 	padding-bottom: 0.25rem;
 }
@@ -662,6 +663,7 @@ textarea {
 	-webkit-line-clamp: 4;
 	display: -webkit-box;
 	margin-top: 0.625rem;
+	min-height: 0;
 	overflow: hidden;
 }
 
@@ -1710,6 +1712,7 @@ button,
 	font-weight: 500;
 	line-height: 1.5;
 	margin-top: 0.25rem;
+	min-height: 0;
 	overflow: hidden;
 }
 

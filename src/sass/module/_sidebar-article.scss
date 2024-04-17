@@ -49,5 +49,6 @@
   overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+  min-height: 0;
   margin-top: rem(4);
 }
