@@ -1,10 +1,7 @@
 <?php get_header(); ?>
 
 
-<!-- 下層ページmv -->
 <?php get_template_part('parts/sub-mv'); ?>
-
-<!-- パンくず -->
 <?php get_template_part('parts/breadcrumb'); ?>
 
 
@@ -12,8 +9,7 @@
   <div class="two-col__inner inner">
     <div class="two-col__wrap">
       <div class="two-col__left">
-        <div class="two-col__cards cards cards--archive">
-          <!-- ループ処理開始 -->
+        <div class="two-col__cards cards">
           <?php if (have_posts()) : ?>
             <?php while (have_posts()) : the_post(); ?>
               <a href="<?php the_permalink(); ?>" class="cards__item card card--archive">
@@ -44,20 +40,18 @@
               </a>
           <?php endwhile;
           endif; ?>
-          <!-- ループ処理終了 -->
         </div>
         <div class="two-col__pagenavi pagenavi">
-          <!-- wp-pagenavi -->
           <?php wp_pagenavi(); ?>
         </div>
       </div>
-      <!-- two-col__right/sidebar -->
       <?php get_template_part('parts/sidebar'); ?>
     </div>
   </div>
 </div>
 
-<!-- contact -->
+
 <?php get_template_part('parts/contact'); ?>
+
 
 <?php get_footer(); ?>

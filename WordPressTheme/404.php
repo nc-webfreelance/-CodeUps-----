@@ -1,13 +1,9 @@
 <?php get_header(); ?>
 
 
-
 <div class="notFound">
   <div class="notFound__inner">
-
-    <!-- パンくず -->
     <?php get_template_part('parts/breadcrumb'); ?>
-
     <div class="notFound__content">
       <h1>404</h1>
       <p>

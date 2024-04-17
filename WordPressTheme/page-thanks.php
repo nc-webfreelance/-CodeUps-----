@@ -1,10 +1,9 @@
 <?php get_header(); ?>
 
-<!-- 下層ページmv -->
-<?php get_template_part('parts/sub-mv'); ?>
 
-<!-- パンくず -->
+<?php get_template_part('parts/sub-mv'); ?>
 <?php get_template_part('parts/breadcrumb'); ?>
+
 
 <div class="page-thanks layout-subPage">
   <div class="page-thanks__inner inner">

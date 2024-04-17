@@ -51,27 +51,24 @@ jQuery(function ($) {
       delay: 3000,
     },
   });
-
-  jQuery(function ($) {
-    const blogSwiper = new Swiper(".js-blog-swiper", {
-      loop: true,
-      speed: 2000,
-      slidesPerView: 1,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
+  const blogSwiper = new Swiper(".js-blog-swiper", {
+    loop: true,
+    speed: 2000,
+    slidesPerView: 1,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 4,
       },
-      breakpoints: {
-        768: {
-          slidesPerView: 4,
-        },
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
   });
 
   // ハンバーガー,ドロワー
@@ -107,19 +104,7 @@ jQuery(function ($) {
     });
   });
 
-  // Gallery
-  $(function () {
-    $(".gallery-list__item img").click(function () {
-      $("#gallery__modal-image").html($(this).prop("outerHTML"));
-      $("#gallery__modal-image").fadeIn(100);
-      $("body").addClass("no-scroll");
-    });
-    $("#gallery__modal-image, #gallery__modal-image img").click(function () {
-      $("#gallery__modal-image").fadeOut(100);
-      $("body").removeClass("no-scroll");
-    });
-  });
-
+  // Serviceタブ
   $(function () {
     $(".js-tab").on("click", function () {
       $(".js-tab").removeClass("is-active");

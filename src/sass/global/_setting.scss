@@ -15,13 +15,11 @@ $padding-sp: 15px;
 
 //色指定（共通性のあるものは出来る限り指定すると良い）
 $black: #0d2936;
-$black2: #000000;
 $white: #ffffff;
-
 $base: #806c65;
 $second: #d4c4ae;
-$light:  #f5f0e9;
-$yellow: #F5F534;
+$light: #f5f0e9;
+$yellow: #f5f534;
 
 ////////////////////
 // フォント設定
@@ -35,7 +33,6 @@ $regular: 400;
 $medium: 500;
 $bold: 700;
 
-// ※検証ツールでしっかり反映されているか確認する
 body {
   font-family: $base-font-family;
   color: $base;
@@ -52,4 +49,3 @@ $sp-nav-z-index: 3000;
 $header-z-index: 5000;
 $company-logo-z-index: 10000;
 $hamburger-z-index: 10000;
-$modal-z-index: 20000;

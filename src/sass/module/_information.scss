@@ -1,7 +1,5 @@
 @use "global" as *;
 
-
-
 .information__inner.inner {
   max-width: rem(650);
   @include mq("md") {
@@ -26,10 +24,6 @@
   }
 }
 
-
-
-
-
 .information__textBody {
   text-align: center;
   @include mq("md") {
@@ -37,7 +31,6 @@
     width: 50%;
   }
 }
-
 
 .information__head {
   border-bottom: 1px solid $second;

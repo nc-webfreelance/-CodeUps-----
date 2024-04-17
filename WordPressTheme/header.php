@@ -6,13 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- <meta name="robots" content="noindex" /> -->
   <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
-
 
 
   <?php
@@ -26,7 +24,6 @@
   $privacypolicy = esc_url(home_url('/privacypolicy/ '));
   $sitemap = esc_url(home_url('/sitemap/ '));
   ?>
-
 
 
   <header class="header js-header">
@@ -44,13 +41,11 @@
       <?php else : ?>
     </div>
   <?php endif; ?>
-
   <div class="header__hamburger js-hamburger u-mobile">
     <span></span>
     <span></span>
     <span></span>
   </div>
-
   <nav class="header__sp-nav sp-nav js-sp-nav">
     <div class="sp-nav__inner">
       <div class="sp-nav__wrapper">
@@ -113,7 +108,6 @@
       </div>
     </div>
   </nav>
-
   <nav class="header__pc-nav pc-nav js-pc-nav u-desktop">
     <ul class="pc-nav__items">
       <li class="pc-nav__item">

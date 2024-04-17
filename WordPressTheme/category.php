@@ -1,10 +1,7 @@
 <?php get_header(); ?>
 
 
-<!-- 下層ページmv -->
 <?php get_template_part('parts/sub-mv'); ?>
-
-<!-- パンくず -->
 <?php get_template_part('parts/breadcrumb'); ?>
 
 
@@ -12,30 +9,24 @@
   <div class="two-col__inner inner">
     <div class="two-col__wrap">
       <div class="two-col__left">
-        <div class="two-col__cards cards cards--archive">
-          <!-- ループ処理開始 -->
-
+        <div class="two-col__cards cards">
           <?php
           $catId = get_query_var('cat');
           $paged = get_query_var('paged') ? get_query_var('paged') : 1;
           $cat_info = get_category($catId);
           $post_slug = get_post_field('post_name', get_queried_object_id());
           $category_link = get_category_link($catId);
-          // $category_link_with_param = add_query_arg('cat', $catId, $category_link);
-          // global $post;
-          // $slug = $post->post_name;
-          // $category_link_with_param = add_query_arg('slug', $slug, $category_link_with_param);
           ?>
           <?php
           if (wp_is_mobile()) {
-            $num = 6; // スマホの表示数(全件は-1)
+            $num = 6;
           } else {
-            $num = 6; // PCの表示数(全件は-1)
+            $num = 6;
           }
           $args = array(
-            'post_type' => array('post'), // 投稿タイプのスラッグ(通常投稿なので'post')
-            'paged' => $paged, // ページネーションがある場合に必要
-            'posts_per_page' => $num, // 表示件数（変更不要）
+            'post_type' => array('post'),
+            'paged' => $paged,
+            'posts_per_page' => $num,
             'category_name' => $cat_info->slug,
           );
           $wp_query = new WP_Query($args);
@@ -73,20 +64,18 @@
           endif;
           wp_reset_postdata();
           ?>
-          <!-- ループ処理終了 -->
         </div>
         <div class="two-col__pagenavi pagenavi">
-          <!-- wp-pagenavi -->
           <?php wp_pagenavi(); ?>
         </div>
       </div>
-      <!-- two-col__right/sidebar -->
       <?php get_template_part('parts/sidebar'); ?>
     </div>
   </div>
 </div>
 
-<!-- contact -->
+
 <?php get_template_part('parts/contact'); ?>
+
 
 <?php get_footer(); ?>

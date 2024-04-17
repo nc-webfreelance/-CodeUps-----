@@ -1,20 +1,13 @@
 <?php get_header(); ?>
 
-<!-- 下層ページmv -->
-<?php get_template_part('parts/sub-mv'); ?>
 
-<!-- パンくず -->
+<?php get_template_part('parts/sub-mv'); ?>
 <?php get_template_part('parts/breadcrumb'); ?>
 
 
-
-
-
-<!-- company -->
 <section class="page-information layout-subPage">
   <div class="page-information__inner inner">
     <div class="page-information__wrap">
-
       <div class="page-information__message info-message">
         <div class="info-message__textBlock">
           <div class="info-message__title">
@@ -37,7 +30,7 @@
         </div>
         <div class="info-message__ceo">
           <div class="info-message__ceo-image">
-            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/ceo-img.jpg" alt="" />
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/ceo-img.jpg" alt="代表取締役社長の写真" />
           </div>
           <div class="info-message__ceo-text">
             <p>
@@ -53,7 +46,6 @@
         </div>
       </div>
     </div>
-
     <div class="page-information__company info-company">
       <div class="info-company__title">
         <div class="section-header">
@@ -89,18 +81,12 @@
         <a href="https://maps.app.goo.gl/eSxQjcLwXDuSSEgo8" rel="noopener noreferrer" target="_blank">Google mapで見る</a>
       </div>
     </div>
-
   </div>
   </div>
 </section>
 
 
-
-
-
-
-
-<!-- contact -->
 <?php get_template_part('parts/contact'); ?>
+
 
 <?php get_footer(); ?>

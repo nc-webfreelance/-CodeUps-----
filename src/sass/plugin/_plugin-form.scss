@@ -78,7 +78,6 @@ textarea {
   }
 }
 [type="tel"] {
-  // max-width: rem(480);
   width: 100%;
 }
 button,
@@ -114,7 +113,7 @@ button,
     line-height: 1;
     cursor: pointer;
     transition: 0.3s ease;
-    
+
     &::before {
       position: absolute;
       content: "";
@@ -207,7 +206,6 @@ select {
 textarea {
   height: $textarea-height;
   width: 100%;
-  // max-width: rem(480);
   resize: none;
 }
 

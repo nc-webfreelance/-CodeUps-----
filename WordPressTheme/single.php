@@ -1,19 +1,13 @@
 <?php get_header(); ?>
 
 
-<!-- 下層ページmv -->
 <?php get_template_part('parts/sub-mv'); ?>
-
-<!-- パンくず -->
 <?php get_template_part('parts/breadcrumb'); ?>
-
-
 
 
 <section class="two-col layout-single-blog">
   <div class="two-col__inner inner">
     <div class="two-col__wrap">
-      <!-- ループ処理開始 -->
       <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
           <div class="two-col__left">
@@ -38,20 +32,17 @@
                   <?php previous_post_link('%link', '', ((isset($_GET['previous_page']) && $_GET['previous_page'] === 'category') ? true : false)); ?>
                 </div>
               </div>
-
             </div>
           </div>
       <?php endwhile;
       endif; ?>
-      <!-- ループ処理終了 -->
-      <!-- two-col__right/sidebar -->
       <?php get_template_part('parts/sidebar'); ?>
     </div>
   </div>
 </section>
 
 
-<!-- contact -->
 <?php get_template_part('parts/contact'); ?>
+
 
 <?php get_footer(); ?>

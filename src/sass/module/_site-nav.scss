@@ -5,14 +5,7 @@
   justify-content: space-between;
 }
 
-.site-nav__wrap {
-  @include mq("md") {
-    display: flex;
-    flex-direction: column;
-    gap: rem(20);
-  }
-}
-
+.site-nav__wrap,
 .site-nav__items {
   @include mq("md") {
     display: flex;
@@ -60,6 +53,6 @@
   }
 }
 
-.site-nav__item--white:first-child a::before {
+.site-nav__item--brown:first-child a::before {
   background-color: $base;
 }

@@ -12,8 +12,7 @@
   font-weight: $bold;
   font-size: rem(20);
   padding: 0 rem(32);
-  margin-left: 1em;
-  cursor: pointer;
+  margin-left: rem(16);
 }
 
 .sidebar-category__item a::before {
@@ -21,7 +20,7 @@
   position: absolute;
   top: rem(8);
   left: rem(2);
-  mask-image: url(../images/common/sidebar-archive-triangle.svg);
+  mask-image: url(../images/common/sidebar-category-triangle.svg);
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: contain;

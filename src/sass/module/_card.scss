@@ -19,7 +19,7 @@
 .card__inner {
   padding-top: rem(16);
   padding-right: rem(16);
-  padding-bottom: rem(23.3);
+  padding-bottom: rem(24);
   padding-left: rem(16);
 }
 
@@ -57,7 +57,7 @@
   font-size: rem(12);
   background-color: $base;
   color: $white;
-  border-radius: 12px;
+  border-radius: rem(12);
   width: rem(80);
   padding: rem(4);
   text-align: center;

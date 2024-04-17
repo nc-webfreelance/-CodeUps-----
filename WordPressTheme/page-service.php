@@ -1,10 +1,9 @@
 <?php get_header(); ?>
 
-<!-- 下層ページmv -->
-<?php get_template_part('parts/sub-mv'); ?>
 
-<!-- パンくず -->
+<?php get_template_part('parts/sub-mv'); ?>
 <?php get_template_part('parts/breadcrumb'); ?>
+
 
 <section class="page-service layout-subPage">
   <div class="page-service__inner inner">
@@ -34,7 +33,7 @@
               <p>料金&nbsp;:&nbsp;1泊&emsp;小型犬¥5,000~&emsp;中型犬¥6,500~&emsp;大型犬¥8,000~</p>
             </div>
             <div class="tab__content-image">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/dog-hotel.jpg" alt="" />
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/dog-hotel.jpg" alt="眠っている犬の画像" />
             </div>
           </div>
         </li>
@@ -48,7 +47,7 @@
               <p>料金&nbsp;:&nbsp;小型犬¥3,000~&emsp;中型犬¥4,500~&emsp;大型犬¥6,000~</p>
             </div>
             <div class="tab__content-image">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/dog-trimming.jpg" alt="" />
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/dog-trimming.jpg" alt="女性が犬をトリミングしている画像" />
             </div>
           </div>
         </li>
@@ -62,7 +61,7 @@
               <p>料金&nbsp;:&nbsp;¥1,000&nbsp;(30分)</p>
             </div>
             <div class="tab__content-image">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/dog-run.jpg" alt="" />
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/dog-run.jpg" alt="2匹の犬が歩いている様子の画像" />
             </div>
           </div>
         </li>
@@ -76,7 +75,7 @@
               <p>料金につきましては、お手軽なものから高価なものまで幅広く取り揃えております。</p>
             </div>
             <div class="tab__content-image">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/dog-sales.jpg" alt="" />
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/dog-sales.jpg" alt="犬のお菓子の画像" />
             </div>
           </div>
         </li>
@@ -85,7 +84,8 @@
   </div>
 </section>
 
-<!-- sub-contact -->
+
 <?php get_template_part('parts/contact'); ?>
+
 
 <?php get_footer(); ?>

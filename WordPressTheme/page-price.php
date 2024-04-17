@@ -1,10 +1,9 @@
 <?php get_header(); ?>
 
-<!-- 下層ページmv -->
-<?php get_template_part('parts/sub-mv'); ?>
 
-<!-- パンくず -->
+<?php get_template_part('parts/sub-mv'); ?>
 <?php get_template_part('parts/breadcrumb'); ?>
+
 
 <div class="page-price layout-subPage">
   <div class="page-price__inner inner">
@@ -28,7 +27,7 @@
           </div>
           <div class="price-menu__item">
             <dt>スイートルーム</dt>
-            <dd>＋¥1,500 (1泊)</dd>
+            <dd>&plus;¥1,500 (1泊)</dd>
           </div>
         </dl>
       </div>
@@ -51,7 +50,7 @@
           </div>
           <div class="price-menu__item">
             <dt>シャンプー持ち込み</dt>
-            <dd>−¥500</dd>
+            <dd>&minus;¥500</dd>
           </div>
         </dl>
       </div>
@@ -114,7 +113,8 @@
   </div>
 </div>
 
-<!-- sub-contact -->
+
 <?php get_template_part('parts/contact'); ?>
+
 
 <?php get_footer(); ?>

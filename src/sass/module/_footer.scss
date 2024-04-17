@@ -13,8 +13,6 @@
 .footer__head {
   display: flex;
   position: relative;
-  @include mq("md") {
-  }
 }
 
 .footer__logo {
@@ -40,8 +38,6 @@
   position: absolute;
   left: rem(160);
   bottom: 12%;
-  @include mq("md") {
-  }
   :hover {
     opacity: 0.8;
   }
@@ -57,7 +53,7 @@
 }
 
 .footer__nav {
-  margin-top: rem(19);
+  margin-top: rem(20);
   @include mq("md") {
     margin-top: rem(40);
   }

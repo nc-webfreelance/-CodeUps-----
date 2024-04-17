@@ -21,8 +21,12 @@
 .two-col__cards {
   display: grid;
   gap: rem(64);
+  max-width: rem(650);
+  width: 100%;
+  margin-inline: auto;
   @include mq("md") {
     grid-template-columns: 1fr 1fr;
+    row-gap: rem(87);
   }
 }
 

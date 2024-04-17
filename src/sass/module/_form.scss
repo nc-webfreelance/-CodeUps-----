@@ -48,13 +48,11 @@
   letter-spacing: 0.075em;
   background-color: #c94800;
   color: $white;
-  margin-top: rem(2);
-  margin-left: rem(8);
+  border-radius: rem(24);
   width: rem(61);
   height: rem(21);
-  border-radius: rem(24);
-  @include mq("md") {
-  }
+  margin-top: rem(2);
+  margin-left: rem(8);
 }
 
 .form__checkbox {
@@ -82,7 +80,7 @@
   @include mq("md") {
     max-width: rem(420);
     padding: 0;
-    margin-top: rem(79);
+    margin-top: rem(80);
   }
 }
 
@@ -133,20 +131,14 @@ button,
   padding: 0;
 }
 
-.form__btn
-
 .form__btn-inner.button span {
   padding: 0;
 }
-
-
 
 .wpcf7-response-output {
   display: none;
 }
 
-
 .wpcf7-spinner {
   display: none;
 }
-

@@ -17,9 +17,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  font-family: $mont-font-family;
   color: $white;
   z-index: $mv__header-z-index;
-  font-family: $mont-font-family;
 }
 
 .mv__header h2 {

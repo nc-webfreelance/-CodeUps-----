@@ -1,35 +1,30 @@
 <?php
 if (is_page('service')) {
     $title = 'Service';
+} elseif (is_home()) {
+    $title = 'Blog';
+} elseif (is_category()) {
+    $title = 'Blog';
+} elseif (is_single()) {
+    $title = 'Blog';
 } elseif (is_page('price')) {
     $title = 'Price';
-} elseif (is_page('service')) {
-    $title = 'service';
 } elseif (is_page('faq')) {
     $title = 'FAQ';
 } elseif (is_page('information')) {
     $title = 'Information';
 } elseif (is_page('contact')) {
     $title = 'Contact';
+} elseif (is_page('thanks')) {
+    $title = 'Contact';
 } elseif (is_page('privacypolicy')) {
     $title = 'Privacy Policy';
 } elseif (is_page('sitemap')) {
     $title = 'Site MAP';
-} elseif (is_page('thanks')) {
-    $title = 'Contact';
-} elseif (is_single()) {
-    $title = 'Blog';
-} elseif (is_home()) {
-    $title = 'Blog';
-} elseif (is_category()) {
-    $title = 'Blog';
 } else {
     $title = 'タイトルが設定されていません';
 }
 ?>
-
-
-
 
 <div class="sub-mv js-mv-height">
     <div class="sub-mv__inner">

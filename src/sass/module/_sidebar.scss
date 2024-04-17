@@ -10,22 +10,21 @@
   padding: 0 rem(25);
   @include mq("md") {
     flex: 1;
-    max-width: rem(294);
     margin-top: 0;
     padding: 0;
   }
 }
 
 .sidebar__item:not(:first-child) {
-  margin-top: rem(81);
+  margin-top: rem(80);
 }
 
 .sidebar__title {
-  border-left: 8px solid $second;
   display: flex;
   align-items: center;
   height: rem(50);
-  padding-left: rem(74);
+  border-left: 8px solid $second;
+  padding-left: rem(72);
 }
 
 .sidebar__title h3 {

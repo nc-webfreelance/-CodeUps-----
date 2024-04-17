@@ -1,13 +1,9 @@
 @use "global" as *;
 
-
-
-
 .price-menu__head {
-  padding-bottom: rem(4);
   border-bottom: 1px solid $second;
+  padding-bottom: rem(4);
 }
-
 
 .price-menu__head h3 {
   font-weight: $bold;
@@ -18,15 +14,13 @@
   font-size: rem(20);
   @include mq("md") {
     font-size: rem(24);
-}
+  }
 }
 
 .price-menu__head h3 span {
   font-weight: $regular;
   font-size: rem(14);
 }
-
-
 
 .price-menu__items {
   margin-top: rem(8);

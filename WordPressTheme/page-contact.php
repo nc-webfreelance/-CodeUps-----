@@ -1,9 +1,7 @@
 <?php get_header(); ?>
 
-<!-- 下層ページmv -->
-<?php get_template_part('parts/sub-mv'); ?>
 
-<!-- パンくず -->
+<?php get_template_part('parts/sub-mv'); ?>
 <?php get_template_part('parts/breadcrumb'); ?>
 
 
@@ -14,7 +12,6 @@
     </div>
   </div>
 </div>
-
 
 
 <?php get_footer(); ?>

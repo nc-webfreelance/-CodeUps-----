@@ -81,7 +81,7 @@
 }
 
 .wp-pagenavi a.previouspostslink::before,
-.category-next a::before  {
+.category-next a::before {
   transform: translate(-50%, -50%) rotate(-138deg);
   left: 55%;
 }
@@ -95,8 +95,7 @@
 .wp-pagenavi a:hover.previouspostslink::before,
 .wp-pagenavi a:hover.nextpostslink::before,
 .category-pre a:hover::before,
-.category-next a:hover::before  {
+.category-next a:hover::before {
   border-top: 1px solid $white;
   border-right: 1px solid $white;
 }
-

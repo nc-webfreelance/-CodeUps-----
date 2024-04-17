@@ -16,27 +16,25 @@
   ?>
 
 
-
-
-
   <?php
   $mv_1 = get_field('mv_1');
   $mv_2 = get_field('mv_2');
   $mv_3 = get_field('mv_3');
   ?>
 
+
   <section id="top" class="mv js-mv-height">
     <div class="mv__inner">
       <div class="mv__slider mv-swiper swiper js-swiper">
         <div class="mv-swiper__wrapper swiper-wrapper">
           <div class="mv-swiper__slide swiper-slide">
-            <img src="<?php echo $mv_1 ?>" alt="">
+            <img src="<?php echo $mv_1 ?>" alt="メインビュー画像">
           </div>
           <div class="mv-swiper__slide swiper-slide">
-            <img src="<?php echo $mv_2 ?>" alt="">
+            <img src="<?php echo $mv_2 ?>" alt="メインビュー画像">
           </div>
           <div class="mv-swiper__slide swiper-slide">
-            <img src="<?php echo $mv_3 ?>" alt="">
+            <img src="<?php echo $mv_3 ?>" alt="メインビュー画像">
           </div>
         </div>
       </div>
@@ -46,12 +44,6 @@
       </div>
     </div>
   </section>
-
-
-
-
-
-
 
 
   <section id="service" class="service layout-top">
@@ -126,7 +118,6 @@
           </div>
         </div>
         <div class="service__btn">
-          <!-- <a class="button" href=""><span>View more</span></a> -->
           <a href="<?php echo $service; ?>" class="button">
             <span class="button__front">View more</span>
           </a>
@@ -134,9 +125,6 @@
       </div>
     </div>
   </section>
-
-
-
 
 
   <section id="blog" class="blog layout-top">
@@ -158,11 +146,10 @@
             $args = array(
               'post_type' => 'post',
               'posts_per_page' => -1,
-            ); // カスタム投稿タイプ Products
+            );
             $the_query = new WP_Query($args);
             if ($the_query->have_posts()) :
             ?>
-              <!-- ループ開始 -->
               <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
                 <a href="<?php the_permalink(); ?>" class="cards__item card  swiper-slide">
                   <div class="card__inner">
@@ -170,7 +157,7 @@
                       <?php if (has_post_thumbnail()) : ?>
                         <img src="<?php the_post_thumbnail_url('full'); ?>" alt="<?php the_title(); ?>のアイキャッチ画像">
                       <?php else : ?>
-                        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/no-image.jpeg" alt="" />
+                        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/no-image.jpeg" alt="ノーイメージ" />
                       <?php endif; ?>
                     </div>
                     <div class="card__body">
@@ -196,7 +183,6 @@
                 </a>
             <?php endwhile;
             endif; ?>
-            <!-- ループ処理終了 -->
           </div>
         </div>
         <div class="blog__btn">
@@ -209,8 +195,6 @@
       <div class="swiper-button-next u-desktop"></div>
     </div>
   </section>
-
-
 
 
   <section id="price" class="price layout-top">
@@ -246,7 +230,7 @@
                 </div>
                 <div class="price-menu__item">
                   <dt>スイートルーム</dt>
-                  <dd>＋¥1,500 (1泊)</dd>
+                  <dd>&plus;¥1,500 (1泊)</dd>
                 </div>
               </dl>
             </div>
@@ -269,7 +253,7 @@
                 </div>
                 <div class="price-menu__item">
                   <dt>シャンプー持ち込み</dt>
-                  <dd>−¥500</dd>
+                  <dd>&minus;¥500</dd>
                 </div>
               </dl>
             </div>
@@ -319,11 +303,6 @@
   </section>
 
 
-
-
-
-
-
   <section id="faq" class="faq layout-top">
     <div class="faq__inner inner">
       <div class="faq__wrap">
@@ -349,7 +328,7 @@
             </li>
           <?php
             $display_count++;
-            if ($display_count == 4) { // 5件を超えたらループを抜ける
+            if ($display_count == 4) {
               break;
             }
           }
@@ -365,9 +344,6 @@
   </section>
 
 
-
-
-
   <section id="information" class="information layout-top">
     <div class="information__inner inner">
       <div class="information__wrap">
@@ -380,7 +356,7 @@
         <div class="information__access">
           <div class="information__textBody">
             <div class="information__head">
-              <h3><span>犬専用&nbsp;ペットホテル</span>&emsp; <ruby>Star Violet<rt>スター&nbsp;バイオレット</rt></ruby></h3>
+              <h3><span>犬専用&nbsp;ペットホテル</span>&emsp;<ruby>Star Violet<rt>スター&nbsp;バイオレット</rt></ruby></h3>
             </div>
             <div class="information__text">
               <p>〒060-0806&emsp;北海道札幌市北区北６条西４丁目</p>
@@ -403,12 +379,8 @@
   </section>
 
 
-
-
-
-
-  <!-- contact-->
   <?php get_template_part('parts/contact'); ?>
+
 
 </body>
 <?php get_footer(); ?>

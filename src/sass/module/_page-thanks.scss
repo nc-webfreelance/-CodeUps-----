@@ -4,8 +4,6 @@
   text-align: center;
 }
 
-
-
 .page-thanks__text p {
   font-weight: $regular;
   font-size: rem(16);
@@ -13,14 +11,13 @@
 }
 
 .page-thanks__text p:not(:first-child) {
-  line-height: 1.44;
   margin-top: rem(39);
 }
 
 .page-thanks__btn {
   text-align: center;
-  margin-top: rem(39.5);
+  margin-top: rem(40);
   @include mq("md") {
-    margin-top: rem(34);
+    margin-top: rem(80);
   }
 }

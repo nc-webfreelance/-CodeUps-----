@@ -13,11 +13,10 @@
           'orderby' => 'meta_value_num',
           'order' => 'DESC',
           'posts_per_page' => 3,
-        ); // カスタム投稿タイプ Products
+        );
         $the_query = new WP_Query($args);
         if ($the_query->have_posts()) :
         ?>
-          <!-- ループ開始 -->
           <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
             <li class="sidebar-article__item">
               <article class="sidebar-article__contents">
@@ -41,7 +40,6 @@
         <?php endwhile;
           wp_reset_postdata();
         endif; ?>
-        <!-- ループ終了 -->
       </ul>
     </li>
     <li class="sidebar__item">

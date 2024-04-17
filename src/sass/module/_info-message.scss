@@ -1,12 +1,8 @@
 @use "global" as *;
 
-
-
 .info-message__textBlock {
   text-align: center;
 }
-
-
 
 .info-message__head {
   font-weight: $bold;
@@ -21,13 +17,14 @@
 }
 
 .info-message__head-line {
-  background: linear-gradient(180deg,
-  transparent 0%,
-  transparent 77%,
-  $yellow 77%,
-  $yellow 95%,
-  transparent 95%,
-  transparent 100%
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    transparent 77%,
+    $yellow 77%,
+    $yellow 95%,
+    transparent 95%,
+    transparent 100%
   );
 }
 

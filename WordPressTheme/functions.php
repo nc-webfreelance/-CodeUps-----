@@ -2,9 +2,6 @@
 
 function my_script_init()
 {
-
-
-
 	// Googleフォント
 	wp_enqueue_style('NotoSansJP', '//fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
 	wp_enqueue_style('Montserrat', '//fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
@@ -22,12 +19,6 @@ function my_script_init()
 	wp_enqueue_script('script-js', get_theme_file_uri('/assets/js/script.js'), array('jquery'), '1.0.1', true);
 }
 add_action('wp_enqueue_scripts', 'my_script_init');
-
-
-
-
-
-
 
 
 /**
@@ -70,7 +61,6 @@ function my_archive_title($title)
 add_filter('get_the_archive_title', 'my_archive_title');
 
 
-
 /**
  * 抜粋文の文字数の変更
  *
@@ -97,9 +87,6 @@ function my_excerpt_more($more)
 add_filter('excerpt_more', 'my_excerpt_more');
 
 
-
-
-
 // アイキャッチ画像
 function my_setup()
 {
@@ -120,29 +107,6 @@ function my_setup()
 add_action('after_setup_theme', 'my_setup');
 
 
-
-
-
-// 表示件数の変更
-add_action('pre_get_posts', 'my_custom_query_vars');
-function my_custom_query_vars($query)
-{
-	if (!is_admin() && $query->is_main_query()) {
-		if (is_post_type_archive('campaign')) {
-			// 全部表記なら-1
-			$query->set('posts_per_page', 4);
-		}
-		if (is_post_type_archive('voice')) {
-			// 全部表記なら-1
-			$query->set('posts_per_page', 6);
-		}
-	}
-	return $query;
-}
-
-
-
-
 // Contact Form 7で自動挿入されるPタグ、brタグを削除
 add_filter('wpcf7_autop_or_not', 'wpcf7_autop_return_false');
 function wpcf7_autop_return_false()
@@ -157,6 +121,7 @@ add_filter('body_class', function ($classes) {
 	return $classes;
 });
 
+
 //記事のアクセス数を表示
 function getPostViews($postID)
 {
@@ -169,6 +134,7 @@ function getPostViews($postID)
 	}
 	return $count . ' Views';
 }
+
 
 //記事のアクセス数を保存
 function setPostViews($postID)
@@ -187,7 +153,6 @@ function setPostViews($postID)
 remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
 
 
-
 /**
  * @param string $page_title ページのtitle属性値
  * @param string $menu_title 管理画面のメニューに表示するタイトル
@@ -197,8 +162,6 @@ remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
  * @param int $position メニューの位置
  */
 SCF::add_options_page('faq-list', 'FAQ', 'manage_options', 'theme-options', '', 5);
-
-
 function is_parent_slug()
 {
 	global $post;
@@ -209,7 +172,6 @@ function is_parent_slug()
 }
 
 
-
 add_action('registered_post_type', 'kaiza_posts_hierarchical', 10, 2);
 function kaiza_posts_hierarchical($post_type, $pto)
 {
@@ -218,12 +180,3 @@ function kaiza_posts_hierarchical($post_type, $pto)
 	$wp_post_types['post']->hierarchical = 1;
 	add_post_type_support('post', 'page-attributes');
 }
-
-
-
-// エディタ非表示
-// function remove_wysiwyg() {
-// 	remove_post_type_support( 'recruit', 'editor');
-// 	remove_post_type_support( 'page', 'editor');
-// }
-// add_action( 'init' , 'remove_wysiwyg');
