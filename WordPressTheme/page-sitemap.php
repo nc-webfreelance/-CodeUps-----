@@ -2,15 +2,15 @@
 
 
 <?php
-$home = esc_url(home_url('/ '));
-$service = esc_url(home_url('/service/ '));
-$blog = esc_url(home_url('/blog/ '));
-$price = esc_url(home_url('/price/ '));
-$faq = esc_url(home_url('/faq/ '));
-$information = esc_url(home_url('/information/ '));
-$contact = esc_url(home_url('/contact/ '));
-$privacypolicy = esc_url(home_url('/privacypolicy/ '));
-$sitemap = esc_url(home_url('/sitemap/ '));
+$home = esc_url(home_url('/'));
+$service = esc_url(home_url('/service'));
+$blog = esc_url(home_url('/blog'));
+$price = esc_url(home_url('/price'));
+$faq = esc_url(home_url('/faq'));
+$information = esc_url(home_url('/information'));
+$contact = esc_url(home_url('/contact'));
+$privacypolicy = esc_url(home_url('/privacypolicy'));
+$sitemap = esc_url(home_url('/sitemap'));
 ?>
 
 
