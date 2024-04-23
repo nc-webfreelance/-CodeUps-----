@@ -34,9 +34,3 @@
   margin-top: rem(78);
 }
 
-.two-col__pagenavi--single-blog.two-col__pagenavi {
-  margin-top: rem(40);
-  @include mq("md") {
-    margin-top: rem(80);
-  }
-}

@@ -81,3 +81,20 @@
 .single-blog__body ul li:not(:first-child) {
   margin-top: rem(4);
 }
+
+.single-blog__pagenavi {
+  font-size: rem(14);
+  display: flex;
+  gap: rem(40);
+  justify-content: center;
+  margin-top: rem(60);
+  @include mq("md") {
+    margin-top: rem(120);
+    gap: rem(80);
+  }
+}
+
+.single-blog__pagenavi-archive {
+  padding-bottom: rem(2);
+  border-bottom: 1px solid $second;
+}

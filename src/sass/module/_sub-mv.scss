@@ -32,11 +32,14 @@
   white-space: nowrap;
   width: 100%;
   font-family: $mont-font-family;
-  font-weight: $regular;
-  font-size: rem(40);
-  line-height: 1;
+  font-weight: $bold;
+  font-size: rem(38);
+  letter-spacing: 0.25em;
+  text-indent: 0.25em;
   color: $white;
   @include mq("md") {
-    font-size: rem(80);
+    font-size: rem(72);
+    letter-spacing: 0.4em;
+    text-indent: 0.4em;
   }
 }

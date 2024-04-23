@@ -16,20 +16,21 @@
               <h2 class="single-blog__title"><?php the_title(); ?></h2>
               <?php if (has_post_thumbnail()) : ?>
                 <div class="single-blog__image">
-                  <img src="<?php the_post_thumbnail_url('full'); ?>" alt="<?php the_title(); ?>のアイキャッチ画像">
+                  <?php the_post_thumbnail('full'); ?>
                 </div>
               <?php endif; ?>
               <div class="single-blog__body">
                 <?php the_content(); ?>
               </div>
-            </div>
-            <div class="two-col__pagenavi two-col__pagenavi--single-blog pagenavi">
-              <div class="single-blog__wp-pagenavi wp-pagenavi" role="navigation">
-                <div class="previouspostslink pagenavi-pre category-next">
-                  <?php next_post_link('%link', '', ((isset($_GET['previous_page']) && $_GET['previous_page'] === 'category') ? true : false)); ?>
+              <div class="single-blog__pagenavi">
+                <div class="single-blog__pagenavi-pre">
+                  <?php previous_post_link('%link', '< 前の記事', ((isset($_GET['previous_page']) && $_GET['previous_page'] === 'category') ? true : false)); ?>
                 </div>
-                <div class="nextpostslink pagenavi-next category-pre">
-                  <?php previous_post_link('%link', '', ((isset($_GET['previous_page']) && $_GET['previous_page'] === 'category') ? true : false)); ?>
+                <div class="single-blog__pagenavi-archive">
+                  <a href="<?php echo esc_url(home_url('/blog')); ?>">一覧へ戻る</a>
+                </div>
+                <div class="single-blog__pagenavi-next">
+                  <?php next_post_link('%link', '次の記事 >', ((isset($_GET['previous_page']) && $_GET['previous_page'] === 'category') ? true : false)); ?>
                 </div>
               </div>
             </div>

@@ -9,55 +9,9 @@
 }
 
 .sp-nav__wrapper {
-  display: flex;
   padding-top: rem(52);
-  padding-bottom: rem(100);
-  justify-content: space-around;
-}
-
-.sp-nav__left-item a,
-.sp-nav__right-item a {
-  display: block;
-  font-size: rem(16);
-  font-weight: $regular;
-  line-height: 1.125;
-  padding-top: rem(12);
-  padding-right: rem(12);
-  padding-bottom: rem(12);
-  padding-left: rem(26);
-  white-space: nowrap;
+  padding-bottom: rem(120);
   @include mq("md") {
-    font-size: rem(18);
-    padding-left: rem(34);
+    padding-top: rem(80);
   }
-}
-
-.sp-nav__left-item:first-child a,
-.sp-nav__right-item:first-child a {
-  position: relative;
-  font-weight: $bold;
-}
-
-.sp-nav__left-item:first-child a::before,
-.sp-nav__right-item:first-child a::before {
-  content: "";
-  mask-image: url(../images/common/dog-logo.png);
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: contain;
-  background-color: $white;
-  position: absolute;
-  top: 30%;
-  left: 0;
-  width: rem(20);
-  height: rem(20);
-  @include mq("md") {
-    width: rem(26);
-    height: rem(26);
-  }
-}
-
-.sp-nav__left-items:not(:first-child),
-.sp-nav__right-items:not(:first-child) {
-  margin-top: rem(18);
 }

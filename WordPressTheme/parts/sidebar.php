@@ -22,10 +22,10 @@
               <article class="sidebar-article__contents">
                 <a href="<?php the_permalink(); ?>" class="sidebar-article__contents-link">
                   <div class="sidebar-article__contents-image">
-                    <?php if (has_post_thumbnail()) : ?>
-                      <img src="<?php the_post_thumbnail_url('full'); ?>" alt="<?php the_title(); ?>のアイキャッチ画像">
+                  <?php if (has_post_thumbnail()) : ?>
+                      <?php the_post_thumbnail('full'); ?>
                     <?php else : ?>
-                      <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/no-image.jpeg" alt="ノーイメージ" />
+                      <img src="<?php echo esc_url(get_theme_file_uri( "/assets/images/common/no-image.jpeg" )); ?>" alt="NoImage画像" />
                     <?php endif; ?>
                   </div>
                   <div class="sidebar-article__contents-meta">

@@ -6,12 +6,6 @@
   justify-content: center;
 }
 
-.single-blog__wp-pagenavi.wp-pagenavi {
-  gap: rem(26);
-  @include mq("md") {
-    margin-left: rem(-30);
-  }
-}
 
 .previouspostslink {
   margin-right: rem(28);
@@ -22,8 +16,7 @@
 }
 
 .wp-pagenavi a,
-.wp-pagenavi span,
-.wp-pagenavi div {
+.wp-pagenavi span {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -37,16 +30,7 @@
   transition: 0.3s ease;
 }
 
-.wp-pagenavi div {
-  border: none;
-}
 
-.wp-pagenavi a.u-desktop {
-  display: none;
-  @include mq("md") {
-    display: inline-flex;
-  }
-}
 
 .wp-pagenavi a:hover {
   background: $base;
@@ -65,9 +49,7 @@
 }
 
 .wp-pagenavi a.previouspostslink::before,
-.wp-pagenavi a.nextpostslink:before,
-.category-pre a::before,
-.category-next a::before {
+.wp-pagenavi a.nextpostslink:before {
   content: "";
   position: absolute;
   top: 52%;
@@ -80,22 +62,18 @@
   border-left: none;
 }
 
-.wp-pagenavi a.previouspostslink::before,
-.category-next a::before {
+.wp-pagenavi a.previouspostslink::before {
   transform: translate(-50%, -50%) rotate(-138deg);
   left: 55%;
 }
 
-.wp-pagenavi a.nextpostslink:before,
-.category-pre a::before {
+.wp-pagenavi a.nextpostslink:before {
   transform: translate(-50%, -50%) rotate(45deg);
   left: 43%;
 }
 
 .wp-pagenavi a:hover.previouspostslink::before,
-.wp-pagenavi a:hover.nextpostslink::before,
-.category-pre a:hover::before,
-.category-next a:hover::before {
+.wp-pagenavi a:hover.nextpostslink::before {
   border-top: 1px solid $white;
   border-right: 1px solid $white;
 }

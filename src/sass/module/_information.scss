@@ -25,9 +25,8 @@
 }
 
 .information__textBody {
-  text-align: center;
+  text-align: left;
   @include mq("md") {
-    text-align: left;
     width: 50%;
   }
 }
@@ -35,28 +34,36 @@
 .information__head {
   border-bottom: 1px solid $second;
   @include mq("md") {
+    display: flex;
+    align-items: flex-end;
+    gap: rem(36);
     padding-bottom: rem(8);
   }
 }
 
-.information__head h3 {
-  font-weight: $bold;
-  font-size: rem(28);
-  @include mq("md") {
-    font-size: rem(32);
-    line-height: 1;
-  }
-}
-
-.information__head span {
+.information__head-info {
+  display: inline-block;
   font-weight: $regular;
   font-size: rem(16);
+  padding: 0 rem(6);
+  background-color: $light;
   @include mq("md") {
-    font-size: rem(24);
+    font-size: rem(20);
+    padding: 0 rem(8);
   }
 }
 
-.information__head rt {
+.information__head-name {
+  font-weight: $bold;
+  font-size: rem(28);
+  line-height: 1;
+  margin-top: rem(18);
+  @include mq("md") {
+    font-size: rem(32);
+  }
+}
+
+.information__head-name rt {
   font-size: rem(12);
 }
 

@@ -48,59 +48,59 @@
   </div>
   <nav class="header__sp-nav sp-nav js-sp-nav">
     <div class="sp-nav__inner">
-      <div class="sp-nav__wrapper">
-        <div class="sp-nav__left js-drawer">
-          <ul class="sp-nav__left-items">
-            <li class="sp-nav__left-item">
+      <div class="sp-nav__wrapper site-nav site-nav--sp">
+        <div class="site-nav__left js-drawer">
+          <ul class="site-nav__left-items">
+            <li class="site-nav__item">
               <a href="<?php echo $service; ?>">サービス</a>
             </li>
-            <li class="sp-nav__left-item">
-              <a href="<?php echo $service; ?>?tabId=tab1">ホテル</a>
+            <li class="site-nav__item">
+              <a href="<?php echo $service; ?>#hotel">ホテル</a>
             </li>
-            <li class="sp-nav__left-item">
-              <a href="<?php echo $service; ?>?tabId=tab2">トリミング</a>
+            <li class="site-nav__item">
+              <a href="<?php echo $service; ?>#trimming">トリミング</a>
             </li>
-            <li class="sp-nav__left-item">
-              <a href="<?php echo $service; ?>?tabId=tab3">ドッグラン</a>
+            <li class="site-nav__item">
+              <a href="<?php echo $service; ?>#dog-run">ドッグラン</a>
             </li>
-            <li class="sp-nav__left-item">
-              <a href="<?php echo $service; ?>?tabId=tab4">グッズ販売</a>
+            <li class="site-nav__item">
+              <a href="<?php echo $service; ?>#merchandise-sales">グッズ販売</a>
             </li>
           </ul>
-          <ul class="sp-nav__left-items">
-            <li class="sp-nav__left-item">
+          <ul class="site-nav__left-items">
+            <li class="site-nav__item">
               <a href="<?php echo $blog; ?>">ブログ</a>
             </li>
           </ul>
-          <ul class="sp-nav__left-items">
-            <li class="sp-nav__left-item">
+          <ul class="site-nav__left-items">
+            <li class="site-nav__item">
               <a href="<?php echo $price; ?>">料金表</a>
             </li>
           </ul>
         </div>
-        <div class="sp-nav__right js-drawer">
-          <ul class="sp-nav__right-items">
-            <li class="sp-nav__right-item">
+        <div class="site-nav__right js-drawer">
+          <ul class="site-nav__right-items">
+            <li class="site-nav__item">
               <a href="<?php echo $faq; ?>">よくある質問</a>
             </li>
           </ul>
-          <ul class="sp-nav__right-items">
-            <li class="sp-nav__right-item">
+          <ul class="site-nav__right-items">
+            <li class="site-nav__item">
               <a href="<?php echo $information; ?>">店舗情報</a>
             </li>
           </ul>
-          <ul class="sp-nav__right-items">
-            <li class="sp-nav__right-item">
+          <ul class="site-nav__right-items">
+            <li class="site-nav__item">
               <a href="<?php echo $contact; ?>">お問い合わせ</a>
             </li>
           </ul>
-          <ul class="sp-nav__right-items">
-            <li class="sp-nav__right-item">
+          <ul class="site-nav__right-items">
+            <li class="site-nav__item">
               <a href="<?php echo $privacypolicy; ?>">プライバシー <br class="u-mobile">ポリシー</a>
             </li>
           </ul>
-          <ul class="sp-nav__right-items">
-            <li class="sp-nav__right-item">
+          <ul class="site-nav__right-items">
+            <li class="site-nav__item">
               <a href="<?php echo $sitemap; ?>">サイトマップ</a>
             </li>
           </ul>

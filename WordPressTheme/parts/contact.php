@@ -3,9 +3,8 @@
     <div class="contact__body">
       <div class="contact__inquiry">
         <div class="contact_title">
-          <div class="section-header">
-            <span class="section-header__title">Contact</span>
-            <h2 class="section-header__subtitle">お問い合わせ</h2>
+        <div class="section-header">
+            <h2 class="section-header__title">Contact<span class="section-header__jatitle">お問い合わせ</span></h2>
           </div>
         </div>
         <div class="contact__text">

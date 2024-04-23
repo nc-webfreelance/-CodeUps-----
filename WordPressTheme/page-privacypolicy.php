@@ -8,11 +8,7 @@
 <section class="page-privacypolicy layout-subPage">
   <div class="page-privacypolicy__inner inner">
     <div class="page-privacypolicy__content">
-      <div class="page-privacypolicy__title">
-        <h2>
-          <?php echo get_the_title(); ?>
-        </h2>
-      </div>
+        <h2><?php echo get_the_title(); ?></h2>
       <div class="page-privacypolicy__text">
         <?php the_content(); ?>
       </div>

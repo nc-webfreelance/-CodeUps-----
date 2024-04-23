@@ -10,7 +10,9 @@ jQuery(function ($) {
       header.removeClass("is-color");
     }
   });
+
   $("main").css("margin-top", headerHeight);
+
   $('a[href^="#"]').click(function () {
     const speed = 1000;
     let href = $(this).attr("href");
@@ -19,6 +21,19 @@ jQuery(function ($) {
     $("body,html").animate({ scrollTop: position }, speed, "swing");
     return false;
   });
+
+  $(function(){
+    var url = jQuery(location).attr('href');
+    if (url.indexOf("?id=") == -1) {
+        // スムーズスクロールの処理
+        var url_sp = url.split("#");
+        var hash   = '#' + url_sp[url_sp.length - 1];
+        var tgt    = $(hash);
+        var pos    = tgt.offset().top - [headerHeight += 28];
+        $("html, body").animate({scrollTop:pos}, 400, "swing");
+    }
+});
+
 
   // トップへ戻るボタン
   let topBtn = $(".to-top");
@@ -105,23 +120,23 @@ jQuery(function ($) {
   });
 
   // Serviceタブ
-  $(function () {
-    $(".js-tab").on("click", function () {
-      $(".js-tab").removeClass("is-active");
-      $(".js-tab-content").removeClass("is-active");
-      $(this).addClass("is-active");
-      let index = $(this).index();
-      $(".js-tab-content").hide().eq(index).fadeIn(300);
-    });
-    let urlParams = new URLSearchParams(window.location.search);
-    let tabId = urlParams.get("tabId");
-    if (tabId) {
-      $(".is-active").removeClass("is-active");
-      $('.js-tab[data-tab-id="'.concat(tabId, '"]')).addClass("is-active");
-      let index = $('.js-tab[data-tab-id="'.concat(tabId, '"]')).index();
-      $(".js-tab-content").hide().eq(index).fadeIn(300);
-    }
-  });
+  // $(function () {
+  //   $(".js-tab").on("click", function () {
+  //     $(".js-tab").removeClass("is-active");
+  //     $(".js-tab-content").removeClass("is-active");
+  //     $(this).addClass("is-active");
+  //     let index = $(this).index();
+  //     $(".js-tab-content").hide().eq(index).fadeIn(300);
+  //   });
+  //   let urlParams = new URLSearchParams(window.location.search);
+  //   let tabId = urlParams.get("tabId");
+  //   if (tabId) {
+  //     $(".is-active").removeClass("is-active");
+  //     $('.js-tab[data-tab-id="'.concat(tabId, '"]')).addClass("is-active");
+  //     let index = $('.js-tab[data-tab-id="'.concat(tabId, '"]')).index();
+  //     $(".js-tab-content").hide().eq(index).fadeIn(300);
+  //   }
+  // });
 
   // js-popUp
   gsap.utils.toArray(".js-popUp").forEach((target) => {

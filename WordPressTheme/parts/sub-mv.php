@@ -29,7 +29,7 @@ if (is_page('service')) {
 <div class="sub-mv js-mv-height">
     <div class="sub-mv__inner">
         <div class="sub-mv__image">
-            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/dog-submv.jpg" alt="サブメインビュー">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/dog-submv.jpg" alt="">
         </div>
         <div class="sub-mv__header">
             <h1><?php echo $title; ?></h1>

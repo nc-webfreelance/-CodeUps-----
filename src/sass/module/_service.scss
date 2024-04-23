@@ -62,7 +62,7 @@
   }
 }
 
-.service__head {
+.service__textBody h3 {
   border-bottom: 1px solid $second;
   @include mq("md") {
     padding-bottom: rem(8);
@@ -77,14 +77,11 @@
   }
 }
 
-.service__text {
-  margin-top: rem(8);
-}
-
-.service__text p {
+.service__textBody p {
   font-weight: $regular;
   font-size: rem(16);
-  line-height: calc(24 / 16);
+  line-height: 1.8;
+  margin-top: rem(8);
 }
 
 .service__btn {

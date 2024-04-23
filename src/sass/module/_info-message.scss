@@ -6,12 +6,12 @@
 
 .info-message__head {
   font-weight: $bold;
-  font-size: rem(32);
+  font-size: rem(28);
   letter-spacing: 0.05em;
   line-height: 1.5;
   margin-top: rem(32);
   @include mq("md") {
-    font-size: rem(48);
+    font-size: rem(32);
     margin-top: rem(60);
   }
 }
@@ -21,8 +21,8 @@
     180deg,
     transparent 0%,
     transparent 77%,
-    $yellow 77%,
-    $yellow 95%,
+    #d4c4ae 77%,
+    #d4c4ae 95%,
     transparent 95%,
     transparent 100%
   );
@@ -32,23 +32,38 @@
   font-size: rem(14);
   letter-spacing: 0.07em;
   line-height: 1.75;
-  margin-top: rem(28);
+  margin-top: rem(20);
   @include mq("md") {
-    font-size: rem(18);
+    font-size: rem(16);
     margin-top: rem(32);
   }
 }
 
 .info-message__ceo {
+  width: 100vw;
+  padding: rem(100) 0;
+  margin-top: rem(64);
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  background-color: $light;
+  @include mq("md") {
+    margin-top: rem(120);
+  }
+}
+
+.info-message__ceo-wrap {
   display: flex;
   flex-direction: column;
   gap: rem(32);
-  margin-top: rem(64);
+  max-width: rem(580);
+  margin-inline: auto;
+  padding: 0 rem(15);
   @include mq("md") {
     flex-direction: row;
     align-items: center;
     gap: rem(40);
-    margin-top: rem(120);
+    max-width: rem(1160);
+    padding: 0 rem(25);
   }
 }
 

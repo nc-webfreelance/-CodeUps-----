@@ -22,11 +22,12 @@
   z-index: $mv__header-z-index;
 }
 
-.mv__header h2 {
-  font-weight: $bold;
-  font-size: rem(40);
+.mv__header h2 span {
+  display: inline-block;
   letter-spacing: 0.53em;
   text-indent: 0.53em;
+  font-weight: $bold;
+  font-size: rem(40);
   @include mq("md") {
     font-size: rem(80);
   }

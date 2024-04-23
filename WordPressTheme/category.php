@@ -37,9 +37,9 @@
                 <div class="card__inner">
                   <div class="card__image">
                     <?php if (has_post_thumbnail()) : ?>
-                      <img src="<?php the_post_thumbnail_url('full'); ?>" alt="<?php the_title(); ?>のアイキャッチ画像">
+                      <?php the_post_thumbnail('full'); ?>
                     <?php else : ?>
-                      <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/no-image.jpeg" alt="ノーイメージ" />
+                      <img src="<?php echo esc_url(get_theme_file_uri( "/assets/images/common/no-image.jpeg" )); ?>" alt="NoImage画像" />
                     <?php endif; ?>
                   </div>
                   <div class="card__body">
@@ -65,7 +65,7 @@
           wp_reset_postdata();
           ?>
         </div>
-        <div class="two-col__pagenavi pagenavi">
+        <div class="two-col__pagenavi">
           <?php wp_pagenavi(); ?>
         </div>
       </div>

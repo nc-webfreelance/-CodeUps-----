@@ -2,6 +2,7 @@
 
 .section-header {
   text-align: center;
+  line-height: 4;
 }
 
 .section-header::first-letter {
@@ -9,15 +10,15 @@
 }
 
 .section-header__title {
+  position: relative;
   display: inline;
   font-family: $mont-font-family;
   font-weight: $bold;
   font-size: rem(32);
-  line-height: calc(40 / 32);
   color: $second;
+  line-height: 1;
   @include mq("md") {
     font-size: rem(40);
-    line-height: 1;
   }
 }
 
@@ -25,14 +26,16 @@
   color: $white;
 }
 
-.section-header__subtitle {
+.section-header__jatitle {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -50%);
   font-family: $mont-font-family;
   font-weight: $medium;
   font-size: rem(12);
-  line-height: calc(18 / 12);
+  line-height: 1.5;
   color: $base;
-  margin-top: rem(4);
-  @include mq("md") {
-    margin-top: rem(8);
-  }
+  white-space: nowrap;
 }

@@ -28,18 +28,18 @@
       <div class="mv__slider mv-swiper swiper js-swiper">
         <div class="mv-swiper__wrapper swiper-wrapper">
           <div class="mv-swiper__slide swiper-slide">
-            <img src="<?php echo $mv_1 ?>" alt="メインビュー画像">
+            <img src="<?php echo $mv_1 ?>" alt="">
           </div>
           <div class="mv-swiper__slide swiper-slide">
-            <img src="<?php echo $mv_2 ?>" alt="メインビュー画像">
+            <img src="<?php echo $mv_2 ?>" alt="">
           </div>
           <div class="mv-swiper__slide swiper-slide">
-            <img src="<?php echo $mv_3 ?>" alt="メインビュー画像">
+            <img src="<?php echo $mv_3 ?>" alt="">
           </div>
         </div>
       </div>
       <div class="mv__header">
-        <h2>Star Violet</h2>
+        <h2><span>Star</span><br><span>Violet</span></h2>
         <p>Dog-exclusive hotel</p>
       </div>
     </div>
@@ -51,69 +51,52 @@
       <div class="service__wrap">
         <div class="service__title">
           <div class="section-header">
-            <span class="section-header__title">Service</span>
-            <h2 class="section-header__subtitle">サービス</h2>
+            <h2 class="section-header__title">Service<span class="section-header__jatitle">サービス</span></h2>
           </div>
         </div>
         <div class="service__contents">
           <div class="service__content js-popUp">
             <div class="service__image">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/dog-hotel.jpg" alt="眠っている犬の画像" />
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/dog-hotel.jpg" alt="" />
             </div>
             <div class="service__textBody">
-              <div class="service__head">
-                <h3>ホテル</h3>
-              </div>
-              <div class="service__text">
-                <p>
-                  24時間体制で安全かつ快適な滞在環境を提供しています。専用のケージやスイートルームを完備し、定期的な散歩や運動、特別な食事、医療管理など、ペットの健康と幸福をサポートするさまざまなサービスを提供しています。飼い主の皆様が安心してペットを預けられるよう、常に心を込めたケアを行っています。
-                </p>
-              </div>
+              <h3>ホテル</h3>
+              <p>
+                24時間体制で安全かつ快適な滞在環境を提供しています。専用のケージやスイートルームを完備し、定期的な散歩や運動、特別な食事、医療管理など、ペットの健康と幸福をサポートするさまざまなサービスを提供しています。飼い主の皆様が安心してペットを預けられるよう、常に心を込めたケアを行っています。
+              </p>
             </div>
           </div>
           <div class="service__content js-popUp">
             <div class="service__image">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/dog-trimming.jpg" alt="女性が犬をトリミングしている画像" />
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/dog-trimming.jpg" alt="" />
             </div>
             <div class="service__textBody">
-              <div class="service__head">
-                <h3>トリミング</h3>
-              </div>
-              <div class="service__text">
-                <p>
-                  ペットの美容と健康を重視し、専門のトリマーが丁寧にケアいたします。毛のカット、爪の手入れ、耳の清掃、バス＆ブローなど、ペットの個々のニーズに合わせたトリミングプランを提供しています。安全かつ快適な環境で、ペットたちがリラックスして美しくなれるよう心がけています。
-                </p>
-              </div>
+              <h3>トリミング</h3>
+              <p>
+                ペットの美容と健康を重視し、専門のトリマーが丁寧にケアいたします。毛のカット、爪の手入れ、耳の清掃、バス＆ブローなど、ペットの個々のニーズに合わせたトリミングプランを提供しています。安全かつ快適な環境で、ペットたちがリラックスして美しくなれるよう心がけています。
+              </p>
             </div>
           </div>
           <div class="service__content js-popUp">
             <div class="service__image">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/dog-run.jpg" alt="2匹の犬が歩いている様子の画像" />
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/dog-run.jpg" alt="" />
             </div>
             <div class="service__textBody">
-              <div class="service__head">
-                <h3>ドッグラン</h3>
-              </div>
-              <div class="service__text">
-                <p>
-                  広々とした安全なエリアで、愛犬たちが思い切り遊び、社交するのに最適な場所です。フェンスで囲まれたエリアで、愛犬たちは安心して自由に走り回ることができます。専用の遊具や障害物も備え、愛犬たちが楽しく運動できる環境を整えています。また、専門のスタッフが常駐しており、安全かつ清潔な状態を保ちながら、愛犬たちが快適に遊べるように配慮しています。
-                </p>
-              </div>
+              <h3>ドッグラン</h3>
+              <p>
+                広々とした安全なエリアで、愛犬たちが思い切り遊び、社交するのに最適な場所です。フェンスで囲まれたエリアで、愛犬たちは安心して自由に走り回ることができます。専用の遊具や障害物も備え、愛犬たちが楽しく運動できる環境を整えています。また、専門のスタッフが常駐しており、安全かつ清潔な状態を保ちながら、愛犬たちが快適に遊べるように配慮しています。
+              </p>
             </div>
           </div>
           <div class="service__content js-popUp">
             <div class="service__image">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/dog-sales.jpg" alt="犬のお菓子の画像" />
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/dog-sales.jpg" alt="" />
             </div>
             <div class="service__textBody">
-              <div class="service__head">
-                <h3>グッズ販売</h3>
-              </div>
-              <div class="service__text">
-                <p>
-                  高品質な犬用グッズを幅広く取り揃えており、愛犬との素敵な生活をサポートします。お散歩用のリードやハーネス、快適なベッドやクレート、健康や遊びを促進するおもちゃ、栄養バランスの整ったフードなど、豊富な品揃えが自慢です。専門的なアドバイスやお手入れ方法のアドバイスもご提供し、飼い主様と愛犬の生活をより充実させるお手伝いをいたします。
-                </p>
-              </div>
+              <h3>グッズ販売</h3>
+              <p>
+                高品質な犬用グッズを幅広く取り揃えており、愛犬との素敵な生活をサポートします。お散歩用のリードやハーネス、快適なベッドやクレート、健康や遊びを促進するおもちゃ、栄養バランスの整ったフードなど、豊富な品揃えが自慢です。専門的なアドバイスやお手入れ方法のアドバイスもご提供し、飼い主様と愛犬の生活をより充実させるお手伝いをいたします。
+              </p>
             </div>
           </div>
         </div>
@@ -132,12 +115,7 @@
       <div class="blog__wrap">
         <div class="blog__title">
           <div class="section-header">
-            <span class="section-header__title">
-              Blog
-            </span>
-            <h2 class="section-header__subtitle">
-              ブログ
-            </h2>
+            <h2 class="section-header__title">Blog<span class="section-header__jatitle">ブログ</span></h2>
           </div>
         </div>
         <div class="blog__swiper swiper js-blog-swiper">
@@ -155,9 +133,9 @@
                   <div class="card__inner">
                     <div class="card__image">
                       <?php if (has_post_thumbnail()) : ?>
-                        <img src="<?php the_post_thumbnail_url('full'); ?>" alt="<?php the_title(); ?>のアイキャッチ画像">
+                        <?php the_post_thumbnail('full'); ?>
                       <?php else : ?>
-                        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/no-image.jpeg" alt="ノーイメージ" />
+                        <img src="<?php echo esc_url(get_theme_file_uri("/assets/images/common/no-image.jpeg")); ?>" alt="NoImage画像" />
                       <?php endif; ?>
                     </div>
                     <div class="card__body">
@@ -171,9 +149,7 @@
                         </div>
                       </div>
                       <div class="card__textBlock">
-                        <div class="card__title-wrap">
-                          <h3 class="card__title"> <?php the_title(); ?></h3>
-                        </div>
+                        <h3 class="card__title"><?php the_title(); ?></h3>
                         <div class="card__text">
                           <?php the_excerpt(); ?>
                         </div>
@@ -202,13 +178,12 @@
       <div class="price__wrap">
         <div class="price__title">
           <div class="section-header">
-            <span class="section-header__title">Price</span>
-            <h2 class="section-header__subtitle">料金一覧</h2>
+            <h2 class="section-header__title">Price<span class="section-header__jatitle">料金一覧</span></h2>
           </div>
         </div>
         <div class="price__contents  js-popUps">
           <div class="price__image">
-            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/price-img.jpg" alt="犬が笑いながら歩いている画像" />
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/price-img.jpg" alt="" />
           </div>
           <div class="price__list">
             <div class="price__list-item price-menu">
@@ -308,8 +283,7 @@
       <div class="faq__wrap">
         <div class="faq__title">
           <div class="section-header">
-            <span class="section-header__title  section-header__title--white">FAQ</span>
-            <h2 class="section-header__subtitle">よくある質問</h2>
+            <h2 class="section-header__title section-header__title--white">FAQ<span class="section-header__jatitle">よくある質問</span></h2>
           </div>
         </div>
         <ul class="faq__items faq-list">
@@ -349,14 +323,14 @@
       <div class="information__wrap">
         <div class="information__title">
           <div class="section-header">
-            <span class="section-header__title">Information</span>
-            <h2 class="section-header__subtitle">店舗情報</h2>
+            <h2 class="section-header__title">Information<span class="section-header__jatitle">店舗情報</span></h2>
           </div>
         </div>
         <div class="information__access">
           <div class="information__textBody">
             <div class="information__head">
-              <h3><span>犬専用&nbsp;ペットホテル</span>&emsp;<ruby>Star Violet<rt>スター&nbsp;バイオレット</rt></ruby></h3>
+              <p class="information__head-info">犬専用 ペットホテル</p>
+              <h3 class="information__head-name"><ruby>Star Violet<rt>スター バイオレット</rt></ruby></h3>
             </div>
             <div class="information__text">
               <p>〒060-0806&emsp;北海道札幌市北区北６条西４丁目</p>

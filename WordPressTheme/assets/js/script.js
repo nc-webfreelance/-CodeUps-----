@@ -23,6 +23,19 @@ jQuery(function ($) {
     }, speed, "swing");
     return false;
   });
+  $(function () {
+    var url = jQuery(location).attr('href');
+    if (url.indexOf("?id=") == -1) {
+      // スムーズスクロールの処理
+      var url_sp = url.split("#");
+      var hash = '#' + url_sp[url_sp.length - 1];
+      var tgt = $(hash);
+      var pos = tgt.offset().top - [headerHeight += 28];
+      $("html, body").animate({
+        scrollTop: pos
+      }, 400, "swing");
+    }
+  });
 
   // トップへ戻るボタン
   var topBtn = $(".to-top");
@@ -105,23 +118,23 @@ jQuery(function ($) {
   });
 
   // Serviceタブ
-  $(function () {
-    $(".js-tab").on("click", function () {
-      $(".js-tab").removeClass("is-active");
-      $(".js-tab-content").removeClass("is-active");
-      $(this).addClass("is-active");
-      var index = $(this).index();
-      $(".js-tab-content").hide().eq(index).fadeIn(300);
-    });
-    var urlParams = new URLSearchParams(window.location.search);
-    var tabId = urlParams.get("tabId");
-    if (tabId) {
-      $(".is-active").removeClass("is-active");
-      $('.js-tab[data-tab-id="'.concat(tabId, '"]')).addClass("is-active");
-      var index = $('.js-tab[data-tab-id="'.concat(tabId, '"]')).index();
-      $(".js-tab-content").hide().eq(index).fadeIn(300);
-    }
-  });
+  // $(function () {
+  //   $(".js-tab").on("click", function () {
+  //     $(".js-tab").removeClass("is-active");
+  //     $(".js-tab-content").removeClass("is-active");
+  //     $(this).addClass("is-active");
+  //     let index = $(this).index();
+  //     $(".js-tab-content").hide().eq(index).fadeIn(300);
+  //   });
+  //   let urlParams = new URLSearchParams(window.location.search);
+  //   let tabId = urlParams.get("tabId");
+  //   if (tabId) {
+  //     $(".is-active").removeClass("is-active");
+  //     $('.js-tab[data-tab-id="'.concat(tabId, '"]')).addClass("is-active");
+  //     let index = $('.js-tab[data-tab-id="'.concat(tabId, '"]')).index();
+  //     $(".js-tab-content").hide().eq(index).fadeIn(300);
+  //   }
+  // });
 
   // js-popUp
   gsap.utils.toArray(".js-popUp").forEach(function (target) {

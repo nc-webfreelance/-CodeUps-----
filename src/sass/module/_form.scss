@@ -1,6 +1,7 @@
 @use "global" as *;
 
 .form__wrap {
+  padding-top: rem(24);
   padding-bottom: rem(24);
   border-bottom: 1px dashed $base;
   @include mq("md") {
@@ -8,15 +9,14 @@
     align-items: center;
     justify-content: space-between;
     gap: rem(20);
+    padding-top: rem(40);
     padding-bottom: rem(40);
   }
 }
 
-.form__wrap:not(:first-child) {
-  padding-top: rem(24);
-  @include mq("md") {
-    padding-top: rem(40);
-  }
+
+.form__wrap--cat{
+  border-top: 1px dashed $base;
 }
 
 .form__wrap dt {

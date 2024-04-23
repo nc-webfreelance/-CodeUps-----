@@ -31,14 +31,9 @@
 }
 .info-company__list-item dd {
   font-size: rem(16);
-  @include mq("md") {
-    font-size: rem(20);
-  }
 }
 
-.info-company__list-item dd span {
-  font-size: rem(12);
-}
+
 
 .info-company__map {
   aspect-ratio: 3 / 2;
