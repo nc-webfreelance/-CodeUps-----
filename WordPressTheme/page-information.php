@@ -7,46 +7,39 @@
 
 <section class="page-information layout-subPage">
   <div class="page-information__inner inner">
-    <div class="page-information__wrap">
-      <div class="page-information__message info-message">
-        <div class="info-message__textBlock">
-          <div class="info-message__title">
-            <div class="section-header">
-              <div class="section-header">
-                <h2 class="section-header__title">Message<span class="section-header__jatitle">メッセージ
-                  </span></h2>
-              </div>
-            </div>
-            <div class="info-message__head">
-              <span class="info-message__head-line">愛するペットが<br class="u-mobile">安心して過ごせる場所</span>
-            </div>
-            <div class="info-message__text">
-              <p>
-                当ペットホテルは、<br class="u-mobile">そんな願いを実現いたします。<br>
-                私たちは、愛情と安心をモットーに、<br>ペットたちが心地よく過ごせる <br class="u-mobile">居心地の良い環境を提供し、 <br>飼い主の期待に応えることを<br class="u-mobile">誇りに思っています。<br>
-                専門のスタッフが24時間体制で<br class="u-mobile">ペットたちの健康と安全を見守り、 <br>一人ひとりの個性やニーズに合わせた <br class="u-mobile">丁寧なケアを提供します。<br>
-                私たちの施設では、愛するペットが<br class="u-mobile">心地よく過ごせることを保証いたします。
-              </p>
-            </div>
-          </div>
+    <div class="page-information__message">
+      <div class="page-information__message-title">
+        <div class="section-header">
+          <h2 class="section-header__title">Message<span class="section-header__jatitle">メッセージ</span></h2>
         </div>
-        <div class="info-message__ceo">
-          <div class="info-message__ceo-wrap">
-            <div class="info-message__ceo-image">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/ceo-img.jpg" alt="" />
-            </div>
-            <div class="info-message__ceo-text">
-              <p>
-                &emsp;私たちは、ペットを家族の一員として大切にする全ての飼い主のために、安心してペットを預けられる場所を提供することを使命としています。私たちの施設では、愛情と専門知識を持ったスタッフが、ペットたちが快適で安全な環境で過ごせるように心がけています。
-              </p>
-              <p>
-                &emsp;私自身も熱心なペット愛好家であり、ペットたちが幸せで健康な生活を送ることを願っています。そのために、私たちは施設内の設備やサービスを常に向上させ、ペットたちがリラックスし、楽しい時間を過ごせるよう努めています。
-              <p>
-                &emsp;最後に、私たちのペットホテルを選んでいただき、誠にありがとうございます。皆様の愛するペットと素晴らしい時間を過ごせることを楽しみにしています。
-              </p>
-              <p>代表取締役社長&emsp;犬山犬田</p>
-            </div>
-          </div>
+      </div>
+      <div class="page-information__message-head">
+        <span class="page-information__message-head-line">愛するペットが<br class="u-mobile">安心して過ごせる場所</span>
+      </div>
+      <div class="page-information__message-text">
+        <p>
+          当ペットホテルは、<br class="u-mobile">そんな願いを実現いたします。<br>
+          私たちは、愛情と安心をモットーに、<br>ペットたちが心地よく過ごせる <br class="u-mobile">居心地の良い環境を提供し、 <br>飼い主の期待に応えることを<br class="u-mobile">誇りに思っています。<br>
+          専門のスタッフが24時間体制で<br class="u-mobile">ペットたちの健康と安全を見守り、 <br>一人ひとりの個性やニーズに合わせた <br class="u-mobile">丁寧なケアを提供します。<br>
+          私たちの施設では、愛するペットが<br class="u-mobile">心地よく過ごせることを保証いたします。
+        </p>
+      </div>
+    </div>
+    <div class="page-information__ceo">
+      <div class="page-information__ceo-wrap">
+        <div class="page-information__ceo-image">
+          <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/ceo-img.jpg" alt="" />
+        </div>
+        <div class="page-information__ceo-text">
+          <p>
+            &emsp;私たちは、ペットを家族の一員として大切にする全ての飼い主のために、安心してペットを預けられる場所を提供することを使命としています。私たちの施設では、愛情と専門知識を持ったスタッフが、ペットたちが快適で安全な環境で過ごせるように心がけています。
+          </p>
+          <p>
+            &emsp;私自身も熱心なペット愛好家であり、ペットたちが幸せで健康な生活を送ることを願っています。そのために、私たちは施設内の設備やサービスを常に向上させ、ペットたちがリラックスし、楽しい時間を過ごせるよう努めています。
+          <p>
+            &emsp;最後に、私たちのペットホテルを選んでいただき、誠にありがとうございます。皆様の愛するペットと素晴らしい時間を過ごせることを楽しみにしています。
+          </p>
+          <p>代表取締役社長&emsp;犬山犬田</p>
         </div>
       </div>
     </div>
@@ -85,7 +78,6 @@
         <a href="https://maps.app.goo.gl/eSxQjcLwXDuSSEgo8" rel="noopener noreferrer" target="_blank">Google mapで見る</a>
       </div>
     </div>
-  </div>
   </div>
 </section>
 

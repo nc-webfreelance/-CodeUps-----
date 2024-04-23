@@ -28,13 +28,19 @@
       <div class="mv__slider mv-swiper swiper js-swiper">
         <div class="mv-swiper__wrapper swiper-wrapper">
           <div class="mv-swiper__slide swiper-slide">
-            <img src="<?php echo $mv_1 ?>" alt="">
+            <?php if(!empty($mv_1)): ?>
+            <img src="<?php echo esc_url($mv_1['url']); ?>" alt="<?php echo esc_attr($mv_1['alt']); ?>">
+            <?php endif; ?>
           </div>
           <div class="mv-swiper__slide swiper-slide">
-            <img src="<?php echo $mv_2 ?>" alt="">
+          <?php if(!empty($mv_2)): ?>
+            <img src="<?php echo esc_url($mv_2['url']); ?>" alt="<?php echo esc_attr($mv_2['alt']); ?>">
+            <?php endif; ?>
           </div>
           <div class="mv-swiper__slide swiper-slide">
-            <img src="<?php echo $mv_3 ?>" alt="">
+          <?php if(!empty($mv_3)): ?>
+            <img src="<?php echo esc_url($mv_3['url']); ?>" alt="<?php echo esc_attr($mv_3['alt']); ?>">
+            <?php endif; ?>
           </div>
         </div>
       </div>

@@ -20,7 +20,7 @@ $sitemap = esc_url(home_url('/sitemap'));
 
 <div class="page-sitemap layout-subPage">
   <div class="page-sitemap__inner inner">
-  <nav class="page-sitemap__nav site-nav">
+    <nav class="page-sitemap__nav site-nav">
       <div class="site-nav__left">
         <ul class="site-nav__left-items">
           <li class="site-nav__item site-nav__item--brown">

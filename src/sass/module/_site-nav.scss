@@ -1,7 +1,6 @@
 @use "global" as *;
 
-
-.site-nav{
+.site-nav {
   display: flex;
   justify-content: space-evenly;
 }
@@ -77,7 +76,6 @@
   background-color: $base;
 }
 
-
 // .site-nav {
 //   display: flex;
 //   justify-content: space-between;
@@ -134,4 +132,3 @@
 //     height: rem(26);
 //   }
 // }
-

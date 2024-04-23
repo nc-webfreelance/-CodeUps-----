@@ -19,9 +19,7 @@ $sitemap = esc_url(home_url('/sitemap'));
 <?php endif; ?>
 
 
-<footer class="footer  <?php if (is_page(array('contact', 'thanks'))) {
-                          echo 'layout-page-footer';
-                        } ?>">
+<footer class="footer  <?php if (is_page(array('contact', 'thanks'))) {echo 'layout-page-footer';} ?>">
   <div class="footer__inner inner">
     <div class="footer__head">
       <a href="<?php echo $home; ?>" class="footer__logo">

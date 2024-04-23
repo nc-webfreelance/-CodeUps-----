@@ -671,12 +671,9 @@ textarea {
 }
 
 .contact__text {
-	margin-top: 2.5rem;
-}
-
-.contact__text p {
 	font-size: 0.875rem;
 	font-weight: 400;
+	margin-top: 2.5rem;
 }
 
 .contact__btn {
@@ -1088,74 +1085,6 @@ button,
 	width: 100%;
 }
 
-.info-message__textBlock {
-	text-align: center;
-}
-
-.info-message__head {
-	font-size: 1.75rem;
-	font-weight: 700;
-	letter-spacing: 0.05em;
-	line-height: 1.5;
-	margin-top: 2rem;
-}
-
-.info-message__head-line {
-	background: linear-gradient(180deg, transparent 0%, transparent 77%, #d4c4ae 77%, #d4c4ae 95%, transparent 95%, transparent 100%);
-}
-
-.info-message__text {
-	font-size: 0.875rem;
-	letter-spacing: 0.07em;
-	line-height: 1.75;
-	margin-top: 1.25rem;
-}
-
-.info-message__ceo {
-	background-color: #f5f0e9;
-	margin-left: calc(50% - 50vw);
-	margin-right: calc(50% - 50vw);
-	margin-top: 4rem;
-	padding: 6.25rem 0;
-	width: 100vw;
-}
-
-.info-message__ceo-wrap {
-	display: flex;
-	flex-direction: column;
-	gap: 2rem;
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 36.25rem;
-	padding: 0 0.9375rem;
-}
-
-.info-message__ceo-image {
-	aspect-ratio: 3/2;
-	overflow: hidden;
-}
-
-.info-message__ceo-image img {
-	-o-object-fit: cover;
-	height: 100%;
-	object-fit: cover;
-	width: 100%;
-}
-
-.info-message__ceo-text {
-	display: flex;
-	flex-direction: column;
-	font-size: 0.875rem;
-	gap: 1rem;
-	text-align: left;
-}
-
-.info-message__ceo-text p:last-child {
-	margin-top: 1rem;
-	padding: 0 1.25rem;
-	text-align: right;
-}
-
 .information__inner.inner {
 	max-width: 40.625rem;
 }
@@ -1360,6 +1289,74 @@ button,
 	margin-right: auto;
 	max-width: 40.625rem;
 	width: 100%;
+}
+
+.page-information__message {
+	text-align: center;
+}
+
+.page-information__message-head {
+	font-size: 1.75rem;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+	line-height: 1.5;
+	margin-top: 2rem;
+}
+
+.page-information__message-head-line {
+	background: linear-gradient(180deg, transparent 0%, transparent 77%, #d4c4ae 77%, #d4c4ae 95%, transparent 95%, transparent 100%);
+}
+
+.page-information__message-text {
+	font-size: 0.875rem;
+	letter-spacing: 0.07em;
+	line-height: 1.75;
+	margin-top: 1.25rem;
+}
+
+.page-information__ceo {
+	background-color: #f5f0e9;
+	margin-left: calc(50% - 50vw);
+	margin-right: calc(50% - 50vw);
+	margin-top: 4rem;
+	padding: 6.25rem 0;
+	width: 100vw;
+}
+
+.page-information__ceo-wrap {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 36.25rem;
+	padding: 0 0.9375rem;
+}
+
+.page-information__ceo-image {
+	aspect-ratio: 3/2;
+	overflow: hidden;
+}
+
+.page-information__ceo-image img {
+	-o-object-fit: cover;
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+}
+
+.page-information__ceo-text {
+	display: flex;
+	flex-direction: column;
+	font-size: 0.875rem;
+	gap: 1rem;
+	text-align: left;
+}
+
+.page-information__ceo-text p:last-child {
+	margin-top: 1rem;
+	padding: 0 1.25rem;
+	text-align: right;
 }
 
 .page-information__company {
@@ -2393,43 +2390,6 @@ select {
 	max-width: 53.125rem;
 }
 
-.info-message__head {
-	font-size: 2rem;
-	margin-top: 3.75rem;
-}
-
-.info-message__text {
-	font-size: 1rem;
-	margin-top: 2rem;
-}
-
-.info-message__ceo {
-	margin-top: 7.5rem;
-}
-
-.info-message__ceo-wrap {
-	align-items: center;
-	flex-direction: row;
-	gap: 2.5rem;
-	max-width: 72.5rem;
-	padding: 0 1.5625rem;
-}
-
-.info-message__ceo-image {
-	width: 42%;
-}
-
-.info-message__ceo-text {
-	font-size: 1rem;
-	gap: 1.25rem;
-	width: 58%;
-}
-
-.info-message__ceo-text p:last-child {
-	margin-top: 1.25rem;
-	text-align: left;
-}
-
 .information__inner.inner {
 	max-width: 72.5rem;
 }
@@ -2514,6 +2474,43 @@ select {
 
 .page-information__inner.inner {
 	max-width: 72.5rem;
+}
+
+.page-information__message-head {
+	font-size: 2rem;
+	margin-top: 3.75rem;
+}
+
+.page-information__message-text {
+	font-size: 1rem;
+	margin-top: 2rem;
+}
+
+.page-information__ceo {
+	margin-top: 7.5rem;
+}
+
+.page-information__ceo-wrap {
+	align-items: center;
+	flex-direction: row;
+	gap: 2.5rem;
+	max-width: 72.5rem;
+	padding: 0 1.5625rem;
+}
+
+.page-information__ceo-image {
+	width: 42%;
+}
+
+.page-information__ceo-text {
+	font-size: 1rem;
+	gap: 1.25rem;
+	width: 58%;
+}
+
+.page-information__ceo-text p:last-child {
+	margin-top: 1.25rem;
+	text-align: left;
 }
 
 .page-information__company {

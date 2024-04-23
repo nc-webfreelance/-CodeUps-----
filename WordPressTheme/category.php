@@ -39,7 +39,7 @@
                     <?php if (has_post_thumbnail()) : ?>
                       <?php the_post_thumbnail('full'); ?>
                     <?php else : ?>
-                      <img src="<?php echo esc_url(get_theme_file_uri( "/assets/images/common/no-image.jpeg" )); ?>" alt="NoImage画像" />
+                      <img src="<?php echo esc_url(get_theme_file_uri( "/assets/images/common/no-image.jpeg" )); ?>" alt="" />
                     <?php endif; ?>
                   </div>
                   <div class="card__body">

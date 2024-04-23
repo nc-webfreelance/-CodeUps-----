@@ -1,6 +1,5 @@
 @use "global" as *;
 
-
 .page-sitemap__nav {
   margin-top: rem(20);
   @include mq("md") {
