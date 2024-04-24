@@ -2,7 +2,6 @@
 
 .section-header {
   text-align: center;
-  line-height: 4;
 }
 
 .section-header::first-letter {
@@ -16,7 +15,6 @@
   font-weight: $bold;
   font-size: rem(32);
   color: $second;
-  line-height: 1;
   @include mq("md") {
     font-size: rem(40);
   }

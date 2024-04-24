@@ -44,11 +44,11 @@
 .information__head-info {
   display: inline-block;
   font-weight: $regular;
-  font-size: rem(16);
+  font-size: rem(14);
   padding: 0 rem(6);
   background-color: $light;
   @include mq("md") {
-    font-size: rem(20);
+    font-size: rem(18);
     padding: 0 rem(8);
   }
 }

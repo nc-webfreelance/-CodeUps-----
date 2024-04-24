@@ -1112,7 +1112,7 @@ button,
 .information__head-info {
 	background-color: #f5f0e9;
 	display: inline-block;
-	font-size: 1rem;
+	font-size: 0.875rem;
 	font-weight: 400;
 	padding: 0 0.375rem;
 }
@@ -1648,7 +1648,6 @@ button,
 }
 
 .section-header {
-	line-height: 4;
 	text-align: center;
 }
 
@@ -1662,7 +1661,6 @@ button,
 	font-family: "Montserrat", sans-serif;
 	font-size: 2rem;
 	font-weight: 700;
-	line-height: 1;
 	position: relative;
 }
 
@@ -1728,9 +1726,6 @@ button,
 
 .service__textBody h3 {
 	border-bottom: 1px solid #d4c4ae;
-}
-
-.service__head h3 {
 	font-size: 1.25rem;
 	font-weight: 700;
 }
@@ -2412,7 +2407,7 @@ select {
 }
 
 .information__head-info {
-	font-size: 1.25rem;
+	font-size: 1.125rem;
 	padding: 0 0.5rem;
 }
 
@@ -2629,11 +2624,8 @@ select {
 }
 
 .service__textBody h3 {
-	padding-bottom: 0.5rem;
-}
-
-.service__head h3 {
 	font-size: 1.5rem;
+	padding-bottom: 0.5rem;
 }
 
 .sidebar {

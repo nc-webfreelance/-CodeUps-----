@@ -101,5 +101,5 @@ $sitemap = esc_url(home_url('/sitemap'));
 
 
 <?php wp_footer(); ?>
-
+</body>
 </html>

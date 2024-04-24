@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-<body>
-
 
   <?php
   $home = esc_url(home_url('/'));
@@ -362,5 +360,5 @@
   <?php get_template_part('parts/contact'); ?>
 
 
-</body>
+
 <?php get_footer(); ?>
