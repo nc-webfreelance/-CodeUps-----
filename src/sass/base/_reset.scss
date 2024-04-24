@@ -28,7 +28,6 @@ dd {
 
 /* Set core root defaults */
 html {
-  overflow-x: hidden;
   // scroll-behavior: smooth;
 }
 
@@ -38,11 +37,10 @@ body {
   min-height: 100vh;
   text-rendering: optimizeLegibility;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
-// body.is-active {
-//   overflow: hidden;
-// }
+
 
 body.no-scroll {
   overflow: hidden;

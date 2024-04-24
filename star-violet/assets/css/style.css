@@ -45,15 +45,12 @@ dd {
 
 /* Set core root defaults */
 
-html {
-	overflow-x: hidden;
-}
-
 /* Set core body defaults */
 
 body {
 	line-height: 1.5;
 	min-height: 100vh;
+	overflow-x: hidden;
 	position: relative;
 	text-rendering: optimizeLegibility;
 }
@@ -1467,7 +1464,6 @@ button,
 	aspect-ratio: 3/2;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 1.125rem;
 	max-width: 31.25rem;
 	width: 100%;
 }
@@ -2552,7 +2548,6 @@ select {
 }
 
 .page-service__image {
-	margin-top: 0;
 	width: 50%;
 }
 

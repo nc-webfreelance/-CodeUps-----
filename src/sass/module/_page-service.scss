@@ -75,11 +75,9 @@
   max-width: rem(500);
   width: 100%;
   aspect-ratio: 3 / 2;
-  margin-top: rem(18);
   margin-inline: auto;
   @include mq("md") {
     width: 50%;
-    margin-top: 0;
   }
 }
 
