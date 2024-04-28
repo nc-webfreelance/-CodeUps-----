@@ -7,16 +7,22 @@ function my_script_init()
 	wp_enqueue_style('Montserrat', '//fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
 	// css
-	wp_enqueue_style('swiper-css', "https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css", false);
-	wp_enqueue_style('style-css', get_theme_file_uri('/assets/css/style.css'), false);
+	wp_enqueue_style('swiper-css', "https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css", array(), '10.0.0', 'all');
+	wp_enqueue_style('style-css', get_theme_file_uri('/assets/css/style.css'), array(), date('YmdGis', filemtime(get_theme_file_path('/assets/css/style.css'))), 'all');
+
+
+	$args = array(
+		'in_footer' => true,
+		'strategy' => 'defer',
+	);
 
 	// js
-	wp_enqueue_script('jquery', "https://code.jquery.com/jquery-3.6.0.js", array('jquery'), '3.6.0', true);
-	wp_enqueue_script('script-jquery', get_theme_file_uri('/assets/js/jquery.inview.min.js'), array('jquery'), '1.0.1', true);
-	wp_enqueue_script('swiper-js', "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js", array('jquery'), '8.0.0', true);
-	wp_enqueue_script('gsap-js', "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js", '3.12.5', true);
-	wp_enqueue_script('gsap-scroll', "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js", '3.12.5', true);
-	wp_enqueue_script('script-js', get_theme_file_uri('/assets/js/script.js'), array('jquery'), '1.0.1', true);
+	wp_enqueue_script('jquery', "https://code.jquery.com/jquery-3.6.0.js", array('jquery'), '3.6.0', $args);
+	wp_enqueue_script('script-jquery', get_theme_file_uri('/assets/js/jquery.inview.min.js'), array('jquery'), date('YmdGis', filemtime(get_theme_file_path('/assets/js/jquery.inview.min.js'))), $args);
+	wp_enqueue_script('swiper-js', "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js", array('jquery'), '8.0.0', $args);
+	wp_enqueue_script('gsap-js', "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js", array(), '3.12.5', $args);
+	wp_enqueue_script('gsap-scroll', "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js", array(), '3.12.5', $args);
+	wp_enqueue_script('script-js', get_theme_file_uri('/assets/js/script.js'), array('jquery'), date('YmdGis', filemtime(get_theme_file_path('/assets/js/script.js'))), $args);
 }
 add_action('wp_enqueue_scripts', 'my_script_init');
 
