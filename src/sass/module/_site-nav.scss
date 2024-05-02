@@ -13,7 +13,11 @@
 }
 
 .site-nav__left-items:not(:first-child),
-.site-nav__right-items {
+.site-nav__right-items:not(:first-child) {
+  margin-top: rem(18);
+}
+
+.site-nav__right-items--mt {
   margin-top: rem(18);
 }
 

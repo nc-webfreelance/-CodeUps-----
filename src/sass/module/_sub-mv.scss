@@ -37,6 +37,7 @@
   letter-spacing: 0.25em;
   text-indent: 0.25em;
   color: $white;
+  text-align: center;
   @include mq("md") {
     font-size: rem(72);
     letter-spacing: 0.4em;

@@ -18,7 +18,7 @@ if (is_page('service')) {
 } elseif (is_page('thanks')) {
     $title = 'Contact';
 } elseif (is_page('privacypolicy')) {
-    $title = 'Privacy Policy';
+    $title = 'Privacy<br>Policy';
 } elseif (is_page('sitemap')) {
     $title = 'Site MAP';
 } else {

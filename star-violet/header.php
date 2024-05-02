@@ -79,7 +79,7 @@
           </ul>
         </div>
         <div class="site-nav__right js-drawer">
-          <ul class="site-nav__right-items">
+          <ul class="site-nav__right-items site-nav__right-items--mt">
             <li class="site-nav__item">
               <a href="<?php echo $faq; ?>">よくある質問</a>
             </li>
